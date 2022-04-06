@@ -1,0 +1,6 @@
+# Site settings
+title: YVR EMA Project Docs
+description: Documentation for the Smart Device sensors
+baseurl: "/"
+remote_theme: just-the-docs/just-the-docs
+url: "https://bcit-reseach-long-term-issp.github.io" 
