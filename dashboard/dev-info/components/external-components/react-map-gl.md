@@ -1,7 +1,6 @@
 ---  
 layout: default  
 title: react-map-gl  
-has_children: true  
 permalink: /docs/dashboard/react  
 parent: External Components  
 has_toc: false
