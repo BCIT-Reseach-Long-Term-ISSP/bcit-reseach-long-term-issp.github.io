@@ -5,7 +5,7 @@ parent: Cloud
 has_children: false
 permalink: /docs/cloud/iot-core
 has_toc: false
-nav_order: 3
+nav_order: 1
 ---
 # IoT Core
 AWS IoT Core is the platform that enables users to connect devices to AWS Services and other devices, secure data and interactions, and process and act upon device data
