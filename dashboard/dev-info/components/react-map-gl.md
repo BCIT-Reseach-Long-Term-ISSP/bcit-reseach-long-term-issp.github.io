@@ -1,16 +1,25 @@
 ---  
 layout: default  
 title: react-map-gl  
-parent: External Components  
+parent: Dashboard React  
+grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/components/external/react-map-gl
+permalink: /docs/dashboard/react/react-map-gl
 ---  
 
 # react-map-gl
 
-react-map-gl is a suite of components which are geared towards Mapbox in React. Below are components which are used within the dashboard. Please note that some components may take props which are unlisted here; the props listed here are merely the ones used in the dashboard.
+react-map-gl is a suite of components which are geared towards Mapbox in React. The website for it can be found [here](https://visgl.github.io/react-map-gl/).
 
+Below are components which are used within the dashboard. Please note that some components may take props which are unlisted here; the props listed here are merely the ones used in the dashboard.
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
 {:toc}
+   
+---
 
 ## Map
 
