@@ -3,6 +3,7 @@ layout: default
 title: Components  
 has_children: true  
 parent: Dashboard React  
+permalink: /docs/dashboard/react/components  
 has_toc: true
 ---  
 
