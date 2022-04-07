@@ -31,7 +31,7 @@ On the client (dashboard) side of things, libraries are available to connect the
 
 The architecture below has been remodeled based on the initial architecture above. 
 
-![Untitled](assets/Untitled%2026.png)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2026.png?raw=true)
 
 # AWS Timestream
 
@@ -89,7 +89,7 @@ We are using single-measure records for guaranteed scalability when adding more 
 
 The following queries can be tested directly in the AWS Timestream Query Editor.
 
-![Untitled](assets/Untitled%2027.png)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2027.png?raw=true)
 
 ### Create SQL query to list all unique device IDs
 
