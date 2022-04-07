@@ -1,4 +1,5 @@
 # Specify filepatterns you want git to ignore.
 
+.jekyll-metadata
 .jekyll-cache
 _site

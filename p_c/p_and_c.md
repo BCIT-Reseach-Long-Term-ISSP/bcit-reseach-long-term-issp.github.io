@@ -2,8 +2,9 @@
 layout: default
 title: Power and Communication
 has_children: true
-permalink: /docs/power-comm/other
-has_toc: false
+permalink: /docs/power-comm
+has_toc: true
+nav_order: 2
 ---
 
 # Power and Communication team
