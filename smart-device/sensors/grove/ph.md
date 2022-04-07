@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PH
-parent: Grove
+parent: Sensors
 grand_parent: Smart Device
 ---
 

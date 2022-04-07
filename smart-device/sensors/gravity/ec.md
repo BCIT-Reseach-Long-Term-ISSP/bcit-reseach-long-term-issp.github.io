@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Electrical Conductivity
-parent: Gravity
-grand_parent: Sensors
+parent: Sensors
+grand_parent: Smart Device
 ---
 
 # Electrical Conductivity Sensor

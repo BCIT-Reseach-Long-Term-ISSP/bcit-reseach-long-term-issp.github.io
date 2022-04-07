@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Liquid Level
-parent: Gravity
-grand_parent: Sensors
+parent: Sensors
+grand_parent: Smart Device
 ---
 
 # Liquid Level Sensor

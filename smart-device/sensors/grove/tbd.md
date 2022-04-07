@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Turbidity
-parent: Grove
-grand_parent: Sensors
+parent: Sensors
+grand_parent: Smart Device
 ---
 
 # Turbidity Sensor
