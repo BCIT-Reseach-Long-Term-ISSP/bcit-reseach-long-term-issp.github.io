@@ -208,7 +208,25 @@ AWS offers data storage tiering and supports two storage tiers: a **memory store
 - **Memory store:** Optimized for point-in-time queries; shows how data has changed over a period of time. Typically, these queries process small amounts of **recent** data that has been sent to Timestream
 - **Magnetic store:** Optimized for fast analytical queries and its purpose is more for long-term data storage. These queries process medium to large volumes of data
 
+As of November 2021, AWS now offers magnetic storage writes. This allows us to write late arrival data into the magnetic store in the case of intermittent connectivity of our IoT sensors. Late arrival data is data with a timestamp that is in the past. Now, instead of maintaining a larger data retention period to process late arrival for memory store, we can set the the memory store data retention period to match the high throughput data ingestion requirements. This is highly suggested to be enabled as we can optimize our data storage spend. 
+
+### Price per GB
 | Memory Store | Magnetic Store |
 | --- | --- |
-| Optimized for point-in-time queries | Optimized for fast analytical queries |
-|  |  |
+| $0.036/hour | $0.03/month |
+
+### How To Set Data Retention Periods
+
+1. Go to Amazon Timestream
+2. Select your table and click **Edit**
+
+
+![Data Retention Period Step 2](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2028.PNG?raw=true)
+
+3. Set your memory and magnetic store retention accordingly. As of Spring 2022, the memory store retention is currently set to **24 hours** and the magnetic store retention is set to the maximum of 73,000 days before permanent deletion. 
+
+![Data Retention Period Step 3](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2029.PNG?raw=true)
+
+4. Magnetic storage writes (above) are currently enabled. In the case of errors occurring during magnetic storage writes (asynchronous operation), an S3 location can be specified for error logs to be written to. This should be considered and integrated as the project scales further. 
+
+5. Press **Save** to save your changes.
