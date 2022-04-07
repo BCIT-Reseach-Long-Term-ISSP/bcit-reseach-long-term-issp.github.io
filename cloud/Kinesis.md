@@ -1,9 +1,9 @@
 ---
 layout: default
-title: IoT-Core
-parent: Cloud
+title: Kinesis
 has_children: false
 permalink: /docs/cloud/kinesis
+parent: Cloud
 has_toc: false
 nav_order: 2
 ---
