@@ -1,7 +1,7 @@
 ---  
 layout: default  
 title: react-map-gl  
-permalink: /docs/dashboard/react  
+permalink: /docs/dashboard/react/external-components/react-map-gl  
 parent: External Components  
 has_toc: false
 ---  
