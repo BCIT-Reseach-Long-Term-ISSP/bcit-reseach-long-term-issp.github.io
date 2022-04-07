@@ -43,13 +43,13 @@ Click on the “Create Data Stream”
 After clicking, you’ll be brought to a new page where we will be customizing the data stream.
 Here we can include the data stream name, data stream Capacity, and various other settings.
 
-### Naming the Data Stream
+## Naming the Data Stream
 
 Name your data stream in the appropriate box, it should look like below:
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96ce0da1-3651-49ae-a5f2-4ff521c20492/Untitled.png)
 
-### Choosing Data Capacity
+## Choosing Data Capacity
 
 Here we can choose the data capacity. In our case, since we’re aware of our data bandwidth we can select Provisioned; However, if you’re unaware of your data usage, you can use on-demand, and then change the capacity mode afterwards to suit your needs.
 
@@ -58,8 +58,6 @@ Here we can choose the data capacity. In our case, since we’re aware of our da
 After select our capacity mode, we need to provide number of “shards” or ordered streams of data. Please be aware, each shard has a maximum write and read capacity. If you don’t care about order you can just use one shard (assuming its within the read/write capacity). If you need help deciding how many “Shards” you require, AWS provides a Shard estimator.
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2fb499d7-47fd-4ac8-9ed0-ac8569b69200/Untitled.png)
-
-### 
 
 A important note to take into consideration: provisioned streams can be cheaper but are of fixed pricing while on-demand streams can vary dependent on usage. You can switch between the capacity modes twice every 24 hours.
 
@@ -71,7 +69,7 @@ To finish creating the data stream Click on the orange “Create data stream” 
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62e5f47e-05af-4136-9c0a-808b1228cd7a/Untitled.png)
 
-### Configurations
+## Configurations
 
 Once the data stream is created; we’ll be brought to the data streams summary page. From here we can make configuration changes by clicking on the Configuration tab located below the Data Stream Summary.
 
@@ -79,11 +77,11 @@ Once the data stream is created; we’ll be brought to the data streams summary 
 
 ARN is blacked out for privacy reasons.
 
-### Pricing for On-Demand (Oregon Region)
+## Pricing for On-Demand (Oregon Region)
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38f7d5a9-8756-4817-b655-d33e59b0b73f/Untitled.png)
 
-### Pricing for Provisioned (Oregon Region)
+## Pricing for Provisioned (Oregon Region)
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9db2032a-6cee-48e1-a6a0-0272d253543e/Untitled.png)
 
@@ -99,7 +97,7 @@ Left Navigation Menu
 
 Main Amazon Kinesis Dashboard
 
-### Creating Delivery Streams
+## Creating Delivery Streams
 
 From the Delivery Stream page we can see a quick summary of existing delivery streams and create new ones.
 
@@ -137,7 +135,7 @@ Once all you’re happy with your configurations, click on the orange “create 
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22bcb9c6-8754-4308-87c8-bae71c42c0dd/Untitled.png)
 
-### Transforming Data via the Delivery Stream
+## Transforming Data via the Delivery Stream
 
 To transform data coming from the data stream before it goes to the delivery stream destination, we need to enable it in the Transform and Convert Records section mention earlier.
 
