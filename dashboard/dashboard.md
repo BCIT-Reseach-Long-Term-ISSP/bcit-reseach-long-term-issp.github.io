@@ -3,7 +3,7 @@ layout: default
 title: Dashboard
 has_children: true
 permalink: /docs/dashboard/
-has_toc: false
+has_toc: true
 ---
 
 # Dashboard Team
