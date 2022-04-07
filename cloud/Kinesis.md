@@ -2,7 +2,7 @@
 layout: default
 title: Kinesis
 has_children: false
-permalink: /docs/cloud/
+permalink: /docs/cloud/kinesis
 parent: Cloud
 has_toc: false
 nav_order: 3
