@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cloud
+title: IoT Core
 has_children: true
 permalink: /docs/cloud/
 has_toc: true
