@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Kinesis
-has_children: false
-permalink: /docs/cloud/
+title: IoT-Core
 parent: Cloud
+has_children: false
+permalink: /docs/cloud/kinesis
 has_toc: false
-nav_order: 3
+nav_order: 2
 ---
 
 # Serving Data from Cloud through API gateway
