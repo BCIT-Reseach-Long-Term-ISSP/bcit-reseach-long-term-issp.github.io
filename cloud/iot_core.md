@@ -8,8 +8,6 @@ has_toc: false
 nav_order: 1
 ---
 
-![Picture-Test](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/2eeeeb6a826d4aac7a87cea04cf7ca98ce718669/cloud/assets/Untitled%201.png)
-
 # IoT Core
 AWS IoT Core is the platform that enables users to connect devices to AWS Services and other devices, secure data and interactions, and process and act upon device data
 
