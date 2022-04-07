@@ -38,7 +38,7 @@ Kinesis
 In the AWS Console, head over to the Kinesis. You’ll be greeted with a quick dashboard/summary of existing Streams, Firehoses or Data Analytic applications.
 Click on the “Create Data Stream”
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c06301fe-95d3-48d0-b692-7c1c46998d30/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%205.png)
 
 After clicking, you’ll be brought to a new page where we will be customizing the data stream.
 Here we can include the data stream name, data stream Capacity, and various other settings.
@@ -47,27 +47,27 @@ Here we can include the data stream name, data stream Capacity, and various othe
 
 Name your data stream in the appropriate box, it should look like below:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96ce0da1-3651-49ae-a5f2-4ff521c20492/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%206.png)
 
 ## Choosing Data Capacity
 
 Here we can choose the data capacity. In our case, since we’re aware of our data bandwidth we can select Provisioned; However, if you’re unaware of your data usage, you can use on-demand, and then change the capacity mode afterwards to suit your needs.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d130d96-47cf-48ea-a5bc-99ea698167b4/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%207.png)
 
 After select our capacity mode, we need to provide number of “shards” or ordered streams of data. Please be aware, each shard has a maximum write and read capacity. If you don’t care about order you can just use one shard (assuming its within the read/write capacity). If you need help deciding how many “Shards” you require, AWS provides a Shard estimator.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2fb499d7-47fd-4ac8-9ed0-ac8569b69200/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%208.png)
 
 A important note to take into consideration: provisioned streams can be cheaper but are of fixed pricing while on-demand streams can vary dependent on usage. You can switch between the capacity modes twice every 24 hours.
 
 The various settings will be set by default to the following and can be edited afterwards.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b30c9740-184c-46ed-b211-d68f3a4b1b02/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%209.png)
 
 To finish creating the data stream Click on the orange “Create data stream” button
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62e5f47e-05af-4136-9c0a-808b1228cd7a/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2010.png)
 
 ## Configurations
 
