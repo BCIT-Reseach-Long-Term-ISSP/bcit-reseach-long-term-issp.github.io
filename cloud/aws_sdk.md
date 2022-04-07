@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Cloud
+title: AWS SDK
 has_children: false
+parent: Cloud
 permalink: /docs/cloud/aws_sdk
 has_toc: false
+nav_order: 3
 ---
 # AWS SDKs & Accessing Timestream
 
