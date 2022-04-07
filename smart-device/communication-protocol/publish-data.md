@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Publish Data
-nav_order: 2
-permalink: /docs/
+parent: MQTT Protocol
+grand_parent: Smart Device
+nav_order: 1
 ---
 
 # Publish Data
