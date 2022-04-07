@@ -73,27 +73,27 @@ To finish creating the data stream Click on the orange “Create data stream” 
 
 Once the data stream is created; we’ll be brought to the data streams summary page. From here we can make configuration changes by clicking on the Configuration tab located below the Data Stream Summary.
 
-![ARN is blacked out for privacy reasons.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8975ac5c-514d-4d8f-bfe5-644db2f66650/Untitled.png)
+![ARN is blacked out for privacy reasons.](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2011.png)
 
 ARN is blacked out for privacy reasons.
 
 ## Pricing for On-Demand (Oregon Region)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38f7d5a9-8756-4817-b655-d33e59b0b73f/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2012.png)
 
 ## Pricing for Provisioned (Oregon Region)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9db2032a-6cee-48e1-a6a0-0272d253543e/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2013.png)
 
 ## Dumping Data Stream to an Endpoint
 
 To dump data in the data stream into an endpoint or to apply a transformation to the data has to be done through “Delivery Streams” or “Data Firehose”. To access the Delivery streams menu, you can find it on the left-hand side of Amazon Kinesis or in the dashboard via the Data firehose section and clicking on the number of existing delivery streams you have; in our case, 2.
 
-![Left Navigation Menu](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e40b5678-42da-464f-9e3b-f1c22de1b703/Untitled.png)
+![Left Navigation Menu](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2014.png)
 
 Left Navigation Menu
 
-![Main Amazon Kinesis Dashboard](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/26ca124d-6376-46ed-813f-221196417b4c/Untitled.png)
+![Main Amazon Kinesis Dashboard](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2015.png)
 
 Main Amazon Kinesis Dashboard
 
@@ -103,29 +103,29 @@ From the Delivery Stream page we can see a quick summary of existing delivery st
 
 In the delivery Stream summary page, click on the orange “Create delivery stream”
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48a58c58-5a69-409d-afc8-cf5ba5d5ca93/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2016.png)
 
 Upon entering the “Create a delivery stream page” you will be greeted with a quick infographic of how it works.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74419536-49ac-411d-ab0a-21a0357f8473/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2017.png)
 
 Scrolling down a little, we begin to see how to set a delivery stream up. We need to select a Source of data and a Destination for the data.
 In our case we want the Source to be our data stream, and our destination a S3 bucket which we can select from the drop-down menus.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88e0ffce-fc84-44b2-9e3b-4f17a3b9e402/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2018.png)
 
 New options will be unlocked below allowing us to select our data stream. We select the data stream via the browse button, or if you don’t have one set up yet you can use the create button just right of the Browse button.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00ce441b-a1b3-403e-84cd-54b59655e913/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2019.png)
 
 The next step (Transform and Convert Records) is optional, and is only used if you wish to transform the data via an AWS lambda function. There will be a more in-depth look into this in another section.
 Once we’re done selecting out data stream, we get to name our delivery stream.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/923a9227-2266-4a69-8f1c-388e8925e58a/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2020.png)
 
 In the destination settings, we can select the S3 bucket we wish the data to flow into via the browse button. If it doesn’t exist, we can also create a new one via the create button.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/54f4e2e9-38e4-4697-839e-655c4fec215d/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2021.png)
 
 Within the Destination settings, we can enable or disable Dynamic partitioning which creates targetable partitions in our data lake for specific AWS lambda functions to dump data into. This will incur more costs if enabled, and it cannot be disabled once set. For more information on costs visit: [https://aws.amazon.com/kinesis/data-firehose/pricing/](https://aws.amazon.com/kinesis/data-firehose/pricing/)
 
@@ -133,17 +133,17 @@ In our case we are only using the S3 bucket as a storage space for raw data and 
 
 Once all you’re happy with your configurations, click on the orange “create delivery stream” button
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22bcb9c6-8754-4308-87c8-bae71c42c0dd/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2022.png)
 
 ## Transforming Data via the Delivery Stream
 
 To transform data coming from the data stream before it goes to the delivery stream destination, we need to enable it in the Transform and Convert Records section mention earlier.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5921063-fa44-4e6e-b491-557ef2b3574f/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2023.png)
 
 Once enabled, options to select our AWS Lambda function, buffer size, and buffer interval is made available.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/622b3ec0-6463-4952-a0ea-e94697491dc5/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%2024.png)
 
 Because the data is being ran through a lambda function there is a possibility that the resulting data may take up more space than the original data, buffer size is there to accommodate the data expansion.
 Buffer interval is the time Kinesis Firehose buffers incoming data before invoking the lambda function. So In the screenshot above, it will buffer either 3MB of data or wait 60 seconds before invoking the lambda function.
