@@ -25,13 +25,13 @@ On the client (dashboard) side of things, libraries are available to connect the
 | IP access control, controlling network access to TimescaleDB instance |  |
 | Better value at higher loads |  |
 
-![Untitled](EMA%20Cloud%20%2069012/Untitled%2025.png)
+![Untitled](assets/Untitled%2025.png)
 
 ## Phase 4
 
 The architecture below has been remodeled based on the initial architecture above. 
 
-![Untitled](EMA%20Cloud%20%2069012/Untitled%2026.png)
+![Untitled](assets/Untitled%2026.png)
 
 # AWS Timestream
 
@@ -89,7 +89,7 @@ We are using single-measure records for guaranteed scalability when adding more 
 
 The following queries can be tested directly in the AWS Timestream Query Editor.
 
-![Untitled](EMA%20Cloud%20%2069012/Untitled%2027.png)
+![Untitled](assets/Untitled%2027.png)
 
 ### Create SQL query to list all unique device IDs
 
