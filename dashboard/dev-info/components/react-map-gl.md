@@ -1,13 +1,14 @@
 ---  
 layout: default  
 title: react-map-gl  
-parent: Dashboard React  
+parent: React  
 grand_parent: Dashboard
 has_toc: false
 permalink: /docs/dashboard/react/react-map-gl
 ---  
 
 # react-map-gl
+{: .no_toc }
 
 react-map-gl is a suite of components which are geared towards Mapbox in React. The website for it can be found [here](https://visgl.github.io/react-map-gl/).
 
