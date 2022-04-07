@@ -2,10 +2,8 @@
 layout: default  
 title: In-House Components  
 has_children: true  
-permalink: /docs/dashboard/react/inhouse-components  
-parent: Dashboard React  
+parent: Components  
 nav_order: 1  
-has_toc: false
 ---  
 
 # In-House Components

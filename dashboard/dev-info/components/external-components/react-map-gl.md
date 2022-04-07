@@ -1,7 +1,6 @@
 ---  
 layout: default  
 title: react-map-gl  
-permalink: /docs/dashboard/react/external-components/react-map-gl  
 parent: External Components  
 has_toc: false
 ---  
@@ -9,6 +8,8 @@ has_toc: false
 # react-map-gl
 
 react-map-gl is a suite of components which are geared towards Mapbox in React. Below are components which are used within the dashboard. Please note that some components may take props which are unlisted here; the props listed here are merely the ones used in the dashboard.
+
+{:toc}
 
 ## Map
 

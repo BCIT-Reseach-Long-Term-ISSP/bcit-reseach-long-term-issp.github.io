@@ -2,10 +2,8 @@
 layout: default  
 title: External Components  
 has_children: true  
-permalink: /docs/dashboard/react/external-components  
-parent: Dashboard React  
+parent: Components  
 nav_order: 2  
-has_toc: false
 ---  
 
 # External Components
