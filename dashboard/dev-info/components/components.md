@@ -3,7 +3,6 @@ layout: default
 title: Components  
 has_children: true  
 parent: Dashboard React  
-nav_order: 1  
 has_toc: true
 ---  
 
