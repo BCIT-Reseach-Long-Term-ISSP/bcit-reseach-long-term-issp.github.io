@@ -20,11 +20,11 @@ Kinesis
 - Kinesis Data Stream vs Kinesis Firehose
     - Data stream is a singular stream of data
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3672dfe6-6c47-4ba2-807d-806ca5993930/Untitled.png)
+        ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/Untitled%203.png?raw=true)
         
     - Firehose is an aggregate of data streams
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8a9d270-4ff9-4fad-b4ca-107d01e9c70f/Untitled.png)
+        ![Untitled](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Untitled%204.png)
         
 - Documentation Links
     
