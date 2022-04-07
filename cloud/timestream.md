@@ -25,7 +25,7 @@ On the client (dashboard) side of things, libraries are available to connect the
 | IP access control, controlling network access to TimescaleDB instance |  |
 | Better value at higher loads |  |
 
-![Untitled](assets/Untitled%2025.png)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2025.png?raw=true)
 
 ## Phase 4
 
