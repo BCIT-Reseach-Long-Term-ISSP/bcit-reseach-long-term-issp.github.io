@@ -230,3 +230,15 @@ As of November 2021, AWS now offers magnetic storage writes. This allows us to w
 4. Magnetic storage writes (above) are currently enabled. In the case of errors occurring during magnetic storage writes (asynchronous operation), an S3 location can be specified for error logs to be written to. This should be considered and integrated as the project scales further. 
 
 5. Press **Save** to save your changes.
+
+### Notes
+- Data transfer is **permanent** from memory to magnetic store. Timestream does not populate the memory store from magnetic store. Be aware when decreasing the retention period of the memory store.
+- Data deleted from magnetic store is **permanent**. 
+- If increasing the retention period of the memory or magnetic store, the change takes effect for data being sent to Timestream from that point onwards.
+	- **Example:** If original retention period of memory was _2 hours_ and increased to _24 hours_, it will take **22 hours** for memory store to contain **24 hours** worth of data.
+
+## Storage Layer Overview
+
+In the next section, we will go over how dashboard can query and populate the front end with data with AWS SDK.
+
+![Storage Layer Overview](https://docs.aws.amazon.com/timestream/latest/developerguide/images/ts-architecture.png)
