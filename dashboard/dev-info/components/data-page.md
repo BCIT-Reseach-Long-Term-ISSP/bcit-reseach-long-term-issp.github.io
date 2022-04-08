@@ -20,30 +20,6 @@ permalink: /docs/dashboard/react/data-page
 
 ---
 
-## MapPage
-
-MapPage is a component which renders the entirety of the map page.
-
-**Props used:**
-- *selectedDevices*: A list of IDs corresponding to devices which the user has selected.
-    - Example: ["1", "9", "3"]
-- *updateSelectedDevices*: A function which can be used to overwrite the selectedDevices list.
-    - This function is used in another function, *condUpdateSelDevices*, which either adds or removes a given device from the list depending on whether it's already present.
-- *deviceList*: A list of all devices in the system.
-    - These devices should have an "id", "longitude", "latitude", and "name" value.
-
-**Functions implemented:**
-- *getSelected*: Takes a device as an argument and returns a green colour or a black colour value depending on whether that device's id is in selectedDevices.
-    - This is used in the MapMarker component to determine the colour.
-- *condUpdateSelDevices*: Takes a device as an argument and adds or removes that device from the selectedDevices list depending on whether it's already present.
-    - This is used in the MapMarker component so that a MapMarker can be clicked on to select/deselect a device.
-
-**Noteworthy components used:**
-- *Map*: A component from react-map-gl which renders a Mapbox map. More information [here](/docs/dashboard/react/react-map-gl).
-- *MapMarker*: A component which renders a marker on the map. More information in the MapMarker section of this page.
-- *MapSelectedDevices*: A component which renders a list of selected devices on the map page. More information in the MapSelectedDevices section of this page.
-
-
 ## SingleDevicePage
 
 SingleDevicePage is a component which renders the entirety of the data page for a single device.
@@ -217,68 +193,63 @@ None
 **Noteworthy components used:**
 None
 
-## 
 
+## MapWidget
 
+The MapWidget component is a small map display meant to be used on the devices page along with the other widgets of that page.
 
-**Props used:**
-
-
-**Functions implemented:**
-
-
-**Noteworthy components used:**
-
-
-## 
-
-
+It displays a single marker for a single given device. 
 
 **Props used:**
-
-
-**Functions implemented:**
-
+- *device*: An object representing a device.
+    - This device is needed to be passed as a prop into MapMarker.
 
 **Noteworthy components used:**
+- *MapMarker*: A component which renders a marker on the map. More information [here](/docs/dashboard/react/map-page#mapmarker).
+    - The getSelected and condUpdateSelDevices props given by the MapWidget are dummy functions that are essentially given just to prevent issues.
 
 
-## 
+## WeatherWidget
 
-
+WeatherWidget is a component which renders the current weather display with data from WeatherAPI.com.
 
 **Props used:**
-
+None
 
 **Functions implemented:**
-
+None
 
 **Noteworthy components used:**
+None
 
+## TidesWidget
 
-## 
-
-
+TidesWidget is a component which renders the tide forecast display with data from tides.gc.ca.
 
 **Props used:**
-
+None
 
 **Functions implemented:**
-
+- *padTime*: Takes an integer as an argument and returns its string equivalent, padded with a zero if a single digit.
+    - This is used to prepare the time information for display.
+- *getTime*: Takes a date as an argument and ISO 8601 format string and returns a formatted time string for display.
+    - This is used to prepare the time information for display.
+- *assignHighLow*: Takes the data (an array of objects) from the tide API as an argument and adds a new string value indicating whether that reading is for a high or low tide.
 
 **Noteworthy components used:**
+None
 
+## DeviceDescription
 
-## 
-
-
+DeviceDescription is a component which renders a short description of the selected device.
 
 **Props used:**
-
+- *data*: An object containing data pertaining to the device, such as id, battery level, and connectivity. Currently using dummy data.
 
 **Functions implemented:**
-
+None
 
 **Noteworthy components used:**
+None
 
 {: .fs-6 .fw-300 }
