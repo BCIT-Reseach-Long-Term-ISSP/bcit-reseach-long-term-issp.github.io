@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: React CSV
+title: react-csv
 parent: React  
 grand_parent: Dashboard
 has_toc: false

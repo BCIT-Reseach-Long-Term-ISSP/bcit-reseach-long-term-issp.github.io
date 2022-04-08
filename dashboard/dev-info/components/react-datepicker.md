@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: React Datepicker
+title: react-datepicker
 parent: React  
 grand_parent: Dashboard
 has_toc: false
