@@ -239,6 +239,6 @@ As of November 2021, AWS now offers magnetic storage writes. This allows us to w
 
 ## Storage Layer Overview
 
-In the next section, we will go over how dashboard can query and populate the front end with data with AWS SDK.
+In the next section, we will go over how the client application (dashboard) can query and populate the front end with data with AWS SDK.
 
 ![Storage Layer Overview](https://docs.aws.amazon.com/timestream/latest/developerguide/images/ts-architecture.png)
