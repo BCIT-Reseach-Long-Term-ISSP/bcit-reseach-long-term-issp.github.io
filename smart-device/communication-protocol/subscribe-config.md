@@ -30,8 +30,6 @@ $aws/&lt;buoy_id&gt;/error/
 ```
 For example (data for Buoy ID = 1, version 0 of this project):
 
-<div class="code-example" markdown="1">
-
 $aws/0/1/data/
 
 ```
@@ -42,32 +40,73 @@ The packet payload that will be published to the data topic is a JSON message.
 This message will include key/value pairs with the key identifying the type of sensor and the value representing the data value that was measured.
 Only the key/value pairs for the sensors on a buoy will be included in the message.
 
-For example (Buoy with 1 PH sensor):
+<p style="color:green;">1- Data Topic Payload :</p>
 
-<div class="code-example" markdown="1">
-```json
+```
+json
 {
+  "timestamp": 100132,
   "ph": 7.03,      # PH Sensor
+  "tds": 10041,
+  "pressure": 4.5,
 }
 ```
-</div>
+<p style="color:green;">2- Errors Topic Payload :</p>
 
-For example (Buoy with all sensors):
-
-<div class="code-example" markdown="1">
-```json
+````
+json
 {
-  "do": 80.3,      # Dissolved Oxygen Sensor (%Sat)
-  "ec": 250.21,    # Electrical Conductivity Sensor (ms/cm)
-  "liqlev": true,  # Liquid Level Sensor (boolean)
-  "ph": 7.03,      # PH Sensor
-  "tds": 550.96,   # Total Dissolved Solids Sensor (ppm)
-  "tbd": 0.8,      # Turbidity Sensor (NTU)
-  "wf": 1.904,     # Water Flow Sensor (L/s)
-  "wp": 9.81,      # Water Pressure Sensor (kpa)
-  "temp" : 20.34   # Temperature Sensor (Degree C)
+  "timestamp": 100132,
+  "fatal-error": {
+        code: 1,
+        message: "arduino crashed"  
+  },
+  "connectivity-error": {
+        code: 1,
+        message: "bad connection" 
+  },
+   "sensor-error": {
+        code: 1,
+        message: "PH sensor value out of range" 
+  },                                                                                            
 }
-```
-</div>
 
+````
+
+<p style="color:green;">3- Sensor Config Topic Payload :</p>
+
+````
+json
+{
+    "ph": {
+        "time-interval": 6000,
+        "unit": null,
+        "average-value": true,
+        "average-time-interval": 60,
+    },
+    "tds": {
+        "time-interval": 6000,
+        "unit": ppm,
+        "average-value": false,
+        "average-time-interval": 0,
+    },
+    "pressure": {
+        "time-interval": 6000,
+        "unit": kpa,
+        "average-value": false,
+        "average-time-interval": 0,
+    },
+}
+````
+<p style="color:green;">4- Global Config Topic Payload</p>
+
+````
+json
+{
+    "overage-time-interval": 900,
+    "use-low-power-mode": true,
+    "reset": false,
+    "shutdown": false,
+}
+````
 For specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).
