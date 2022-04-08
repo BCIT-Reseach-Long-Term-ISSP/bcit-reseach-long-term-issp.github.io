@@ -48,7 +48,7 @@ Here, we can view a specific sensor's data readings over a specified range of ti
 
 We can also look at this information in table format.
 
-![Device Info Table](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/DeviceInfoTable.png?raw=true "Device Info Table")
+![Device Info Table](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/DeviceInfoTable.PNG?raw=true "Device Info Table")
 
 Finally, we can export and download this data as well by clicking on "Download Data"
 
