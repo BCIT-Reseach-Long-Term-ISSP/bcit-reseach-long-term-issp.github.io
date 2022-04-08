@@ -16,7 +16,7 @@ permalink: /docs/dashboard/react/map-page
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
