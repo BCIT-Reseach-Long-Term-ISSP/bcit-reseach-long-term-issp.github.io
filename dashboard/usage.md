@@ -52,10 +52,4 @@ We can also look at this information in table format.
 
 Finally, we can export and download this data as well by clicking on "Download Data"
 
-
-
-https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/{PNG_NAME}?raw=true
-
-
-
 {: .fs-6 .fw-300 }
