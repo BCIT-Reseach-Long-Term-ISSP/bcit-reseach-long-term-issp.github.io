@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: React ChartsJS 2
+title: react-chartsjs-2
 parent: React  
 grand_parent: Dashboard
 has_toc: false

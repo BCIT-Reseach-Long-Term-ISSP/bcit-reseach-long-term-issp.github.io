@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: React Bootstrap
+title: react-bootstrap
 parent: React  
 grand_parent: Dashboard
 has_toc: false
