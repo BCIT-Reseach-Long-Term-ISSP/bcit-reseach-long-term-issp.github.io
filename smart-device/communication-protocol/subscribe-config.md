@@ -16,18 +16,25 @@ This section provides an overview of how we expect to recieve device config mess
 All data is sent to the data subtopic of a designated Buoy ID.
 
 <div class="code-example" markdown="1">
-```
-$aws/<version#>/<buoy_id>/data/
-```
+
+$aws/&lt;buoy_id&gt;/config/sensor/
+
+$aws/&lt;buoy_id&gt;/config/global/
+
+$aws/&lt;buoy_id&gt;/data/
+
+$aws/&lt;buoy_id&gt;/error/
+
 </div>
 
+```
 For example (data for Buoy ID = 1, version 0 of this project):
 
 <div class="code-example" markdown="1">
-```
+
 $aws/0/1/data/
+
 ```
-</div>
 
 ## MQTT Packet Payload
 
