@@ -101,7 +101,7 @@ QuantitativeDetails is a component which renders a detailed look at quantitative
 **Noteworthy components used:**
 - *Graph*: A component that renders historical data for the selected metric on a line graph.
 - *DropdownButton*: A component from React Bootstrap which renders a dropdown menu for selecting time range and threshold options. More information [here](/docs/dashboard/react/react-bootstrap).
-- *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-bootstrap). 
+- *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-datepicker). 
 - *DataDownloadButton*: A component that renders the data download button which allows data to be downloaded as a .csv file. Renders the file's corresponding file name.
 - *DataTable*: A component that renders a data table displaying raw historical data within the selected date and threshold ranges.
 
@@ -136,7 +136,7 @@ QualitativeDetails is a component which renders a detailed look at qualitative d
 
 **Noteworthy components used:**
 - *DropdownButton*: A component from React Bootstrap which renders a dropdown menu for selecting time range and threshold options. More information [here](/docs/dashboard/react/react-bootstrap).
-- *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-bootstrap). 
+- *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-datepicker). 
 - *DataDownloadButton*: A component that renders the data download button which allows data to be downloaded as a .csv file. Renders the file's corresponding file name.
 - *DataTable*: A component that renders a data table displaying raw historical data within the selected date and threshold ranges. Readings exceeding the set thresholds will appear as red.
 
