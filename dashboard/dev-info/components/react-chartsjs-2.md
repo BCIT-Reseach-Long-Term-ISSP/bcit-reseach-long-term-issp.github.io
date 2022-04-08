@@ -28,4 +28,4 @@ Line is a line graph which plots the given data against time.
 
 **Props Used:**
 - *options*: An object; the options set to customize the graph.
-- *data*: An object; the data x and y values being plotted ont he graph.
+- *data*: An object; the data x and y values being plotted on the graph.
