@@ -7,7 +7,7 @@ has_toc: false
 permalink: /docs/dashboard/react/react-csv
 ---  
 
-# React CSV
+# react-csv
 {: .no_toc }
 
 React CSV is a library used to convert data in CSV files for download. The website for it can be found [here](https://react-csv.github.io/react-csv/).

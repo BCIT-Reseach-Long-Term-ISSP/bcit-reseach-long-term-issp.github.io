@@ -7,7 +7,7 @@ has_toc: false
 permalink: /docs/dashboard/react/react-bootstrap
 ---  
 
-# React Boostrap
+# react-boostrap
 {: .no_toc }
 
 React Bootstrap is a suite of components that are commonly used to build websites. The design elements are responsive and functional.

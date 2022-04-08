@@ -7,7 +7,7 @@ has_toc: false
 permalink: /docs/dashboard/react/react-datepicker
 ---  
 
-# React Datepicker
+# react-datepicker
 {: .no_toc }
 
 . The website for it can be found [here](https://reactdatepicker.com/).
