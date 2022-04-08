@@ -7,7 +7,7 @@ has_toc: false
 permalink: /docs/dashboard/react/react-chartsjs-2
 ---  
 
-# React ChartsJS 2
+# react-chartsjs-2
 {: .no_toc }
 
 React ChartsJS 2 is the React equivalent of the ChartsJS library. It is used to create simple charts. The website for it can be found [here](https://react-chartjs-2.netlify.app/).
