@@ -1,10 +1,10 @@
 ---  
 layout: default  
-title: Dashboard React  
+title: React  
 has_children: true  
 permalink: /docs/dashboard/react  
 parent: Dashboard  
-has_toc: false
+has_toc: true
 ---  
 
 # React

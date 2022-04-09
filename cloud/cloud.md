@@ -3,7 +3,7 @@ layout: default
 title: Cloud
 has_children: true
 permalink: /docs/cloud/
-has_toc: false
+has_toc: true
 ---
 
 # Cloud team
