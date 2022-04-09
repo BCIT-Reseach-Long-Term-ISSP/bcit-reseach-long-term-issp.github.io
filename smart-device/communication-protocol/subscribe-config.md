@@ -13,13 +13,13 @@ Each buoy device will be subscribed to two endpoints, one related to sensors con
 
 ## Sensor Configurations
 
-The 
+
 <div class="code-example" markdown="1">
 ```
 config/sensor/
 ```
 </div>
- endpoint is used when sensor specific configurations are changed. Such as specifying sensor measurment method, as point measurement or averaged measurement.
+ This endpoint is used when sensor specific configurations are changed. Such as specifying sensor measurment method, as point measurement or averaged measurement.
 
 ### Broker Namespace Topic
 
@@ -79,25 +79,26 @@ The key used to identify the specific sensor is the same string used to identify
 
 The sensor configuration options are:
 
-"time-interval": The interval between sensor measurements being taken, this does not determine when the measuremnts are sent to the cloud. The data type for this value is seconds.
+<ul>
+<li><span style="color:#7253ed;font-weight: bold;">time-interval</span>: The interval between sensor measurements being taken, this does not determine when the measuremnts are sent to the cloud. The data type for this value is seconds.
+</li>
+<li><span style="color:#7253ed;font-weight: bold;">unit</span>: The units that measuremnts should be sent in.</li>
 
-"unit": The units that measuremnts should be sent in.
+<li><span style="color:#7253ed;font-weight: bold;">average-value</span>: A boolean for whether measurments should be averaged before publishing.
+</li>
 
-"average-value": A boolean for whether measurments should be averaged before publishing.
+<li><span style="color:#7253ed;font-weight: bold;">average-time-interval</span>: The interval between sensor measurements being taken, for creating the average measurment. The data type for this value is seconds, but if the <span style="color:#7253ed;font-weight: bold;">average-value</span> boolean is false, it will be ignored.</li>
 
-"average-time-interval": The interval between sensor measurements being taken, for creating the average measurment. The data type for this value is seconds, but if the "average-value" boolean is false, it will be ignored.
-
-"disable": A boolean for whether the sensor should take measurments.
+<li><span style="color:#7253ed;font-weight: bold;">disable</span>: A boolean for whether the sensor should take measurments.</li></ul>
 
 ## Global Device Configurations
 
-The 
 <div class="code-example" markdown="1">
 ```
 config/global/
 ```
 </div>
- endpoint is used when general device configuratings are changed. Such as the data publishing time interval for the device.
+This endpoint is used when general device configuratings are changed. Such as the data publishing time interval for the device.
 
 ### Broker Namespace Topic
 
@@ -135,12 +136,14 @@ The packet payload that the buoy will be expecting from a general device configu
 ````
 
 The general device configuration options are:
-
-"publish-time-interval": The interval between the buoy publishing data to the cloud. The data type for this value is seconds.
-
-"use-low-power-mode": A boolean for whether the device should use low power mode. 
-If the device is in low power mode it will use less energy and will last longer, however if the device is not in low power mode it will stay connected to the Cloud and cna recieve messages at any time.
-
-"reset": A boolean for whether the device should reset. If this is true, the device will reset and should start the startup process again.
-
-"shutdown": A boolean for whether the device should shutdown completely. If the device is shutdown, it will no longer be able to recieve messages or publish data.
+<ul>
+<li><span style="color:#7253ed;font-weight: bold;">publish-time-interval</span>: The interval between the buoy publishing data to the cloud. The data type for this value is seconds.
+</li>
+<li><span style="color:#7253ed;font-weight: bold;">use-low-power-mode</span>: A boolean for whether the device should use low power mode. 
+If the device is in low power mode it will use less energy and will last longer, however if the device is not in low power mode it will stay connected to the Cloud and can recieve messages at any time.
+</li>
+<li><span style="color:#7253ed;font-weight: bold;">reset</span>: A boolean for whether the device should reset. If this is true, the device will reset and should start the startup process again.
+</li>
+<li><span style="color:#7253ed;font-weight: bold;">shutdown</span>: A boolean for whether the device should shutdown completely. If the device is shutdown, it will no longer be able to recieve messages or publish data.
+</li>
+</ul>
