@@ -62,3 +62,5 @@ For example (Buoy with all sensors):
 }
 ```
 </div>
+
+For specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensor pages](https://bcit-reseach-long-term-issp.github.io/docs/smart-device/sensors/sensors.md).
