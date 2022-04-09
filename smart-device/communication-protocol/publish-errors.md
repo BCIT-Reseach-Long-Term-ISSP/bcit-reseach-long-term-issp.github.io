@@ -3,7 +3,7 @@ layout: default
 title: Publish Errors
 parent: MQTT Protocol
 grand_parent: Smart Device
-nav_order: 1
+nav_order: 2
 ---
 
 # Publish Errors
@@ -11,13 +11,13 @@ nav_order: 1
 This section provides an overview of how device / sensor errors are sent to the AWS Broker.
 {: .fs-6 .fw-300 }
 
-## Broker Namespace Topic
+## Broker Namespace Topic - Errors
 
-All data is sent to the data subtopic of a designated Buoy ID.
+All errors are sent to the error subtopic of a designated Buoy ID. This conveniently identifies the erroring buoy and allows the dashboard to interpret the data easily, translating it onto their interface. 
 
 <div class="code-example" markdown="1">
 ```
-$aws/<version#>/<buoy_id>/data/
+$aws/<version#>/<buoy_id>/error/
 ```
 </div>
 
@@ -25,42 +25,50 @@ For example (data for Buoy ID = 1, version 0 of this project):
 
 <div class="code-example" markdown="1">
 ```
-$aws/0/1/data/
+$aws/0/1/error/
 ```
 </div>
 
 ## MQTT Packet Payload
 
-The packet payload that will be published to the data topic is a JSON message.
-This message will include key/value pairs with the key identifying the type of sensor and the value representing the data value that was measured.
-Only the key/value pairs for the sensors on a buoy will be included in the message.
+The payload that will be published to the error topic is a JSON message.
+This message will include a timestamp key representing time of error and a variable number of other keys which will represent the error type. Each of these keys will be paired with an object value. This object contains two keys:  code is an error identifier and message explains the error generally.
 
-For example (Buoy with 1 PH sensor):
-
-<div class="code-example" markdown="1">
-```json
-{
-  "ph": 7.03,      # PH Sensor
-}
-```
-</div>
-
-For example (Buoy with all sensors):
+For example (Buoy with connectivity error):
 
 <div class="code-example" markdown="1">
 ```json
 {
-  "do": 80.3,      # Dissolved Oxygen Sensor (%Sat)
-  "ec": 250.21,    # Electrical Conductivity Sensor (ms/cm)
-  "liqlev": true,  # Liquid Level Sensor (boolean)
-  "ph": 7.03,      # PH Sensor
-  "tds": 550.96,   # Total Dissolved Solids Sensor (ppm)
-  "tbd": 0.8,      # Turbidity Sensor (NTU)
-  "wf": 1.904,     # Water Flow Sensor (L/s)
-  "wp": 9.81,      # Water Pressure Sensor (kpa)
-  "temp" : 20.34   # Temperature Sensor (Degree C)
+    “timestamp”: 10032,
+    “connectivity-error”: {
+        code: 1,
+        message: “bad connection”
+    },
 }
 ```
 </div>
 
-For specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).
+For example (Buoy with all the errors):
+
+<div class="code-example" markdown="1">
+```json
+{
+    “timestamp”: 10032,
+    “fatal-error”: {
+        code: 1,
+        message: “arduino crashed”
+    },
+    “connectivity-error”: {
+        code: 1,
+        message: “bad connection”
+    },
+    “sensor-error”: {
+        code: 1,
+        message: “PH sensor values out of range”
+    },
+}
+```
+</div>
+
+For specific error breakdown please refer to the relevant pages (under construction).
+<!-- [error docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md). -->

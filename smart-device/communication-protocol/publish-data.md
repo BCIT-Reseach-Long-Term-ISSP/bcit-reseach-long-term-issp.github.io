@@ -11,7 +11,7 @@ nav_order: 1
 This section provides an overview of how sensor data is sent to the AWS Broker.
 {: .fs-6 .fw-300 }
 
-## Broker Namespace Topic
+## Broker Namespace Topic - Data
 
 All data is sent to the data subtopic of a designated Buoy ID.
 
