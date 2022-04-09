@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Total Dissolved Solids
-parent: Gravity
-grand_parent: Sensors
+parent: Sensors
+grand_parent: Smart Device
 ---
 
 # Total Dissolved Solids Sensor
