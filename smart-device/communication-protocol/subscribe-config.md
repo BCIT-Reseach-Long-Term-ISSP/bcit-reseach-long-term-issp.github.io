@@ -45,9 +45,9 @@ Only the key/value pairs for the sensors on a buoy will be included in the messa
 ```json
 {
   "timestamp": 100132,
-  "ph": 7.03,      # PH Sensor
+  "ph": 7.03,      
   "tds": 10041,
-  "pressure": 4.5,
+  "pressure": 4.5
 }
 ```
 <p style="color:green;">2- Errors Topic Payload :</p>
@@ -56,17 +56,17 @@ Only the key/value pairs for the sensors on a buoy will be included in the messa
 {
   "timestamp": 100132,
   "fatal-error": {
-        code: 1,
-        message: "arduino crashed"  
+        "code": 1,
+        "message": "arduino crashed"  
   },
   "connectivity-error": {
-        code: 1,
-        message: "bad connection" 
+        "code": 1,
+        "message": "bad connection" 
   },
    "sensor-error": {
-        code: 1,
-        message: "PH sensor value out of range" 
-  },                                                                                            
+        "code": 1,
+        "message": "PH sensor value out of range" 
+  }                                                                                            
 }
 
 ````
@@ -79,20 +79,20 @@ Only the key/value pairs for the sensors on a buoy will be included in the messa
         "time-interval": 6000,
         "unit": null,
         "average-value": true,
-        "average-time-interval": 60,
+        "average-time-interval": 60
     },
     "tds": {
         "time-interval": 6000,
-        "unit": ppm,
+        "unit": "ppm",
         "average-value": false,
-        "average-time-interval": 0,
+        "average-time-interval": 0
     },
     "pressure": {
         "time-interval": 6000,
-        "unit": kpa,
+        "unit": "kpa",
         "average-value": false,
-        "average-time-interval": 0,
-    },
+        "average-time-interval": 0
+    }
 }
 ````
 <p style="color:green;">4- Global Config Topic Payload</p>
@@ -102,7 +102,7 @@ Only the key/value pairs for the sensors on a buoy will be included in the messa
     "overage-time-interval": 900,
     "use-low-power-mode": true,
     "reset": false,
-    "shutdown": false,
+    "shutdown": false
 }
 ````
 For specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).
