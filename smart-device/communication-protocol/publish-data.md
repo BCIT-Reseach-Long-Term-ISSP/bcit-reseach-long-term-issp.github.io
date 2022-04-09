@@ -62,5 +62,3 @@ For example (Buoy with all sensors):
 }
 ```
 </div>
-
-For specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).
