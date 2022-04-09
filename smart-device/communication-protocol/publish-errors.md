@@ -21,7 +21,7 @@ $aws/<version#>/<buoy_id>/error/
 ```
 </div>
 
-For example (data for Buoy ID = 1, version 0 of this project):
+For example (error for Buoy ID = 1, version 0 of this project):
 
 <div class="code-example" markdown="1">
 ```
