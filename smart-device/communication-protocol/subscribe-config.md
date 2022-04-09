@@ -42,8 +42,7 @@ Only the key/value pairs for the sensors on a buoy will be included in the messa
 
 <p style="color:green;">1- Data Topic Payload :</p>
 
-```
-json
+```json
 {
   "timestamp": 100132,
   "ph": 7.03,      # PH Sensor
@@ -53,8 +52,7 @@ json
 ```
 <p style="color:green;">2- Errors Topic Payload :</p>
 
-````
-json
+````json
 {
   "timestamp": 100132,
   "fatal-error": {
@@ -75,8 +73,7 @@ json
 
 <p style="color:green;">3- Sensor Config Topic Payload :</p>
 
-````
-json
+````json
 {
     "ph": {
         "time-interval": 6000,
@@ -100,8 +97,7 @@ json
 ````
 <p style="color:green;">4- Global Config Topic Payload</p>
 
-````
-json
+````json
 {
     "overage-time-interval": 900,
     "use-low-power-mode": true,
