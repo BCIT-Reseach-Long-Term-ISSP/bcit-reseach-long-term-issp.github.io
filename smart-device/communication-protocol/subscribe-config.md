@@ -19,7 +19,7 @@ Each buoy device will be subscribed to two endpoints, one related to sensors con
 config/sensor/
 ```
 </div>
- This endpoint is used when sensor specific configurations are changed. Such as specifying sensor measurment method, as point measurement or averaged measurement.
+ This endpoint is used when sensor specific configurations are changed. Such as specifying sensor measurement method, as point measurement or averaged measurement.
 
 ### Broker Namespace Topic
 
@@ -80,16 +80,16 @@ The key used to identify the specific sensor is the same string used to identify
 The sensor configuration options are:
 
 <ul>
-<li><span style="color:#7253ed;font-weight: bold;">time-interval</span>: The interval between sensor measurements being taken, this does not determine when the measuremnts are sent to the cloud. The data type for this value is seconds.
+<li><span style="color:#7253ed;font-weight: bold;">time-interval</span>: The interval between sensor measurements being taken, this does not determine when the measurements are sent to the cloud. The data type for this value is seconds.
 </li>
-<li><span style="color:#7253ed;font-weight: bold;">unit</span>: The units that measuremnts should be sent in.</li>
+<li><span style="color:#7253ed;font-weight: bold;">unit</span>: The units that measurements should be sent in.</li>
 
-<li><span style="color:#7253ed;font-weight: bold;">average-value</span>: A boolean for whether measurments should be averaged before publishing.
+<li><span style="color:#7253ed;font-weight: bold;">average-value</span>: A boolean for whether measurements should be averaged before publishing.
 </li>
 
-<li><span style="color:#7253ed;font-weight: bold;">average-time-interval</span>: The interval between sensor measurements being taken, for creating the average measurment. The data type for this value is seconds, but if the <span style="color:#7253ed;font-weight: bold;">average-value</span> boolean is false, it will be ignored.</li>
+<li><span style="color:#7253ed;font-weight: bold;">average-time-interval</span>: The interval between sensor measurements being taken, for creating the average measurement. The data type for this value is seconds, but if the <span style="color:#7253ed;font-weight: bold;">average-value</span> boolean is false, it will be ignored.</li>
 
-<li><span style="color:#7253ed;font-weight: bold;">disable</span>: A boolean for whether the sensor should take measurments.</li></ul>
+<li><span style="color:#7253ed;font-weight: bold;">disable</span>: A boolean for whether the sensor should take measurements.</li></ul>
 
 ## Global Device Configurations
 
