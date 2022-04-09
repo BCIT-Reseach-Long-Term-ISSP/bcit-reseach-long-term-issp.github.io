@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Publish Errors
-parent: MQTT Protocol
+parent: Communication Protocols
 grand_parent: Smart Device
-nav_order: 2
 ---
 
 # Publish Errors
