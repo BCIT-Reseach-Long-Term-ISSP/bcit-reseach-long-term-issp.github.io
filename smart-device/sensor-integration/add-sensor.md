@@ -9,7 +9,7 @@ grand_parent: Smart Device
 
 Things to consider for adding sensors.
 
-1. Calibration
+1. <span style="color:#7253ed;font-weight: bold;">Calibration</span>
 	- The analogRead returns the voltage which has to be calculated to the appropriate reading.
 	- The equation to use: 
 		input: voltage
@@ -17,16 +17,16 @@ Things to consider for adding sensors.
 	- In the calibration step, the value of the output is given. 
 	- The constant can be calculated which will be unused in future readings. 
 
-2. Testing
+2. <span style="color:#7253ed;font-weight: bold;">Testing</span>
 	- The testing we have currently done was using Arduino UNO for the same sensor. 
 	- The assumption is that we have UNO library for the same sensor and confirm the reading and voltage.
 
-3. Resolution of voltage reading
+3. <span style="color:#7253ed;font-weight: bold;">Resolution of voltage reading</span>
 	- When testing values against Arduino UNO, there is difference in mapping of input voltages
 		Arduino Uno: 10-bit converter (return values( 0~5 volts / 1024 units ))
 		Arduino Zero: 12-bit ADC capabilities (return values ( 0 ~ 3.3 volts/ 4095 units))
 
-4. Example
+4. <span style="color:#7253ed;font-weight: bold;">Example</span>
 	- Electric Conductivity Sensors (DFRobot)
 	1. Equation
 		kValue = RES2 * ECREF * compECsolution / 1000 / voltage 
