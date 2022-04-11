@@ -1,12 +1,13 @@
 ---
 layout: default
 title: MQTT Protocol
-has_children: true
-permalink: /docs/smart-device/communication-protocol/
-parent: Smart Device
+has_children: false
+permalink: /docs/smart-device/communication-protocol/mqtt
+parent: Communication Protocols
+grand_parent: Smart Device
 ---
 
-# MQTT Prootocol
+# MQTT Protocol
 
 The communication protocol used to send data between the smart device and the AWS broker.
 {: .fs-6 .fw-300 }
@@ -36,3 +37,6 @@ The interactions between the Buoy Device (MQTT client) and the Dashboard (MQTT c
 
 All MQTT message payloads will be in JSON form.
 The specific structure, key-value pairs, for these payloads can be found in the relevant subsections for the different message types.
+
+
+{: .no_toc }
