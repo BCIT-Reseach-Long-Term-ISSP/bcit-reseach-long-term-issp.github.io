@@ -15,7 +15,7 @@ These are directions on how to set up your development environment for the code 
 ## Pre-requisites
 1. Install Arduino IDE
 2. Enter Tools->Board->Boards Manager
-3. From the window, install "Arduino SAMD Boards", version 1.8.12
+3. From the window, install "Arduino SAMD Boards", version 1.8.13
 4. Install cmake and ninja build system then make sure executables for both are in your PATH
 5. Install [Eclipse IDE for Embedded C/C++ Developers](https://www.eclipse.org/downloads/packages/release/2021-12/r/eclipse-ide-embedded-cc-developers)
 6. Install [cmake4eclipse](https://github.com/15knots/cmake4eclipse#installation) plugin to the freshly installed eclipse IDE.
@@ -42,7 +42,7 @@ Create a new debug configuration...
 4. Under "C/C++ Application" click "Search Project". Make sure you have built the project at least once so then it finds the correct file. A ".elf" file should be in the list. Select it.
 5. In the "Debugger" tab, ensure "Start openOCD locally" is checked. 
 6. In "Executable Path" choose \<arduinodir\>/packages/arduino/tools/openocd/0.10.0-arduino7/bin/openocd".
-7. In "Config Options" enter "-f\<arduinodir\>/packages/arduino/hardware/samd/1.8.12/variants/arduino_zero/openocd_scripts/arduino_zero.cfg". 
+7. In "Config Options" enter "-f\<arduinodir\>/packages/arduino/hardware/samd/1.8.13/variants/arduino_zero/openocd_scripts/arduino_zero.cfg". 
 8. Under "GDB Client Setup" check "Start GDB Session".
 9. In "Executable Name" enter "\<arduinodir\>/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/bin/arm-none-eabi-gdb". If on windows add ".exe" to the end.
 10. Click apply and debugging should now be set up.
