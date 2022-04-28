@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Electrical Conductivity
-parent: Sensors
-grand_parent: Smart Device
+title: PH
+parent: Atlas
+grand_parent: Sensors
+permalink: /docs/sensors/atlas/ph
 ---
 
-# Electrical Conductivity Sensor
+# PH Sensor
 {: .no_toc }
-## Gravity
+## Atlas
 {: .no_toc }
 
 ## Table of contents
@@ -20,21 +21,21 @@ grand_parent: Smart Device
 
 ## Summary
 
-A Electrical Conductivity sensor.
+A PH sensor.
 
 ---
 
 ## JSON 
-
-<div class="code-example" markdown="1">
+## TBD
+<!-- <div class="code-example" markdown="1">
 ```json
 {
-  name: "ec",           # string
-  data_type: "ms/cm",   # string -- microsiemens/centimeter
-  data_value:          # float
+  name: "ph",       # string
+  data_type: "pH",  # string
+  data_value:       # float
 }
 ```
-</div>
+</div> -->
 
 <!-- {% highlight markdown %}
 ```js

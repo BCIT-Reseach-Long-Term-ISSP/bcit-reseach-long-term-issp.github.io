@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Dissolved Oxygen - Gravity
-parent: Sensors
-grand_parent: Smart Device
+title: Total Dissolved Solids - Analog
+parent: Gravity
+grand_parent: Sensors
+permalink: /docs/sensors/gravity/tds
 ---
 
-# Dissolved Oxygen Sensor
+# Total Dissolved Solids Sensor
 {: .no_toc }
 ## Gravity
 {: .no_toc }
@@ -20,7 +21,7 @@ grand_parent: Smart Device
 
 ## Summary
 
-A Dissolved Oxygen sensor.
+A Total Dissolved Solids sensor.
 
 ---
 
@@ -29,9 +30,9 @@ A Dissolved Oxygen sensor.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "do",       # string
-  data_type: "V",   # string -- Volts
-  data_value:       # float
+  name: "tds",        # string
+  data_type: "ppm",  # string -- parts per million
+  data_value:        # float
 }
 ```
 </div>

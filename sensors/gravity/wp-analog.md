@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Water Pressure
-parent: Sensors
-grand_parent: Smart Device
+parent: Gravity
+grand_parent: Sensors
+permalink: /docs/sensors/gravity/water-pressure
 ---
 
 # Water Pressure Sensor

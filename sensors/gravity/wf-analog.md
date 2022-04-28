@@ -1,11 +1,12 @@
 ---
 layout: default
-title: PH Sensor
-parent: Sensors
-grand_parent: Smart Device
+title: Water Flow
+parent: Gravity
+grand_parent: Sensors
+permalink: /docs/sensors/gravity/water-flow
 ---
 
-# Analog PH Sensor
+# Water Flow Sensor
 {: .no_toc }
 ## Gravity
 {: .no_toc }
@@ -20,7 +21,7 @@ grand_parent: Smart Device
 
 ## Summary
 
-A PH sensor.
+A Water Flow sensor.
 
 ---
 
@@ -29,9 +30,9 @@ A PH sensor.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "ph",       # string
-  data_type: "pH",  # string
-  data_value:       # float
+  name: "wf",          # string
+  data_type: "L/s",    # string -- microsiemens/centimeter
+  data_value:          # float
 }
 ```
 </div>

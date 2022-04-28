@@ -1,13 +1,14 @@
 ---
 layout: default
-title: PH
-parent: Sensors
-grand_parent: Smart Device
+title: Electrical Conductivity
+parent: Atlas
+grand_parent: Sensors
+permalink: /docs/sensors/atlas/ec
 ---
 
-# PH Sensor
+# Electrical Conductivity Sensor
 {: .no_toc }
-## Grove
+## Atlas
 {: .no_toc }
 
 ## Table of contents
@@ -20,21 +21,12 @@ grand_parent: Smart Device
 
 ## Summary
 
-A PH sensor.
+A Electrical Conductivity sensor.
 
 ---
 
 ## JSON 
-
-<div class="code-example" markdown="1">
-```json
-{
-  name: "ph",       # string
-  data_type: "pH",  # string
-  data_value:       # float
-}
-```
-</div>
+## TBD
 
 <!-- {% highlight markdown %}
 ```js

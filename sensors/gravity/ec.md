@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Water Flow
-parent: Sensors
-grand_parent: Smart Device
+title: Electrical Conductivity
+parent: Gravity
+grand_parent: Sensors
+permalink: /docs/sensors/gravity/ec
 ---
 
-# Water Flow Sensor
+# Electrical Conductivity Sensor
 {: .no_toc }
 ## Gravity
 {: .no_toc }
@@ -20,11 +21,23 @@ grand_parent: Smart Device
 
 ## Summary
 
-A Water Flow sensor.
+A Electrical Conductivity sensor.
 
 ---
 
 ## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  name: "ec",           # string
+  data_type: "ms/cm",   # string -- microsiemens/centimeter
+  data_value:           # float
+}
+```
+</div>
+
+## JSON - Analog
 
 <div class="code-example" markdown="1">
 ```json

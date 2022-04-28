@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Turbidity
-parent: Sensors
-grand_parent: Smart Device
+parent: Grove
+grand_parent: Sensors
+permalink: /docs/sensors/grove/tbd
 ---
 
 # Turbidity Sensor
 {: .no_toc }
-## Gravity
+## Grove
 {: .no_toc }
 
 ## Table of contents
@@ -30,7 +31,7 @@ A Turbidity sensor.
 ```json
 {
   name: "tbd",      # string
-  data_type: "NTU", # string -- nephelometric turbidity units
+  data_type: "V",   # string
   data_value:       # float
 }
 ```

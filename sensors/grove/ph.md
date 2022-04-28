@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Dissolved Oxygen
-parent: Sensors
-grand_parent: Smart Device
+title: PH
+parent: Grove
+grand_parent: Sensors
+permalink: /docs/sensors/grove/ph
 ---
 
-# Dissolved Oxygen Sensor
+# PH Sensor
 {: .no_toc }
-## Gravity
+## Grove
 {: .no_toc }
 
 ## Table of contents
@@ -20,7 +21,7 @@ grand_parent: Smart Device
 
 ## Summary
 
-A Dissolved Oxygen sensor.
+A PH sensor.
 
 ---
 
@@ -29,9 +30,9 @@ A Dissolved Oxygen sensor.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "do",          # string
-  data_type: "%Sat",   # string -- percent saturation
-  data_value:          # float
+  name: "ph",       # string
+  data_type: "pH",  # string
+  data_value:       # float
 }
 ```
 </div>

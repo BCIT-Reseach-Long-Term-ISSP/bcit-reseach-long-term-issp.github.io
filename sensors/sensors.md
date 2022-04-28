@@ -2,8 +2,7 @@
 layout: default
 title: Sensors
 has_children: true
-permalink: /docs/smart-device/sensors/
-parent: Smart Device
+permalink: /docs/sensors/
 ---
 
 # Sensors

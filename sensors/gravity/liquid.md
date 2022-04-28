@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Liquid Level
-parent: Sensors
-grand_parent: Smart Device
+parent: Gravity
+grand_parent: Sensors
+permalink: /docs/sensors/gravity/liq-lev
 ---
 
 # Liquid Level Sensor

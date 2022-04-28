@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Total Dissolved Solids
-parent: Sensors
-grand_parent: Smart Device
+parent: Grove
+grand_parent: Sensors
+permalink: /docs/sensors/grove/tds
 ---
 
 # Total Dissolved Solids Sensor
