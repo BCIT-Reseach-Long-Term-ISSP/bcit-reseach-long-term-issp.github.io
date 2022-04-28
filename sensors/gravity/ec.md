@@ -37,7 +37,7 @@ A Electrical Conductivity sensor.
 ```
 </div>
 
-## JSON - Analog
+## JSON
 
 <div class="code-example" markdown="1">
 ```json

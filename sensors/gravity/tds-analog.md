@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Total Dissolved Solids - Analog
+title: Total Dissolved Solids
 parent: Gravity
 grand_parent: Sensors
 permalink: /docs/sensors/gravity/tds

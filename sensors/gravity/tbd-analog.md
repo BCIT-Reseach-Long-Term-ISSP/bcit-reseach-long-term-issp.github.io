@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Turbidity - Analog
+title: Turbidity
 parent: Gravity
 grand_parent: Sensors
 permalink: /docs/sensors/gravity/tbd
