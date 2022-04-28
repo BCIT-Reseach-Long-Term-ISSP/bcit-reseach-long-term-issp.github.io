@@ -3,7 +3,7 @@ layout: default
 title: Dissolved Oxygen
 parent: Atlas
 grand_parent: Sensors
-permalink: /docs/sensors/atlas/do
+permalink: /docs/sensors/atlas/do/
 ---
 
 # Dissolved Oxygen Sensor

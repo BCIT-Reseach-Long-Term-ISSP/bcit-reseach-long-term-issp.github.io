@@ -3,7 +3,7 @@ layout: default
 title: PH
 parent: Atlas
 grand_parent: Sensors
-permalink: /docs/sensors/atlas/ph
+permalink: /docs/sensors/atlas/ph/
 ---
 
 # PH Sensor

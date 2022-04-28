@@ -3,7 +3,7 @@ layout: default
 title: Electrical Conductivity
 parent: Atlas
 grand_parent: Sensors
-permalink: /docs/sensors/atlas/ec
+permalink: /docs/sensors/atlas/ec/
 ---
 
 # Electrical Conductivity Sensor
