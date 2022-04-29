@@ -21,8 +21,14 @@ permalink: /docs/sensors/atlas/ph/
 
 ## Summary
 
-A PH sensor.
+The Atlas pH (potential of Hydrogen) probe measures the hydrogen ion activity in a liquid.
+At the tip of a pH probe is a glass membrane. This glass membrane permits hydrogen
+ions from the liquid being measured to defuse into the outer layer of the glass, while
+larger ions remain in the solution. The difference in the concentration of hydrogen ions
+(outside the probe vs. inside the probe) creates a VERY small current. This current is
+proportional to the concentration of hydrogen ions in the liquid being measured.
 
+[More Info](https://files.atlas-scientific.com/pH_EZO_Datasheet.pdf)
 ---
 
 ## JSON 
