@@ -12,7 +12,7 @@ nav_order: 3
 
 - Install Visual Studio Code
 - Clone the repo by running `git clone --recursive git@github.com:BCIT-Reseach-Long-Term-ISSP/device-firmware.git`
-- Download the "toolchain.zip" care package from google drive. Extract it into "capstone-water-monitor-comm". There should now be a folder in there called "toolchain". This zip file contains Windows binaries for everything and development headers. For just the development headers instead dowload the "toolchain_sourceonly.zip" file. The programs included in the toolchain are listed below.
+- Download the "toolchain.zip" care package from google drive. Extract it into "device-firmware". There should now be a folder in there called "toolchain". This zip file contains Windows binaries for everything and development headers. For just the development headers instead dowload the "toolchain_sourceonly.zip" file. The programs included in the toolchain are listed below.
 - Add the "bin" folder within the toolchain to your system PATH variable
 - Open up Visual Studio Code and under the "Extensions" tab install "C/C++ Extension Pack" and "Cortex-Debug"
 - Under the "Explorer" tab, click on "Open Folder" and navigate to the "firmware" folder inside of the repo
