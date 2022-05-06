@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Uploading Certificates to NB-IoT
+title: Uploading Certificates to NB-IoT Hat
 has_children: false
-permalink: /docs/power-comm/uploading-certs
-parent: Power and Communication
+permalink: /docs/firmware/uploading-certs
+parent: Device Firmware
+grand_parent: Smart Device
 has_toc: false
-nav_order: 3
 ---
 
 # Uploading Certificates to NB-IoT

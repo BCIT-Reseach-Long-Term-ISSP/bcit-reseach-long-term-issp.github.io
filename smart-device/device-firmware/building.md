@@ -2,10 +2,10 @@
 layout: default
 title: Building, Flashing, and Debugging the Firmware
 has_children: false
-permalink: /docs/power-comm/building
-parent: Power and Communication
+permalink: /docs/firmware/building
+parent: Device Firmware
+grand_parent: Smart Device
 has_toc: false
-nav_order: 3
 ---
 
 # Building, Flashing, and Debugging the Firmware

@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # To host:
 #     bundle install
-#     bundle exec jekyll serve
+#     bundle exec jekyll serve -lI
 #
 # Use bundler with Ruby 2.X
 #
