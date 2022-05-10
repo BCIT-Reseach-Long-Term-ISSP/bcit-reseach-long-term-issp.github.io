@@ -13,12 +13,10 @@ The firmware for the smart device is written in Bare-metal C using CMake for its
 
 Once set up, you should have the source code building. The code has the following structure:
 
-| firmware   | Source code root       |
-| Prototypes | Arduino IDE prototypes |
-
-The code within firmware has the following structure:
-
+| Path     | Description
+|---|---|
 | .vscode  | Visual Studio Code Project Settings     |
+| Prototypes | Arduino IDE prototypes |
 | Config   | Configuration for third-party libraries |
 | cmake    | Cmake Helper Scripts                    |
 | contrib  | Third-party libraries                   |
@@ -32,23 +30,113 @@ The code within firmware has the following structure:
 | startup    | Low-Level board startup               |
 | CMakeLists.txt | Base CMake build file             |
 
+## Third-Party Libraries
+
+The firmware relies on several third-party libraries. Some are included directly within the source, and some others are included as git submodules. In `contrib/CMakeLists.txt` the source files and include directories of these libraries are specified. See [Adding New Source Files and Include Paths to the Build](#adding-new-source-files-and-include-paths-to-the-build) for more information on this.
+
+|Path     | Description
+|---|---|
+| contrib/arduino-lmic | LMIC Library for LoraWAN |
+| contrib/backoffAlgorithm | Backoff Algorithm for NB-IoT |
+| contrib/cellular | FreeRTOS Cellular library for NB-IoT |
+| contrib/CMSIS | *Common Microcontroller Software Interface Standard*: ARM General |
+| contrib/CMSIS-Atmel | *Common Microcontroller Software Interface Standard*: Atmel-Specific |
+| contrib/coreMQTT | MQTT Library |
+| contrib/FreeRTOS | FreeRTOS (See [FreeRTOS](#freertos))|
+| contrib/pcg_basic | PCG Random Number Generator |
+
+
 # How the code is built
 
 This project uses CMake for building the firmware. Once the tool chain has been successfully set up, Visual Studio Code will automatically discover the CMakeLists.txt file within the firmware directory. Building of the firmware is done in several steps. Firstly, the configure stage is run by [CMake](https://cmake.org/) to generate the build scripts. These are placed within a "build" directory inside of firmware. Secondly, Visual Studio Code calls [Ninja](https://ninja-build.org/) to run the build scripts. In the build script, a device image is built using GCC, then flashed to the board using OpenOCD. Once flashed, OpenOCD runs a GDB Server which uses the built files in conjunction with the live device to provide utilities such as single stepping or viewing memory.
 
 ![Build Steps](/docs/assets/buildsteps.svg)
 
-# FreeRTOS
+# Getting the Code
+
+Getting started with the code is done in three steps:
+ - Cloning the Repository
+ - Installing the toolchain
+ - Setting up your IDE
+
+Detailed instructions for each are provided below:
+
+## Cloning the repository
+
+To get started, you first need to clone the code repository. The git repository is located at <https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware> and includes git submodules. When cloning this repository *make sure* to also download the submodules. This can be done through the command line by adding the argument `--recursive` when cloning:
+
+`git clone --recursive git@github.com:BCIT-Reseach-Long-Term-ISSP/device-firmware.git`
+
+The above command clones through SSH, which allows you to push changes back to github.
+
+## Installing the toolchain
+
+Next up, you need to set up your toolchain. There are several programs which need to be installed and accessible on your `PATH` in order to build, flash, and debug the code. The programs are as follows:
+- [Cmake](https://cmake.org/download/)
+- [Ninja Build](https://ninja-build.org/)
+- [ARM GNU toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
+- [openocd](https://openocd.org/pages/getting-openocd.html)
+
+Instructions on how to set things up on most major operating systems are provided below:
+
+### Microsoft Windows
+On Windows, these packages are accessible using a single "toolchain.zip" package [on the Google Drive](https://drive.google.com/file/d/1HmVxQ1yRjh2sgQfvb0OxRWoymdMbWISE/view?usp=sharing). Once downloaded, the "bin" directory should be put on your PATH variable. This can be done either within your IDE or on a system-wide basis.
+
+### MacOS
+On MacOS, all of these programs are available through `brew`:
+```
+brew install --cask gcc-arm-embedded
+brew install cmake
+brew install ninja
+brew install open-ocd
+```
+
+### Linux
+On Linux, most distros have all of these packages available through your package manager.
+
+For Debian/Ubuntu/etc:
+```
+sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi openocd cmake ninja
+```
+
+For Arch-Based Systems:
+```
+sudo pacman -Syu arm-none-eabi-gcc arm-none-eabi-binutils openocd cmake ninja
+```
+
+For other Linux distributions, these packages should be named similarily.
+
+## Setting up your IDE
+
+Finally, your IDE must be set up to use the toolchain. This is typically done through extensions. Specific instructions for certain editors are included below:
+
+### Visual Studio Code
+To set-up the toolchain for visual studio code, follow these steps:
+
+- Install Visual Studio Code
+- Open up Visual Studio Code and under the "Extensions" tab install "C/C++ Extension Pack" and "Cortex-Debug"
+- Under the "Explorer" tab, click on "Open Folder" and navigate to the downloaded repo
+- Click on "Yes, I Trust the authors"
+- Press "f7" to do an inital build. It will ask which kit to use, select "[Unspecified]"
+
+### CLion
+*TODO:* CLion Instructions
+
+# Digging into the code
+
+Following are some notes on how the code is developed.
+
+## FreeRTOS
 
 The firmware for this project is based around [FreeRTOS](https://freertos.org/). In main, board initialization functions are called (see startup directory) then FreeRTOS is launched with a startup task. It is within this task that the bulk of the program is run. Within this task, all FreeRTOS features are supported such as memory allocation, multitasking, buffers and more. Run-time information about FreeRTOS can also be found while debugging through the Cortex-Debug extension for VSCode. For more information on Available FreeRTOS APIs, see [https://freertos.org/features.html](https://freertos.org/features.html)
 
-# HAL Development
+## HAL Development
 
 Within the "src" directory is a "hal" directory which contains low-level drivers for smart sensors and hardware interfaces. The code within this directory interfaces with the SAMD21 peripherals directly through registers. Detailed explanations of how to use these peripherals through the registers can be found in the SAMD21 [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21DA1-Family-Data-Sheet-DS40001882G.pdf). 
 
 By including the file "sam.h" within your code, you can also gain access to the CMSIS headers which makes these registers easier to access and control. You can look through some of the HAL code that is already made to get acquainted on how to use these.
 
-# Adding New Source files and include paths to the build
+## Adding New Source files and include paths to the build
 
 A common operation is the creation of new C files and directories in the source tree. After making these you need to tell CMake where they are. There are two aspects which are in play here, _Include directories_ and _source files_. _Include directories_ are directories where the C compiler will search for header files whenever you use `#include "..."`. Generally whenever you create a new source directory you add it as an include directory. _Source Files_ are the ".c" files which the C compiler will directly process. Note the distinction between _Header Files_ and _Source Files_, ".h" files are not source files!!!
 
