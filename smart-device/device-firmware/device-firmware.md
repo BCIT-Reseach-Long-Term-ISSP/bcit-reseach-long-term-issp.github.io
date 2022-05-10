@@ -9,50 +9,15 @@ has_toc: true
 
 # Device Firmware
 
-The firmware for the smart device is written in Bare-metal C using CMake for its build system and runs on the Arduino Zero board. Cross-platform directions on how to set up the toolchain can be found under [Building, Flashing, and Debugging the firmware](building).
+The firmware for the smart device is written in Bare-metal C using CMake for its build system and runs on the Arduino Zero board. Cross-platform directions on how to set up the toolchain can be found under [Getting Set-Up](#getting-set-up).
 
-Once set up, you should have the source code building. The code has the following structure:
-
-| Path     | Description
-|---|---|
-| .vscode  | Visual Studio Code Project Settings     |
-| Prototypes | Arduino IDE prototypes |
-| Config   | Configuration for third-party libraries |
-| cmake    | Cmake Helper Scripts                    |
-| contrib  | Third-party libraries                   |
-| src      | Source code                             |
-| src/watermonitor.c | Program entry-point           |
-| src/comm | AWS Communications                      |
-| src/comm/lora | LoRaWAN-specific communications    |
-| src/comm/nb-iot | NB-IoT-specific communications   |
-| src/hal  | Hardware Abstraction Layer              |
-| src/sensor | Sensor Formatting Code                | 
-| startup    | Low-Level board startup               |
-| CMakeLists.txt | Base CMake build file             |
-
-## Third-Party Libraries
-
-The firmware relies on several third-party libraries. Some are included directly within the source, and some others are included as git submodules. In `contrib/CMakeLists.txt` the source files and include directories of these libraries are specified. See [Adding New Source Files and Include Paths to the Build](#adding-new-source-files-and-include-paths-to-the-build) for more information on this.
-
-|Path     | Description
-|---|---|
-| contrib/arduino-lmic | LMIC Library for LoraWAN |
-| contrib/backoffAlgorithm | Backoff Algorithm for NB-IoT |
-| contrib/cellular | FreeRTOS Cellular library for NB-IoT |
-| contrib/CMSIS | *Common Microcontroller Software Interface Standard*: ARM General |
-| contrib/CMSIS-Atmel | *Common Microcontroller Software Interface Standard*: Atmel-Specific |
-| contrib/coreMQTT | MQTT Library |
-| contrib/FreeRTOS | FreeRTOS (See [FreeRTOS](#freertos))|
-| contrib/pcg_basic | PCG Random Number Generator |
-
-
-# How the code is built
+## How the code is built
 
 This project uses CMake for building the firmware. Once the tool chain has been successfully set up, Visual Studio Code will automatically discover the CMakeLists.txt file within the firmware directory. Building of the firmware is done in several steps. Firstly, the configure stage is run by [CMake](https://cmake.org/) to generate the build scripts. These are placed within a "build" directory inside of firmware. Secondly, Visual Studio Code calls [Ninja](https://ninja-build.org/) to run the build scripts. In the build script, a device image is built using GCC, then flashed to the board using OpenOCD. Once flashed, OpenOCD runs a GDB Server which uses the built files in conjunction with the live device to provide utilities such as single stepping or viewing memory.
 
 ![Build Steps](/docs/assets/buildsteps.svg)
 
-# Getting the Code
+# Getting Set-Up
 
 Getting started with the code is done in three steps:
  - Cloning the Repository
@@ -125,6 +90,42 @@ To set-up the toolchain for visual studio code, follow these steps:
 # Digging into the code
 
 Following are some notes on how the code is developed.
+
+## Source Code Structure
+
+The code has the following structure:
+
+| Path     | Description
+|---|---|
+| .vscode  | Visual Studio Code Project Settings     |
+| Prototypes | Arduino IDE prototypes |
+| Config   | Configuration for third-party libraries |
+| cmake    | Cmake Helper Scripts                    |
+| contrib  | Third-party libraries                   |
+| src      | Source code                             |
+| src/watermonitor.c | Program entry-point           |
+| src/comm | AWS Communications                      |
+| src/comm/lora | LoRaWAN-specific communications    |
+| src/comm/nb-iot | NB-IoT-specific communications   |
+| src/hal  | Hardware Abstraction Layer              |
+| src/sensor | Sensor Formatting Code                | 
+| startup    | Low-Level board startup               |
+| CMakeLists.txt | Base CMake build file             |
+
+## Third-Party Libraries
+
+The firmware relies on several third-party libraries. Some are included directly within the source, and some others are included as git submodules. In `contrib/CMakeLists.txt` the source files and include directories of these libraries are specified. See [Adding New Source Files and Include Paths to the Build](#adding-new-source-files-and-include-paths-to-the-build) for more information on this.
+
+|Path     | Description
+|---|---|
+| contrib/arduino-lmic | LMIC Library for LoraWAN |
+| contrib/backoffAlgorithm | Backoff Algorithm for NB-IoT |
+| contrib/cellular | FreeRTOS Cellular library for NB-IoT |
+| contrib/CMSIS | *Common Microcontroller Software Interface Standard*: ARM General |
+| contrib/CMSIS-Atmel | *Common Microcontroller Software Interface Standard*: Atmel-Specific |
+| contrib/coreMQTT | MQTT Library |
+| contrib/FreeRTOS | FreeRTOS (See [FreeRTOS](#freertos))|
+| contrib/pcg_basic | PCG Random Number Generator |
 
 ## FreeRTOS
 
