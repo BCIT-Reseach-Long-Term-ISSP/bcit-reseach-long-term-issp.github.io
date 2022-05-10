@@ -61,7 +61,7 @@ On Linux, most distros have all of these packages available through your package
 
 For Debian/Ubuntu/etc:
 ```
-sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi openocd cmake ninja
+sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi openocd cmake ninja-build
 ```
 
 For Arch-Based Systems:
