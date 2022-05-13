@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Uploading Certificates to NB-IoT
+title: Uploading Certificates to NB-IoT Hat
 has_children: false
-permalink: /docs/power-comm/uploading-certs
-parent: Power and Communication
+permalink: /docs/firmware/uploading-certs
+parent: Device Firmware
+grand_parent: Smart Device
 has_toc: false
-nav_order: 3
 ---
 
 # Uploading Certificates to NB-IoT
@@ -39,7 +39,7 @@ to your PC through the USB port on the zero.
 In order to run the script you must have python installed and the pyserial library. How to install these are not
 explained here.
 
-The python script is located in the firmware repository as "certupload.py". This script takes two arguments. 
+The python script is located in the firmware repository as "certupload.py" inside of "Prototypes". This script takes two arguments. 
 
 The first argument is the serial port which your arduino board is connected to, this is the same one used 
 with the "serial monitor" feature inside of the arduino IDE. 
