@@ -1,6 +1,6 @@
 ---
 layout: default
-title: S3
+title: IoT to S3
 has_children: false
 permalink: /docs/cloud/Dataflow
 parent: Cloud
@@ -13,20 +13,20 @@ nav_order: 6
 ## Setting up IoT Act Rule
 In AWS IoT Core, on the left hand navigation menu, scroll down to click on "Act" and then click on "Rules". It should be highlighted in orange if you've already opened it.
 
-![IoT to S3 - Navigation](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3.png?raw=true)
+![IoT to S3 - Navigation](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3.PNG)
 
 ### Creating the Rule
 To create the required rule to dump the MQTT messages onto the Kinesis data stream, click on the "create" located on the right hand side.
 
-![IoT to S3 - Create](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_create.png?raw=true)
+![IoT to S3 - Create](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_create.PNG)
 
 In the Create rule window, provide a name and description for the rule.
 
-![IoT to S3 - Name](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_name.png?raw=true)
+![IoT to S3 - Name](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_name.PNG)
 
 We can select the SQL version you're most comfortable with in the Rule Query Statement. In our case we're using "2016-03-23"
 
-![IoT to S3 - SQL](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_sql.png?raw=true)
+![IoT to S3 - SQL](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_sql.PNG)
 
 When providing the "Rule Query Statement" provide the follow:
 ```
@@ -37,14 +37,14 @@ We're adding in buoy_id into the message so we know which physical buoy the data
 Please refer to: https://bcit-reseach-long-term-issp.github.io/docs/smart-device/communication-protocol/mqtt#broker-namespace-topics for more information on the topic formatting.
 
 Now continuing on, In the "Set one or more actions" click on "Add Action"
-![IoT to S3 - Action](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_action.png?raw=true)
+![IoT to S3 - Action](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_action.PNG)
 
 More options will appear, we're looking for "Send a message to an Amazon Kinesis Stream". Select it and scroll down and click on the "Configure action" button.
-![IoT to S3 - Kinesis](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_kinesis.png?raw=true)
+![IoT to S3 - Kinesis](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_kinesis.PNG)
 
 In the configure Action menu, select the Kinesis data stream you wish to dump data on, via the "Choose a resource" drop down. If you cannot find the AWS resource, you can always create a new data stream. Refer to https://bcit-reseach-long-term-issp.github.io/docs/cloud/kinesis#creating-data-stream if you require more information about setting up a new data stream.
 
-![IoT to S3 - Configure Action](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/IoT_to_S3_action2.png?raw=true)
+![IoT to S3 - Configure Action](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/IoT_to_S3_action2.PNG)
 
 In the partition key, we can leave it as what they suggest:
 ```
