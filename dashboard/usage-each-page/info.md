@@ -32,6 +32,10 @@ Below this Widget, we can also view weather info in the YVR area, tide schedule,
 
 ![Device Info Tab Highlighted](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/DeviceInfoTabHighlighted.png?raw=true "Device Info Tab Highlighted")
 
+**3.** Click on "select time frame" and a dropdown list should show. Click on any one of these options. For this example, we'll use "This Month".
+
+![Device Info Time Dropdown](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/DeviceInfoTimeDropdown.png?raw=true "Device Info Time Dropdown")
+
 Here, we can view a specific sensor's data readings over a specified range of time, and we can read the current, maximum, minimum, and average readings in the specified range of time.
 
 ![Device Info Graph](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/DeviceInfoGraph.png?raw=true "Device Info Graph")
