@@ -4,7 +4,7 @@ title: Notifications Page Components
 parent: React  
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/map-page
+permalink: /docs/dashboard/react/notifications-page
 ---  
 
 # Notifications Page Components
