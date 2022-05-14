@@ -14,7 +14,7 @@ This section contains information about how to use the device information page o
 
 ## Viewing Device and Sensor Statistics
 
-**1.** Click on the device statistic button (rightmost button) in the navbar.
+**1.** Click on the device statistic button (middle button) in the navbar.
 
 ![Navbar Info Page Highlighted](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/dashboard/assets/NavbarInfoHighlighted.png?raw=true "Navbar Info Page Highlighted")
 
