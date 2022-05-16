@@ -28,6 +28,7 @@ By implementing this feature in AWS, queries made from the dashboard team using 
 5. Provide a descriptive query name to identify the scheduled query. 
 
   ![Untitled](Untitled%231.png)
+6. To be continued...
 
 # Benefits
 
