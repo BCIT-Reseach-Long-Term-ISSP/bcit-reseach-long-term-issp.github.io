@@ -5,7 +5,7 @@ has_children: false
 permalink: /docs/cloud/Dataflow
 parent: Cloud
 has_toc: false
-nav_order: 6
+nav_order: 7
 ---
 
 # Getting Data from IoT Core to S3 via Kinesis
