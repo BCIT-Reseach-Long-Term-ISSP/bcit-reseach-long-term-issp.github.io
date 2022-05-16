@@ -48,24 +48,6 @@ Queries with projections and predicates including time ranges, measure names, an
 - Table - container for related time series with timestamp, dimensions, and measures
 - Database - container for all tables
 
-## Potential Queries for Client
-
-- Get all sensors’ data from a given start and end timestamp
-    - What timestamp format should be followed?
-- Get all records of a single sensor record (Historical data)
-- The above without a start and end timestamp (if regularly queried given a frequency - weekly, monthly, etc. then this can be part of the query - frontend or backend?)
-- Filter by a specific sensor attribute (i.e., pH, temperature, TDS, pressure) and sort by increasing/decreasing order
-- Get a single measurement at the current time or at a specific time
-- Get all readings from a specific sensor, grouped by sensor ID
-- Get the latest readings, sort by max time (UNIX)
-- Get all sensor IDs —> SELECT DISTINCT
-- Best Practices: Queries
-- Great outline to follow to optimize both performance and cost
-
-[https://docs.aws.amazon.com/timestream/latest/developerguide/queries-bp.html](https://docs.aws.amazon.com/timestream/latest/developerguide/queries-bp.html)
-
-- AWS Timestream Query Language Reference: [https://docs.aws.amazon.com/timestream/latest/developerguide/reference.html](https://docs.aws.amazon.com/timestream/latest/developerguide/reference.html)
-
 ## Best Practices: Data Modeling
 
 As of November 30, 2021, AWS introduced an alternative to single-measure records called **multi-measure records**, as well as two new faster and more cost-effective capabilities called scheduled queries and magnetic storage writes.
