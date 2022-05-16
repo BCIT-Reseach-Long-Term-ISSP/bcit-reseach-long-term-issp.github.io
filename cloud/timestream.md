@@ -40,6 +40,9 @@ Amazom Timestream is purpose-built for IoT and operational systems due to it's s
 
 ([https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html](https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html))
 
+For a step-by-step walkthrough on how to create a database, table, or query using the AWS Management Console click the following link:
+(https://docs.aws.amazon.com/timestream/latest/developerguide/console_timestream.html)
+
 ## Key Concepts
 
 - Time series - a sequence of records over a time interval
