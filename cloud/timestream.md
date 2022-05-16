@@ -36,7 +36,7 @@ The architecture below has been remodeled based on the initial architecture abov
 
 # AWS Timestream
 
-Queries with projections and predicates including time ranges, measure names, and/or dimension names enable the query processing engine to prune a significant amount of data and help with lowering query costs. It is recommended for the dashboard team to use more filtered queries since it is priced according by bytes.
+Amazom Timestream is purpose-built for IoT and operational systems due to it's speed, scalability and cost effectiveness. Compared to a relational database, it can store/analyze big data (up to trillions of events) thousand times faster and at a tenth of the cost. In the following sections, we walk through how we decided to model the data, various sample queries, and setting data retention policies to optimize cost for our use case.  
 
 ([https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html](https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html))
 
@@ -71,6 +71,7 @@ We are using single-measure records for guaranteed scalability when adding more 
 ## Sample Queries
 
 The following queries can be tested directly in the AWS Timestream Query Editor.
+Queries with projections and predicates including time ranges, measure names, and/or dimension names enable the query processing engine to prune a significant amount of data and help with lowering query costs.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2027.png?raw=true)
 
