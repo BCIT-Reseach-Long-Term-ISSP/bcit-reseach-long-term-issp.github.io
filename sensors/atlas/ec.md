@@ -23,6 +23,15 @@ permalink: /docs/sensors/atlas/ec/
 
 A Electrical Conductivity sensor.
 
+Name: Conductivity K 0.1 Kit 
+Link: https://atlas-scientific.com/kits/conductivity-k-0-1-kit/
+Calibration: Calibrated against buffer solutions provided in the kit
+Type: Analog 
+Operational Range: 1 to 50 degrees C
+Unit: µs
+Range:  0.07µs to 50,000µs
+Maintenance: ~6 Months
+Life Expenctancy: 2.5 years 
 ---
 
 ## JSON 

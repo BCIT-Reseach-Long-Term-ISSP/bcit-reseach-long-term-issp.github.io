@@ -21,7 +21,15 @@ permalink: /docs/sensors/atlas/do/
 
 ## Summary
 
-A Dissolved Oxygen sensor.
+Name: Gravity Analog Dissolved Oxygen Kit 
+Link: https://atlas-scientific.com/kits/gravity-analog-do-kit/ 
+Calibration: Calibrated against air. Dip probe in water, and wave probe in air. 
+Type: Analog 
+Operational Range: 1 to 50 degrees C
+Unit: % Saturation 
+Range: 1% t0 100% Saturation 
+Maintenance: ~6 Months
+Life Expenctancy: 2.5 years 
 
 ---
 

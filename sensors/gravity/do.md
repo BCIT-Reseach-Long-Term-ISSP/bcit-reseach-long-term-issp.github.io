@@ -23,6 +23,15 @@ permalink: /docs/sensors/gravity/do
 
 A Dissolved Oxygen sensor.
 
+Name: Gravity: Analog Dissolved Oxygen Sensor / Meter Kit For Arduino
+Link: https://www.dfrobot.com/product-1628.html
+Calibration: Calibrated against air. Dip probe in water, and wave probe in air. 
+Type: Analog 
+Operational Range: 1 to 50 degrees C
+Unit: % Saturation 
+Range: 1% t0 100% Saturation 
+Maintenance: ~1-2 Months
+Life Expenctancy: 1 year 
 ---
 
 ## JSON 
