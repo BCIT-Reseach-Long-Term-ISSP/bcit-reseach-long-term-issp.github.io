@@ -21,13 +21,14 @@ By implementing this feature in AWS, queries made from the dashboard team using 
 1. Log in to AWS and navigate to the **Amazon Timestream** service.
 2. On the left-hand navigation bar, select **Scheduled queries**.
     
-    ![Untitled](Untitled%230.png)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/Untitled%2030.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/Untitled%2030.png?raw=true)
     
 3. Click **Create scheduled query** on the top right to create a new query.
 4. Choose the preferred database to hold the destination table in and choose a table that the scheduled query results will be populated into. 
 5. Provide a descriptive query name to identify the scheduled query. 
 
-  ![Untitled](Untitled%231.png)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/Untitled%2031.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/Untitled%2031.png?raw=true)
+
 6. To be continued...
 
 # Benefits
