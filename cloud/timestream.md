@@ -28,7 +28,7 @@ On the client (dashboard) side of things, libraries are available to connect the
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2025.png?raw=true)
 
 ## Current Phase
-# 2022-05-16
+### 2022-05-16
 
 The architecture below has been remodeled based on the initial architecture above. 
 
