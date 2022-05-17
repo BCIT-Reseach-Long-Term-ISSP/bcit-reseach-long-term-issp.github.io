@@ -21,18 +21,43 @@ permalink: /docs/sensors/atlas/ec/
 
 ## Summary
 
-A Electrical Conductivity sensor.
+An electrical conductivity sensor measures the electrical conductivity in a solution.
+Inside the probe, there are two electrodes positioned opposite from eachother. An AC voltage is applied to the electrodes which causes cations to move to the negatively charged eletrode and the anion to move to the positively charged eletrode. 
+The more free electrolutes the liquid contains, the higher the electrical conductivity. 
+It works by measuring electrical current of the solution between two graphite plates. 
 
 Name: Conductivity K 0.1 Kit 
+
 Link: https://atlas-scientific.com/kits/conductivity-k-0-1-kit/
+
 Calibration: Calibrated against buffer solutions provided in the kit
+
 Type: Analog 
+
 Operational Range: 1 to 50 degrees C
+
 Unit: µs
+
 Range:  0.07µs to 50,000µs
+
 Maintenance: ~6 Months
+
 Life Expenctancy: 2.5 years 
+
 ---
+## Maintenance
+
+Cleaning:
+
+For soft coatings, the probe can be cleaning by light brushing. 
+
+For hard coatings, the recommended method is using the [cleaner from Atlas Science] (https://atlas-scientific.com/calibration-solutions/e-c-probe-cleaner/) 
+
+## Calibration 
+The grpahite plates in this sensor do not go bad, nor do they change. No additional calibration is needed after initial calibration.
+
+## Operational Tips
+The entried conducting area must be submerged in order to get accurate readings. 
 
 ## JSON 
 ## TBD

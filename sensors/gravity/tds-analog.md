@@ -22,13 +22,19 @@ permalink: /docs/sensors/gravity/tds
 ## Summary
 
 A Total Dissolved Solids sensor.
+
 Detects water quality by measuring the turbidity/opaqueness. Uses light to detect suspended particles in water by measuring light transmittance and scattering rate. 
 
 Name: Gravity: Analog Turbidity Sensor for Arduino 
+
 Link: https://www.dfrobot.com/product-1394.html 
+
 Type: Digital and Analog 
+
 Operational temperature range: 5 – 90 degrees C
+
 Output range: 0-4.5V
+
 Unit: NTU 
 
 
