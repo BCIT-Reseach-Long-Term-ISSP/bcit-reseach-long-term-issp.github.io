@@ -29,6 +29,17 @@ larger ions remain in the solution. The difference in the concentration of hydro
 proportional to the concentration of hydrogen ions in the liquid being measured.
 
 [More Info](https://files.atlas-scientific.com/pH_EZO_Datasheet.pdf)
+
+
+Name: pH Kit
+Link: https://atlas-scientific.com/kits/ph-kit/ 
+Calibration: Calibrated against buffer solutions provided in the kit
+Type: Analog 
+Operational Range: 1 to 50 degrees C
+Unit: N/A
+Range: 1 to7
+Maintenance: ~6 Months
+Life Expenctancy: 2.5 years 
 ---
 
 ## JSON 

@@ -52,8 +52,7 @@ TabsSection is the tabbed component of the data page. Displays data collected fr
 **Noteworthy components used:**
 - *Tabs/Tab*: Components from React Bootstrap which renders a tabbed layout. More information [here](/docs/dashboard/react/react-bootstrap).
 - *OverviewDataDisplay*: A component which renders the current reading for a single metric measured by the device selected.
-- *QuantitativeDetails*: A component which renders a detailed look at quantitative data collected for a specific metric for the device selected.
-- *QualitativeDetails*: A component which renders a detailed look at qualitative data collected for a specific metric for the device selected.
+- *DetailsPanel*: A component which renders a detailed look at data collected for a specific metric for the device selected.
 
 ## OverviewDataDisplay
 
@@ -70,21 +69,20 @@ None
 **Noteworthy components used:**
 None
 
-## QuantitativeDetails
 
-QuantitativeDetails is a component which renders a detailed look at quantitative data collected for a specific metric for the device selected.
+## DetailsPanel
+
+DetailsPanel is a component which renders a detailed look at data collected for a specific metric for the device selected.
 
 **Props used:**
+- *mode*: A string. "quantitative or "qualitative" depending on the data being displayed.
+    - Example: "quantitative"
 - *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
     - Example: ["1", "9", "3"]
 - *metric*: A string. The shorthand for the metric being displayed.
     - Example: "do"
 
 **Functions implemented:**
-- *padDate*: Takes an integer as an argument and returns a string that is padded by a zero if the integer is a single digit.
-    - This is used as a helper to prepare the time readings for display on the graph.
-- *stringifyDate*: Takes a Date object as an argument and returns a custom formatted string of the date.
-    - This is used to prepare the time readings for display on the graph.
 - *applyRange*: Does not take any arguments. Changes the rangeStart and rangeEnd states to their corresponding dates as per the selection indicated by the calendar.
     - This is used to change the date range of data being displayed
 - *handleTimeClick*: Handles the selection at the time range dropdown. Changes the main text on the time range dropdown to indicate the current selection and toggles the range selection menu accordingly. Sets the time range if one of the preset values are selected.
@@ -99,64 +97,251 @@ QuantitativeDetails is a component which renders a detailed look at quantitative
     - This is used to prepare the data for use in the DataTable and DataDownloadButton components.
 
 **Noteworthy components used:**
-- *Graph*: A component that renders historical data for the selected metric on a line graph.
+- *LastUpdateArea*: A component which renders the time last updated and the time range dropdown menu.
+- *QualitativeDetailsPanel*: A component which renders a detailed look at qualitative data collected for a specific metric for the device selected.
+- *QuantitativeDetailsPanel*: A component which renders a detailed look at quantitative data collected for a specific metric for the device selected.
+
+
+## LastUpdateArea
+
+LastUpdateArea is a component which renders the time last updated and the time range dropdown menu.
+
+**Props used:**
+- *lastUpdated*: A date object; the most recent timestamp from the data.
+    - Example: new Date(2022, 5, 14)
+- *calendarStartDate*: A date object; the start date for the date picker.
+    - Example: new Date(2022, 5, 10)
+- *setCalendarStartDate*: A function to set calendarStartDate.
+    - Example: setCalendarStartDate
+- *calendarEndDate*: A date object; the end date for the date picker.
+    - Example: new Date(2022, 5, 14)
+- *setCalendarEndDate*: A function to set calendarEndDate.
+    - Example: setCalendarEndDate
+- *timeDropdownSelection*: A string; the time range dropdown item currently selected.
+    - Example: "year"
+- *handleTimeClick*: A function handling a selection in the time range dropdown menu.
+    - Example: handleTimeClick
+- *showTimeRange*: A boolean; toggles display of custom time range menu.
+    - Example: true
+- *applyRange*: A function to set the time range of data being displayed.
+    - Example: applyRange
+
+**Functions implemented:**
+None
+
+**Noteworthy components used:**
 - *DropdownButton*: A component from React Bootstrap which renders a dropdown menu for selecting time range and threshold options. More information [here](/docs/dashboard/react/react-bootstrap).
 - *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-datepicker). 
+
+
+## QualitativeDetailsPanel
+
+QualitativeDetailsPanel is a component which renders a detailed look at qualitative data collected for a specific metric for the device selected.
+
+**Props used:**
+- *lastUpdated*: A date object; the most recent timestamp from the data.
+    - Example: new Date(2022, 5, 14)
+- *calendarStartDate*: A date object; the start date for the date picker.
+    - Example: new Date(2022, 5, 10)
+- *setCalendarStartDate*: A function to set calendarStartDate.
+    - Example: setCalendarStartDate
+- *calendarEndDate*: A date object; the end date for the date picker.
+    - Example: new Date(2022, 5, 14)
+- *setCalendarEndDate*: A function to set calendarEndDate.
+    - Example: setCalendarEndDate
+- *timeDropdownSelection*: A string; the time range dropdown item currently selected.
+    - Example: "year"
+- *handleTimeClick*: A function handling a selection in the time range dropdown menu.
+    - Example: handleTimeClick
+- *showTimeRange*: A boolean; toggles display of custom time range menu.
+    - Example: true
+- *applyRange*: A function to set the time range of data being displayed.
+    - Example: applyRange
+- *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
+    - Example: "under"
+- *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
+    - Example: handleThresholdClick
+- *valueList*: An array of objects; the historical data received from the cloud API.
+    - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
+- *downloadData*: An array of objects; the filtered data ready for download.
+    - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
+- *rangeStart*: A date object; the start date for the range of data to be displayed.
+    - Example: new Date(2022, 5, 10) 
+- *rangeEnd*: A date object; the end date for the range of data to be displayed.
+    - Example: new Date(2022, 5, 14)
+- *metric*: A string. The shorthand for the metric being displayed.
+    - Example: "do"
+
+**Functions implemented:**
+None
+
+**Noteworthy components used:**
+- *LastUpdateArea*: A component which renders the time last updated and the time range dropdown menu.
+- *QualitativeDetailFilters*: A component which renders the threshold dropdown menu for qualitative data.
 - *DataDownloadButton*: A component that renders the data download button which allows data to be downloaded as a .csv file. Renders the file's corresponding file name.
 - *DataTable*: A component that renders a data table displaying raw historical data within the selected date and threshold ranges.
 
 
-## QualitativeDetails
+## QuantitativeDetailsPanel
 
-QualitativeDetails is a component which renders a detailed look at qualitative data collected for a specific metric for the device selected.
+QuantitativeDetailsPanel is a component which renders a detailed look at quantitative data collected for a specific metric for the device selected.
 
 **Props used:**
+- *historicalData*: An array of objects; the historical data received from the cloud API.
+    - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
+- *unit*: A string; the unit associated with the data values being measured.
+    - Example: "°C"
 - *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
     - Example: ["1", "9", "3"]
-- *metric*: A string. The shorthand for the metric being displayed.
+- *metric*: A string; the shorthand for the metric being displayed.
     - Example: "do"
+- *metricValueType*: A string; the type of the data values.
+    - Example: "measure_value::double"
+- *metricName= A string; the full name of the metric being displayed.
+    - Example: "dissolved oxygen"
+- *lastUpdated*: A date object; the most recent timestamp from the data.
+    - Example: new Date(2022, 5, 14)
+- *calendarStartDate*: A date object; the start date for the date picker.
+    - Example: new Date(2022, 5, 10)
+- *setCalendarStartDate*: A function to set calendarStartDate.
+    - Example: setCalendarStartDate
+- *calendarEndDate*: A date object; the end date for the date picker.
+    - Example: new Date(2022, 5, 14)
+- *setCalendarEndDate*: A function to set calendarEndDate.
+    - Example: setCalendarEndDate
+- *timeDropdownSelection*: A string; the time range dropdown item currently selected.
+    - Example: "year"
+- *handleTimeClick*: A function handling a selection in the time range dropdown menu.
+    - Example: handleTimeClick
+- *showTimeRange*: A boolean; toggles display of custom time range menu.
+    - Example: true
+- *applyRange*: A function to set the time range of data being displayed.
+    - Example: applyRange
+- *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
+    - Example: "under"
+- *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
+    - Example: handleThresholdClick
+- *thresholdStart*: A float; the start of the selected threshold.
+    -Example: 3.5
+- *thresholdEnd*: A float; the end of the selected threshold.
+    - Example: 9.9
+- *handleThresholdStartEntry*: A function which handles the text entry of the threshold start.
+    - Example: handleThresholdStartEntry
+- *showThresholdRange*: A boolean; shows the custom threshold range menu.
+    - Example: true
+- *handleThresholdEndEntry*: A function which handles the text entry of the threshold end.
+    - Example: handleThresholdEndEntry
+- *submitThreshold*: A function which handles the submission of a threshold.
+    - Example: submitThreshold
+- *isInvalidSubmission*: A boolean; whether the threshold submission made by the user is valid or not.
+    - Example: true
+- *downloadData*: An array of objects; the filtered data ready for download.
+    - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
+- *rangeStart*: A date object; the start date for the range of data to be displayed.
+    - Example: new Date(2022, 5, 10) 
+- *rangeEnd*: A date object; the end date for the range of data to be displayed.
+    - Example: new Date(2022, 5, 14)
 
 **Functions implemented:**
-- *padDate*: Takes an integer as an argument and returns a string that is padded by a zero if the integer is a single digit.
-    - This is used as a helper to prepare the time readings for display on the graph.
-- *stringifyDate*: Takes a Date object as an argument and returns a custom formatted string of the date.
-    - This is used to prepare the time readings for display on the graph.
-- *applyRange*: Does not take any arguments. Changes the rangeStart and rangeEnd states to their corresponding dates as per the selection indicated by the calendar.
-    - This is used to change the date range of data being displayed
-- *handleTimeClick*: Handles the selection at the time range dropdown. Changes the main text on the time range dropdown to indicate the current selection and toggles the range selection menu accordingly. Sets the time range if one of the preset values are selected.
-    - This is used for the time range dropdown menu.
-- *handleThresholdClick*: Handles the selection at the threshold dropdown. Changes the main text on the threshold dropdown to indicate the current selection and toggles the range selection menu accordingly.
-    - This is used for the threshold dropdown menu.
-- *handleThresholdStartEntry*: Handles the text entry for selecting the start of the threshold range.
-    - This is used to set the start of the threshold range.
-- *handleThresholdEndEntry*:  Handles the text entry for selecting the end of the thrwshold range.
-    - This is used to set the end of the threshold range.
-- *submitThreshold*: Does not take any arguments. Validates whether the text entries are valid (must be a number) and filters the data according to the entered range.
-    - This is used to prepare the data for use in the DataTable and DataDownloadButton components.
+None
+
+**Noteworthy components used:**
+- *LastUpdateArea*: A component which renders the time last updated and the time range dropdown menu.
+- *Graph*: A component that renders historical data for the selected metric on a line graph.
+- *QuantitativeDetailFilters*:  A component which renders the threshold dropdown menu for quantitative data.
+- *DataDownloadButton*: A component that renders the data download button which allows data to be downloaded as a .csv file. Renders the file's corresponding file name.
+- *DataTable*: A component that renders a data table displaying raw historical data within the selected date and threshold ranges.
+
+
+## QualitativeDetailFilters
+
+QualitativeDetailFilters is a component which renders the threshold dropdown menu for qualitative data.
+
+**Props used:**
+- *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
+    - Example: "under"
+- *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
+    - Example: handleThresholdClick
+- *valueList*: An array of objects; the historical data received from the cloud API.
+    - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
+
+**Functions implemented:**
+None
 
 **Noteworthy components used:**
 - *DropdownButton*: A component from React Bootstrap which renders a dropdown menu for selecting time range and threshold options. More information [here](/docs/dashboard/react/react-bootstrap).
-- *DatePicker*: A component from React DatePicker which renders a calendar datepicker for selecting a time range. More information [here](/docs/dashboard/react/react-datepicker). 
-- *DataDownloadButton*: A component that renders the data download button which allows data to be downloaded as a .csv file. Renders the file's corresponding file name.
-- *DataTable*: A component that renders a data table displaying raw historical data within the selected date and threshold ranges. Readings exceeding the set thresholds will appear as red.
+
+
+## QuantitativeDetailFilters
+
+QuantitativeDetailFilters is a component which renders the threshold dropdown menu for quantitative data.
+
+**Props used:**
+- *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
+    - Example: "under"
+- *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
+    - Example: handleThresholdClick
+- *thresholdStart*: A float; the start of the selected threshold.
+    -Example: 3.5
+- *thresholdEnd*: A float; the end of the selected threshold.
+    - Example: 9.9
+- *handleThresholdStartEntry*: A function which handles the text entry of the threshold start.
+    - Example: handleThresholdStartEntry
+- *showThresholdRange*: A boolean; shows the custom threshold range menu.
+    - Example: true
+- *handleThresholdEndEntry*: A function which handles the text entry of the threshold end.
+    - Example: handleThresholdEndEntry
+- *submitThreshold*: A function which handles the submission of a threshold.
+    - Example: submitThreshold
+- *isInvalidSubmission*: A boolean; whether the threshold submission made by the user is valid or not.
+    - Example: true
+
+**Functions implemented:**
+None
+
+**Noteworthy components used:**
+- *DropdownButton*: A component from React Bootstrap which renders a dropdown menu for selecting time range and threshold options. More information [here](/docs/dashboard/react/react-bootstrap).
+
 
 ## Graph
 
 Graph is a component that renders historical data for the selected metric on a line graph.
 
 **Props used:**
-- *deviceId*: A list of one ID corresponding to devices which the user has selected for viewing.
+- *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
     - Example: ["1"]
 - *metric*: A string. The shorthand for the metric being displayed.
     - Example: "do"
-- *graphData*: An array of objects containing a date string and a value float.
-    - Ezample: [{time: "2022-03-24 03:50", value: 21.4}, {time: "2022-03-25 11:30", value: 20.0}]
+- *graphData*: An array of objects containing the buoy id as a string, x value as a date object, and y value as a float.
+    - Ezample: [[{id: "1", x: new Date(2022, 3, 29), y: 9.5}, {id: "1", x: new Date(2022, 3, 30), y: 10.5}], [{id: "2", x: new Date(2022, 3, 29), y: 7.2}]]
 
 **Functions implemented:**
 None
 
 **Noteworthy components used:**
-- *Line*: A component from react-chartjs-2 which renders a line graph displaying the data from the graphData prop. More information [here](/docs/dashboard/react/react-chartsjs-2). 
+- *ChartContainer*: A component from react-timestream-charts which is a container for the whole chart. More information [here](/docs/dashboard/react/react-timestream-charts). 
+- *ChartRow*: A component from react-timestream-charts which is a container for all the rows in the chart. More information [here](/docs/dashboard/react/react-timestream-charts). 
+- *YAxis*: A component from react-timestream-charts which defines the Y axis of the chart. More information [here](/docs/dashboard/react/react-timestream-charts). 
+- *Charts*: A component from react-timestream-charts which is the actual time series chart being plotted. More information [here](/docs/dashboard/react/react-timestream-charts). 
+- *LineChart*: A component from react-timestream-charts which defines the line being plotted on the chart from time series data. More information [here](/docs/dashboard/react/react-timestream-charts). 
+- *CrossHairs*: A component that renders the crosshair for the tracker while hovering over the graph.
+- *Baseline*: A component from react-timestream-charts which defines the baselines being plotted on the chart. More information [here](/docs/dashboard/react/react-timestream-charts). 
+
+
+## CrossHairs
+
+CrossHairs is a component that renders the crosshair for the tracker while hovering over the graph.
+
+**Props used:**
+- *x*: x coordinate of crosshair.
+- *y*: y coordinate of crosshair.
+
+**Functions implemented:**
+None
+
+**Noteworthy components used:**
+None
+
 
 ## DataDownloadButton
 

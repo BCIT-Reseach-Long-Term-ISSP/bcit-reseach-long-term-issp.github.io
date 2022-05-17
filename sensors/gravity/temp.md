@@ -23,6 +23,15 @@ permalink: /docs/sensors/gravity/temp/
 
 A Temperature sensor.
 
+Name: Gravity: Waterproof DS18B20 Sensor Kit 
+Link: https://www.dfrobot.com/product-1354.html 
+Type: Digital 
+Operating Temperature: -55 ~ 125
+Range of measurement: -10 ~ 85
+Precision: +/- 0.5
+Unit: Degrees Celsius 
+Description: Waterproof temperature sensor. 
+
 ---
 
 ## JSON 
