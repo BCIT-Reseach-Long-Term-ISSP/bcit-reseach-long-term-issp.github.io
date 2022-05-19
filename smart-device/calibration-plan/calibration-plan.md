@@ -24,3 +24,5 @@ This section will cover the calibration instructions for all six of the sensors 
 Each subsection will provide the calibration instructions for a sensor in isolation, with the requried materials and the procduere to follow to calibrate it.
 
 It is recommended that all calibration is performed on the same zero that will be deployed in the field for most accurate data.
+
+A user will require both the Arduino IDE and the bare metal programming environment setup for these procedures.
