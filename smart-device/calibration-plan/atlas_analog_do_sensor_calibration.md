@@ -26,13 +26,15 @@ To be filled in
 
     - It is recommended that you create a new task that only takes a measurement for the DO sensor continuously
 
-4. Wave the sensor probe in the air for a few minutes
+4. Dip the probe into water
 
-5. Debug the program and view the result of each measurement
+5. Wave the sensor probe in the air for a few minutes
 
-6. Once the values have stabilized, record that measurement
+6. Debug the program and view the result of each measurement
 
-7. Insert that value into the DO conversion function code in the fraction - ask Brittany for specific location
+7. Once the values have stabilized, record that measurement
+
+8. Insert that value into the DO conversion function code in the fraction - ask Brittany for specific location
 
 ## Procedure Arduino Uno
 
