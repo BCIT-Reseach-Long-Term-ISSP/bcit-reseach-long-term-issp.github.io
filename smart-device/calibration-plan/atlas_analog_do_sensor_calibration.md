@@ -16,76 +16,38 @@ A walkthrough of the Atlas Analog Dissolved Oxygen Sensor calibration procedure
 
 To be filled in
 
-## Proedure Bare Metal Arduino Zero
+## Procedure Bare Metal Arduino Zero
 
-1. a
+1. Grab the Arduino Zero that you're deploying to the field
+
+2. Connect the sensor to the Arduino board
+
+3. Verify that measurements are being received
+
+    - It is recommended that you create a new task that only takes a measurement for the DO sensor continuously
+
+4. Wave the sensor probe in the air for a few minutes
+
+5. Debug the program and view the result of each measurement
+
+6. Once the values have stabilized, record that measurement
+
+7. Insert that value into the DO conversion function code in the fraction - ask Brittany for specific location
 
 ## Procedure Arduino Uno
 
-1. 
+1. Grab the Arduino Uno that you're deploying
 
-<!--
-# Publish Data
+2. Follow the process to download and run the sample code: https://www.atlas-scientific.com/files/gravity-DO-ardunio-code.pdf
 
-In this section, the following table is provided  regarding 
-publishing of data to the MQTT broker namespace. Additionally,
-examples for the payload of the MQTT packet are provided for further
-clarity.
+3. Connect the DO sensor to the board
 
-## Publish Topic Table
+4. Flash the sample code to the Arduino Uno
 
-| **Topic**               | **Purpose**                                      |
-| ----------------------  | ------------------------------------------------ |
-| *$aws/<buoy_id>/data/*  | Destination of raw collected client sensor data. |
-| *$aws/<buoy_id>/error/* | Reserved for logging of errors                   |
+5. Open the serial monitor
 
+6. Wave the sensor probe in the air for a few minutes
 
-### JSON Shorthand Abbreviations
+7. Type "CAL" into the serial monitor and press enter.
 
-The packet payload is published as a serialized JSON string. The values
-of the aforementioned string correspond to the particular sensor from which
-the data has been collected. A breakdown of the expanded meaning of the shorthand
-abbreviations is presented below:
-
-#### **$aws/<buoy_id>/data/**
-
-| **Shorthand**               | **Expanded**                            | **Units**         |
-| --------------------------- | --------------------------------------  | ----------------- |
-| do                          | Dissolved Oxygen Sensor                 | *mg/L*            |
-| ec                          | Electrical Conductivity Sensor          | *ms/cm*           |
-| liqlev                      | Liquid Level Sensor                     | *bool*            |
-| ph                          | PH Sensor                               | *pH*              |
-| tds                         | Total Dissolved Solids Sensor           | *ppm*             |
-| tbd                         | Turbidity Sensor                        | *NTU*             |
-| wf                          | Water Flow Sensor                       | *L/s*             |
-| wp                          | Water Pressure Sensor                   | *kpa*             |
-| temp                        | Temperature Sensor                      | *Degrees Celsius* |
-
-
-### Payload: *$aws/<buoy_id>/error/*
-
-```json
-{
-  "do": 80.3,      
-  "ec": 250.21,    
-  "liqlev": true,  
-  "ph": 7.03,      
-  "tds": 550.96,   
-  "tbd": 0.8,      
-  "wf": 1.904,     
-  "wp": 9.81,      
-  "temp" : 20.34   
-}
-```
-
-### Payload: *$aws/<buoy_id>/error/*
-```json
-{
-  "errno": 4,
-  "errmsg": "Failed to collect data from pH sensor"
-}
-```
-
-
- *For more specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).*
- -->
+8. You should receive a response on the serial monitor once complete.
