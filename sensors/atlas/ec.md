@@ -26,6 +26,8 @@ Inside the probe, there are two electrodes positioned opposite from eachother. A
 The more free electrolutes the liquid contains, the higher the electrical conductivity. 
 It works by measuring electrical current of the solution between two graphite plates. 
 
+[More Info](https://files.atlas-scientific.com/EC_EZO_Datasheet.pdf)
+
 Name: Conductivity K 0.1 Kit 
 
 Link: https://atlas-scientific.com/kits/conductivity-k-0-1-kit/
@@ -38,7 +40,7 @@ Operational Range: 1 to 50 degrees C
 
 Unit: µs
 
-Range:  0.07µs to 50,000µs
+Range: 0.07µS/cm to 50,000µS/cm
 
 Maintenance: ~6 Months
 
@@ -47,7 +49,7 @@ Life Expenctancy: 2.5 years
 ---
 ## Maintenance
 
-Cleaning:
+### Cleaning:
 
 For soft coatings, the probe can be cleaning by light brushing. 
 
@@ -56,10 +58,25 @@ For hard coatings, the recommended method is using the [cleaner from Atlas Scien
 ## Calibration 
 The grpahite plates in this sensor do not go bad, nor do they change. No additional calibration is needed after initial calibration.
 
+### Initial Calibration
+
 ## Operational Tips
 The entried conducting area must be submerged in order to get accurate readings. 
 
+![Diagram](/sensors/assests/ec_probe_submerged.jpg)
+
 ## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  name: "ec",           # string
+  data_type: "µS/cm",   # string -- microsiemens per centimeter 
+  data_value:           # float
+}
+```
+</div>
+
 ## TBD
 
 <!-- {% highlight markdown %}

@@ -47,30 +47,24 @@ Life Expenctancy: 2.5 years
 ---
 ## Maintenace 
 
-Best practice is to replace the electrolyte solution and membrane cap every 6-12 months. 
-
-When the electrolyte solution is depleted, the readings will be very low.
-
-The membrane cap will need to be replaced if damaged, scratched, or ripped. 
+Best practice is to replace the electrolyte solution and membrane cap every 6-12 months. When the electrolyte solution is depleted, the readings will be very low. The membrane cap will need to be replaced if damaged, scratched, or ripped. 
 
 
-Refilling the Electrolyte Solution:
+### Refilling the Electrolyte Solution:
 
 Unscrew the membrane cap and pour out any remaining solution. Inject electrolyte solution into the membrane cap until it is filled to the top. Screw the membrance cap back. Rinse the probe with water. 
 
 
-Cleaning:
+### Cleaning:
 
 The sides of the probe can be lightly brushed with a soft toothbrush. 
 The membrane can be rinsed with a mild bleach solution.  
 
 
 ## Calibration 
-There is no set schedule for recalibration. 
+There is no set schedule for recalibration. Best practice is to recallibrate every 6 months. 
 
-Best practice is to recallibrate every 6 months. 
-
-To calibrate, 
+### Calibration Steps
 
 
 ## Percentage Saturation Equation
@@ -86,6 +80,17 @@ This sensor is designed to read percent saturation only. Reading oxygen in mg/L 
 Default constant is 440 since that is the typical oxygen levels in air. 
 
 ## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  name: "do",          # string
+  data_type: "%Sat",   # string -- percent saturation
+  data_value:          # float
+}
+```
+</div>
+
 ## TBD
 <!-- <div class="code-example" markdown="1">
 ```json
