@@ -4,6 +4,7 @@ title: Calibration Plan
 has_children: true
 permalink: /docs/smart-device/calibration-plan/
 parent: Smart Device
+nav_order: 4
 ---
 
 # Calibration Plan
