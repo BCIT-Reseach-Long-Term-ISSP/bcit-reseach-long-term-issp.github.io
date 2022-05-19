@@ -4,6 +4,7 @@ title: Sensor Integration
 has_children: true
 permalink: /docs/smart-device/sensor-integration/
 parent: Smart Device
+nav_order: 2
 ---
 
 # Sensor Integration

@@ -9,7 +9,7 @@ nav_order: 4
 
 # Calibration Plan
 
-An overvies of the current calibration plan for the May 2022 device deliverable. 
+An overview of the current calibration plan for the May 2022 device deliverable. 
 {: .fs-6 .fw-300 }
 
 ## Scope
