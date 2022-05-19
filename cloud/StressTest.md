@@ -124,18 +124,23 @@ Looks like the lambda function we use to convert the MQTT message into a JSON is
 We can make changes to the Timeout as suggested. Doubling it did seem to alleviate the issue and more data is flowing but there is a longer delay from when the data is created to when the data enters the S3 bucket.
 
 To increase the timeout, go to the Lambda dashboard, on the left hand navigation menu, click on "Functions"
+
 ![Lambda - functions](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Lambda_transform.PNG)
 
 Find the function we wish to adjust. In our case, "datatransform", just click on the function name to be brought to its' function over page.
+
 ![Lambda - transform](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Lambda_functions.PNG)
 
 Once at the function overview page, we can click on "Configurations" located just below the Function overview and above the Code Source section.
+
 ![Lambda - config](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Lambda_config.PNG)
 
 In the "General configuration" box, click on "Edit" just located on the right-hand side to get to the "Edit Basic Settings" page
+
 ![Lambda - config2](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Lambda_config2.PNG)
 
 Within the "Basic Settings Page" scroll down until you see the timeout section. You can increase the value to whatever you wish then click on the orange "save" button.
+
 ![Lambda - config3](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/Lambda_config3.PNG)
 
 
