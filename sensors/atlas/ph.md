@@ -32,17 +32,58 @@ proportional to the concentration of hydrogen ions in the liquid being measured.
 
 
 Name: pH Kit
-Link: https://atlas-scientific.com/kits/ph-kit/ 
+
+Link: https://atlas-scientific.com/kits/ph-kit/  
+
 Calibration: Calibrated against buffer solutions provided in the kit
+
 Type: Analog 
-Operational Range: 1 to 50 degrees C
+
+Operational Range: -55 to 99 degrees C
+
 Unit: N/A
-Range: 1 to7
-Maintenance: ~6 Months
+
+Range: 1 to 14 
+
+Maintenance: ~1 year
+
 Life Expenctancy: 2.5 years 
+
 ---
 
+## Maintenance
+
+### Cleaning
+
+Soft coatings can be removed with stiring the probe in water or rinsing with a squeeze bottle. 
+Harder coatings can be cleaned by stiring the probe in a light bleach solution. 
+
+### Reconditioning
+Reconditioning is required when the probe has been stored incorrectly or when the probe has dried out. 
+The manufactuer recommends their [pH probe reconditioning kid](https://atlas-scientific.com/calibration-solutions/ph-probe-reconditioning-kit/)
+
+## Calibration
+There is no set schedule for recalibration. If the probe is being used in an environment with weak levels of acids and bases, the best practice is to recallibrate every 6 months. If the prove is being used in an environment with strong acids and bases, the best practice is to recallibrate monthly. 
+
+### Calibration Steps 
+
+
+Note: the calibration solution is no long suitable after 20 minutes and needs to be disposed of.
+
+## Notes
+
 ## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  name: "ph",       # string
+  data_type: "pH",  # string
+  data_value:       # float
+}
+```
+</div>
+
 ## TBD
 <!-- <div class="code-example" markdown="1">
 ```json

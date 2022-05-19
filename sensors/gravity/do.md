@@ -23,16 +23,67 @@ permalink: /docs/sensors/gravity/do
 
 A Dissolved Oxygen sensor.
 
+
 Name: Gravity: Analog Dissolved Oxygen Sensor / Meter Kit For Arduino
+
 Link: https://www.dfrobot.com/product-1628.html
-Calibration: Calibrated against air. Dip probe in water, and wave probe in air. 
+
+Calibration: Single-point and two-point. 
+
 Type: Analog 
-Operational Range: 1 to 50 degrees C
+
+Operational Range: 1 to 40 degrees C
+
 Unit: % Saturation 
+
 Range: 1% t0 100% Saturation 
-Maintenance: ~1-2 Months
+
+Maintenance: ~1 Month
+
 Life Expenctancy: 1 year 
+
 ---
+## Calibration
+The probe needs to be calibrated if being used for the first time. Also needs to be calibrated approximately every 6 months during use. There are two types of callibration. Single point and two-point
+
+### Single Point Calibration
+Single point calibration is suitable for when the temperature of the solution is stable. There are two ways to do single point calibration, exposing the wet probe to the air and immersing the probe in saturated dissolved oxygen water. 
+
+#### Exposing wet probe to the air
+1. Prepare the probe.
+2. Dip the probe in water and shake off excess water.
+3. Wave the probe in air.
+4. Wait for the output voltage to stablize. Record the voltage. 
+
+#### Immersing the probe in saturated dissolved oxygen water
+1. Prepare the probe.
+2. Prepared a cup of purified water and use one of the following methods.
+a. Use a stirrer or an eggbeater to continously stir for 10 minutes.
+b. Use an air pump to continously inflate the water for 10 minutes.
+3. Stop stirring/beating/pumping.
+4. Put the prob into the water.
+5. Stir/beat/pump the water slowly to move the water while not creating any air bubbles.
+6. Wait for the output voltage to stablize. Record the voltage. 
+
+
+### Two Point Calibration 
+Two point calibration is suitable for when the temperature flucates.
+
+Prepare two cups of filtered water. Put one cup in the refrigerator to allow water to cool down and warm one cup up to below 40 degrees. 
+
+For each cup of water, do the following:
+1. Prepare the probe.
+2. Use one of the following methods to saturate the the cup of water. 
+a. Use a stirrer or an eggbeater to continously stir for 10 minutes.
+b. Use an air pump to continously inflate the water for 10 minutes.
+3. Stop stirring/beating/pumping.
+4. Put the prob into the water.
+5. Stir/beat/pump the water slowly to move the water while not creating any air bubbles.
+6. Wait for the output voltage to stablize. Record the voltage. 
+
+
+## Notes
+
 
 ## JSON 
 
