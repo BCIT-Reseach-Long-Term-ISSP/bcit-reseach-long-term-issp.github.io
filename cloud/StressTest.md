@@ -145,7 +145,7 @@ Within the "Basic Settings Page" scroll down until you see the timeout section. 
 
 
 ## Conclusion
-Due to the requirements to keep things as fast as possible, I've left it at the 1ambda function's timeout alone (what it was originally).
+Due to the requirements to keep things as fast as possible, I've left it at the lambda function's timeout alone (what it was originally).
 
 The stress test was testing more than double the capcity of what we're currently expecting (14 buoys), maybe if the number of buoys needed to be increased should we look at this again.
 
