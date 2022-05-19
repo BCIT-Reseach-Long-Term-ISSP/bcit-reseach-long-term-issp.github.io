@@ -38,7 +38,7 @@ Operational Range: 1 to 50 degrees C
 
 Unit: % Saturation 
 
-Range: 1% t0 100% Saturation 
+Range: 1% to 100% Saturation 
 
 Maintenance: ~6 Months
 
@@ -50,7 +50,7 @@ Life Expenctancy: 2.5 years
 Best practice is to replace the electrolyte solution and membrane cap every 6-12 months. When the electrolyte solution is depleted, the readings will be very low. The membrane cap will need to be replaced if damaged, scratched, or ripped. 
 
 
-### Refilling the Electrolyte Solution:
+### Filling the Electrolyte Solution:
 
 Unscrew the membrane cap and pour out any remaining solution. Inject electrolyte solution into the membrane cap until it is filled to the top. Screw the membrance cap back. Rinse the probe with water. 
 
@@ -65,7 +65,10 @@ The membrane can be rinsed with a mild bleach solution.
 There is no set schedule for recalibration. Best practice is to recallibrate every 6 months. 
 
 ### Calibration Steps
-
+1. Prepare the probe.
+2. Dip the probe into a cup of water.
+3. Wave the probe in air.
+4. Wait for the output voltage to stablize. Record the voltage. This is the Calibration value and the denominator of the percentage saturation equation. 
 
 ## Percentage Saturation Equation
 

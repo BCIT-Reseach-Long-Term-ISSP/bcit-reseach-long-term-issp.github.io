@@ -21,7 +21,7 @@ permalink: /docs/sensors/gravity/temp/
 
 ## Summary
 
-A Temperature sensor.
+A digital waterproof temperature sensor that provides 9-bit to 12-bit Celsicus temperature measurements. This thermometer uses a 1-wire bues to communited. Because this sensor is digital, there would be any signal degration over long distance. 
 
 Name: Gravity: Waterproof DS18B20 Sensor Kit 
 
@@ -29,7 +29,7 @@ Link: https://www.dfrobot.com/product-1354.html
 
 Type: Digital 
 
-Operating Temperature: -55 ~ 125
+Operating Temperature: -55 ~ 100
 
 Range of measurement: -10 ~ 85
 
