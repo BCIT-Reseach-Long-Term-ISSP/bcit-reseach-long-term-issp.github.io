@@ -16,7 +16,7 @@ A walkthrough of the DFRobot Turbidity Sensor calibration procedure
 
 To be filled in
 
-## Proedure Bare Metal Arduino Zero
+## Procedure Bare Metal Arduino Zero
 
 1. Grab the Arduino Zero that you're deploying to the field
 
@@ -28,11 +28,11 @@ To be filled in
 
 4. Place the sensor "probe" into the water
 
-  - Make sure not to put it in too far, it is only waterproof on the bottom, clear, plastic part or teh probe
+  - Make sure not to put it in too far, it is only waterproof on the bottom, clear, plastic part of the probe
 
-  - It is assumed normal tap water will be close enough to 0 NTU to be considered accurate, but in the furture it may be good to get an actual buffer solution.
+  - It is assumed normal tap water will be close enough to 0 NTU to be considered accurate, but in the future, it may be good to get an actual buffer solution.
 
-5. Wait a few minutes for the measurment to stabalize
+5. Wait a few minutes for the measurement to stabilize
 
 6. Debug the program and view the result of each measurement
 
@@ -52,11 +52,11 @@ To be filled in
 
 4. Place the sensor "probe" into the water
 
-  - Make sure not to put it in too far, it is only waterproof on the bottom, clear, plastic part or teh probe
+  - Make sure not to put it in too far, it is only waterproof on the bottom, clear, plastic part of the probe
 
-  - It is assumed normal tap water will be close enough to 0 NTU to be considered accurate, but in the furture it may be good to get an actual buffer solution.
+  - It is assumed normal tap water will be close enough to 0 NTU to be considered accurate, but in the future, it may be good to get an actual buffer solution.
 
-5. Wait a few minutes for the measurment to stabalize
+5. Wait a few minutes for the measurement to stabilize
 
 6. Debug the program and view the result of each measurement
 

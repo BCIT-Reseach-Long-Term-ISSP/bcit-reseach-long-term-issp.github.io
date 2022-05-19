@@ -16,13 +16,38 @@ A walkthrough of the DFRobot TDS Sensor calibration procedure
 
 To be filled in
 
-## Proedure Bare Metal Arduino Zero
+## Procedure Bare Metal Arduino Zero
 
-1. a
+1. Grab the Arduino Zero that you're deploying to the field
 
+2. Connect the sensor to the Arduino board
+
+3. Verify that measurements are being received
+
+    - It is recommended that you create a new task that only takes a measurement for the turbidity sensor continuously
+
+4. Place the sensor "probe" into the buffer solution of known TDS
+
+5. Wait a few minutes for the measurement to stabilize
+
+6. Debug the program and view the result of each measurement
+
+7. Once the values have stabilized, record that measurement
+
+8. Calculate the factor to get the current measurement to the know measurement: k-value = known / measured
+
+9. Write that factor into the k-value of the TDS conversion function code
+
+  - Refer to this article for more information: https://how2electronics.com/diy-turbidity-meter-using-turbidity-sensor-arduino/
+  
 ## Procedure Arduino Uno
 
-1. 
+1. Grab the Arduino Uno that you're deploying to the field
+
+2. Connect the sensor to the Arduino board
+
+3. Follow the instructions in this article: https://wiki.dfrobot.com/Gravity__Analog_TDS_Sensor___Meter_For_Arduino_SKU__SEN0244
+
 
 <!--
 # Publish Data
