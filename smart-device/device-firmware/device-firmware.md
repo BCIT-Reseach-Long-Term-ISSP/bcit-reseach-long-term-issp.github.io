@@ -5,6 +5,7 @@ has_children: true
 permalink: /docs/firmware
 parent: Smart Device
 has_toc: true
+nav_order: 1
 ---
 
 # Device Firmware

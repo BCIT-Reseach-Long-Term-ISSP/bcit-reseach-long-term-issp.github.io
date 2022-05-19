@@ -4,6 +4,7 @@ title: Communication Protocols
 has_children: true
 permalink: /docs/smart-device/communication-protocols/
 parent: Smart Device
+nav_order: 3
 ---
 
 # Communication Protocols
