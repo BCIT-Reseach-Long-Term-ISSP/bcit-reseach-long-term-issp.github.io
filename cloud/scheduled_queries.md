@@ -54,9 +54,9 @@ Before creating a scheduled query, ensure that a destination table has been set 
     * **SNS Topic:** timestream-scheduled-queries
     * **S3 Location:** s3://timestream-scheduled-query-error-logs
 
-10. Ensure query settings are correct and click **Create** to create a new scheduled query.
-
     ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_6.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_6.png?raw=true)
+
+10. Ensure query settings are correct and click **Create** to create a new scheduled query.
 
 
 # Benefits
