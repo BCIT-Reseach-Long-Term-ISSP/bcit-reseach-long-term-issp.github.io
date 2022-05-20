@@ -34,7 +34,7 @@ To be filled in
 
 7. Once the values have stabilized, record that measurement
 
-8. Insert that value into the DO conversion function code in the fraction - ask Brittany for specific location
+8. Insert that value into the DO conversion function code in the fraction.
 
 ## Procedure Arduino Uno
 
