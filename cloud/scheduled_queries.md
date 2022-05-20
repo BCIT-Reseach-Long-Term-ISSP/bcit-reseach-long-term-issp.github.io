@@ -23,29 +23,29 @@ Before creating a scheduled query, ensure that a destination table has been set 
 1. Log in to AWS and navigate to the **Amazon Timestream** service.
 2. On the left-hand navigation bar, select **Scheduled queries**.
     
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_1.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_1.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_1.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_1.png?raw=true)
     
 3. Click **Create scheduled query** on the top right to create a new query.
 4. Choose the preferred database to hold the destination table in and choose a table that the scheduled query results will be populated into. 
 5. Provide a descriptive query name to identify the scheduled query. 
 
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_2.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_2.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_2.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_2.png?raw=true)
 
 6. Define a query statement on the source table which will be scheduled by Timestream. The query statement below provides a daily aggregate of the average of all values of each measure name per buoy. Once entered, click **Validate** to automatically populate the destination table schema.
 
     For more information, references have been made available at the bottom of this document under **References**.
 
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_3.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_3.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_3.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_3.png?raw=true)
 
 7. Using the visual editor, modify the Timestream attribute type for undefined or columns with incorrect types. There must be at least one column with type **Dimension** and must consist of a **Time** type as well (which will most likely be automatically generated for you). *Please note, any changes made directly to the JSON will not be saved/reflected in the final confirmation screen.*
 
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_4.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_4.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_4.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_4.png?raw=true)
 
 8. Next, specify the schedule of the query. In the below example, we use a **CRON** expression which allows for more precise specifications (i.e., Trigger a scheduled query every hour only on Monday, Wednesdays, and Fridays), allowing us to trigger our query every day at midnight. 
 
     Otherwise, a fixed rate will suffice. For example, by setting the time frame to **minute** and the **frequency** to 5, the query will execute every 5 minutes after the creation of your scheduled query.
 
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_5.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_5.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_5.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_5.png?raw=true)
 
 9. Next, select an IAM role, KMS key, SNS topic, and S3 bucket for the query. All components have been created prior to this document, therefore no further creations are necessary:
     
@@ -56,7 +56,7 @@ Before creating a scheduled query, ensure that a destination table has been set 
 
 10. Ensure query settings are correct and click **Create** to create a new scheduled query.
 
-    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_6.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_6.png?raw=true)
+    ![https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud-kat/cloud/assets/scheduled_query_6.png?raw=true](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/cloud/assets/scheduled_query_6.png?raw=true)
 
 
 # Benefits
