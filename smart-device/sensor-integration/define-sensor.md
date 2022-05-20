@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Add Sensor
+title: Define Sensor
 parent: Sensor Integration
 grand_parent: Smart Device
 ---

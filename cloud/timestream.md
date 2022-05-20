@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Timestream
+title: Timestream - Overview
 parent: Cloud
 has_children: false
 permalink: /docs/cloud/timestream
@@ -27,7 +27,8 @@ On the client (dashboard) side of things, libraries are available to connect the
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2025.png?raw=true)
 
-## Phase 4
+## Current Phase
+### 2022-05-16
 
 The architecture below has been remodeled based on the initial architecture above. 
 
@@ -35,9 +36,12 @@ The architecture below has been remodeled based on the initial architecture abov
 
 # AWS Timestream
 
-Queries with projections and predicates including time ranges, measure names, and/or dimension names enable the query processing engine to prune a significant amount of data and help with lowering query costs. It is recommended for the dashboard team to use more filtered queries since it is priced according by bytes.
+Amazom Timestream is purpose-built for IoT and operational systems due to it's speed, scalability and cost effectiveness. Compared to a relational database, it can store/analyze big data (up to trillions of events) thousand times faster and at a tenth of the cost. In the following sections, we walk through how we decided to model the data, various sample queries, and setting data retention policies to optimize cost for our use case.  
 
 ([https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html](https://docs.aws.amazon.com/timestream/latest/developerguide/metering-and-pricing.queries.html))
+
+For a step-by-step walkthrough on how to create a database, table, or query using the AWS Management Console click the following link:
+(https://docs.aws.amazon.com/timestream/latest/developerguide/console_timestream.html)
 
 ## Key Concepts
 
@@ -47,24 +51,6 @@ Queries with projections and predicates including time ranges, measure names, an
 - Timestamp - indicates when the measure was collected or ingested
 - Table - container for related time series with timestamp, dimensions, and measures
 - Database - container for all tables
-
-## Potential Queries for Client
-
-- Get all sensors’ data from a given start and end timestamp
-    - What timestamp format should be followed?
-- Get all records of a single sensor record (Historical data)
-- The above without a start and end timestamp (if regularly queried given a frequency - weekly, monthly, etc. then this can be part of the query - frontend or backend?)
-- Filter by a specific sensor attribute (i.e., pH, temperature, TDS, pressure) and sort by increasing/decreasing order
-- Get a single measurement at the current time or at a specific time
-- Get all readings from a specific sensor, grouped by sensor ID
-- Get the latest readings, sort by max time (UNIX)
-- Get all sensor IDs —> SELECT DISTINCT
-- Best Practices: Queries
-- Great outline to follow to optimize both performance and cost
-
-[https://docs.aws.amazon.com/timestream/latest/developerguide/queries-bp.html](https://docs.aws.amazon.com/timestream/latest/developerguide/queries-bp.html)
-
-- AWS Timestream Query Language Reference: [https://docs.aws.amazon.com/timestream/latest/developerguide/reference.html](https://docs.aws.amazon.com/timestream/latest/developerguide/reference.html)
 
 ## Best Practices: Data Modeling
 
@@ -88,6 +74,7 @@ We are using single-measure records for guaranteed scalability when adding more 
 ## Sample Queries
 
 The following queries can be tested directly in the AWS Timestream Query Editor.
+Queries with projections and predicates including time ranges, measure names, and/or dimension names enable the query processing engine to prune a significant amount of data and help with lowering query costs.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/Untitled%2027.png?raw=true)
 
