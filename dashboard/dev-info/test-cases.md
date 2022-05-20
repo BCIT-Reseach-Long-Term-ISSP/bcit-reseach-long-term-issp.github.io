@@ -32,7 +32,7 @@ This page lists possible test cases for the Dashboard.
 | Name entry cannot be blank | Delete current name or enter spaces | Error message appears asking the user to enter a valid name |
 | Only numerical values are allowed when assigning thresholds | Enter any non-number | Error message appears asking the user to make a valid entry |
 | Threshold minimum can not be greater than maximum | Enter a lower maximum than the minimum |  Error message appears asking the user to make a valid entry |
-| User must be logged in to edit device | While not logged in click Save Changes | Error message appears saying data cannot be saved and that permission was denied |
-| User must have administrator permissions to edit device | While logged in on an account without admin permissions click Save Changes  | Error message appears saying data cannot be saved and that permission was denied |
+| User must be logged in as an administrator to edit device | While not logged in, click Save Changes | Error message appears saying data cannot be saved and that permission was denied |
+| User must have administrator permissions to edit device | While logged in on an account without admin permissions, click Save Changes | Error message appears saying data cannot be saved and that permission was denied |
 
 {: .fs-6 .fw-300 }
