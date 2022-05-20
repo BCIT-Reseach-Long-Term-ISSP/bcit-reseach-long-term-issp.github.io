@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Timestream
+title: Timestream - Overview
 parent: Cloud
 has_children: false
 permalink: /docs/cloud/timestream

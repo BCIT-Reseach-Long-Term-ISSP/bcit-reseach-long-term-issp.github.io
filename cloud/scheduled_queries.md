@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Timestream
+title: Timestream - Scheduled Queries
 parent: Cloud
 has_children: false
 permalink: /docs/cloud/ts-scheduled-queries
