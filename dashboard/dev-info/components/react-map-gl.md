@@ -48,4 +48,24 @@ Both examples above have omitted the props which Map and Marker take for simplic
 - *longitude*: A number; the longitude at which the marker will display on the map.
 - *draggable*: A boolean; determines whether the marker can be dragged.
 
+
+## Extra Notes
+
+When building the React project, certain versions of Mapbox can have issues with certain versions of React, which causes the map to fail to render.
+
+This issue was affecting the dashboard, and the console.log was revealing that it was an issue with the transpiler when building. The solution we used, found [here](https://stackoverflow.com/a/69489231), involves exempting it from processes of transpilation.
+
+In files where react-map-gl's Map is used, such as mapPage.jsx, you'll notice these 4 lines:
+
+```js
+import mapboxgl from 'mapbox-gl';
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+```
+
+Without these lines, the map will fail to render. The comments are also part of this, and should not be removed, nor modified.
+
+It's possible that this doesn't need to be present in every instance where the Map is used, but we included it in all just to be safe.
+
 {: .fs-6 .fw-300 }
