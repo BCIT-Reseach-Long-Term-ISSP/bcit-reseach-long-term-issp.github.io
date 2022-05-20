@@ -46,7 +46,7 @@ Next up, you need to set up your toolchain. There are several programs which nee
 Instructions on how to set things up on most major operating systems are provided below:
 
 ### Microsoft Windows
-On Windows, these packages are accessible using a single "toolchain.zip" package [on the Google Drive](https://drive.google.com/file/d/1HmVxQ1yRjh2sgQfvb0OxRWoymdMbWISE/view?usp=sharing). Once downloaded, the "bin" directory should be put on your PATH variable. This can be done either within your IDE or on a system-wide basis.
+On Windows, these packages are accessible using a single "toolchain.zip" package [on the Google Drive](https://drive.google.com/file/d/1bYFQPA6Cd6zoyujSbzcGzjMOZFkS-vox/view?usp=sharing). Once downloaded, the "bin" directory should be put on your PATH variable. This can be done either within your IDE or on a system-wide basis.
 
 ### MacOS
 On MacOS, all of these programs are available through `brew`:
