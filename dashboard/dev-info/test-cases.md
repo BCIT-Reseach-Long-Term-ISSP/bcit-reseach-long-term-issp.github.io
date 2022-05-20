@@ -9,6 +9,8 @@ has_toc: true
 
 # Test Cases
 
+This page lists possible test cases for the Dashboard.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -19,13 +21,13 @@ has_toc: true
 
 ## Graph Page Tests
 
-| Description      | Steps || Expected Result |
+| Description      | Steps | Expected Result |
 | ----------- | ----------- | ----------- |
 | Only numerical values are allowed when filtering table values | Enter any non-number | Error message appears asking the user to enter a numerical value |
 
 ## Edit Device Tests
 
-| Description      | Steps || Expected Result |
+| Description      | Steps | Expected Result |
 | ----------- | ----------- | ----------- |
 | Name entry cannot be blank | Delete current name or enter spaces | Error message appears asking the user to enter a valid name |
 | Only numerical values are allowed when assigning thresholds | Enter any non-number | Error message appears asking the user to make a valid entry |
