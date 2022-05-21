@@ -28,6 +28,7 @@ This page lists possible test cases for the Dashboard.
 | When no buoy is selected, no buoy data will be displayed on the data page | Deselect all buoys and navigate to the data page | The message "No buoy selected" will be displayed and no tabs appear |
 | Quantitative metrics will display a time series graph on the detailed data page | query data from a buoy with metrics that measure quanitative data | A time series graph data wll be displayed when that metric's tab is selected |
 | Only numerical values are allowed when filtering table values for quantitative data | Enter any non-number | Error message appears asking the user to enter a numerical value |
+| When filtering values by range, the first text entry must be of a lower number than the next | Enter a higher number in the first text box than the second | Error message appears |
 | Qualitative metrics will allow the user to filter table values by all existing values that have been measured in the buoy within the time range | Use data from a buoy with metrics that measure qualitative data | The filter table values dropdown menu will be populated with all existing values that have been measured in the buoy |
 | Values outside of the set threshold associated with that buoy will display as red in the overview tab and in the data tables | Query data from a buoy which returns values outside of the set threshold | Values will display as red in the overview tab and data tables |
 
