@@ -1,7 +1,7 @@
 ---  
 layout: default  
 title: Test Cases
-has_children: true  
+has_children: false  
 permalink: /docs/dashboard/test-cases  
 parent: Dashboard  
 has_toc: true
