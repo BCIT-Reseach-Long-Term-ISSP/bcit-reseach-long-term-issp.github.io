@@ -8,6 +8,7 @@ has_toc: true
 ---  
 
 # Test Cases
+{: .no_toc }
 
 This page lists possible test cases for the Dashboard.
 
