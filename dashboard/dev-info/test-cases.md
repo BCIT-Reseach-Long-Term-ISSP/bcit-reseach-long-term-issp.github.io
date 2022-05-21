@@ -19,13 +19,19 @@ This page lists possible test cases for the Dashboard.
 
 ---
 
-## Graph Page Tests
+## Data Page Tests
 
 | Description      | Steps | Expected Result |
 | ----------- | ----------- | ----------- |
-| Only numerical values are allowed when filtering table values | Enter any non-number | Error message appears asking the user to enter a numerical value |
+| Selecting one buoy on the map will display that buoy's associated metrics | Select one buoy on the map | The buoy's associated metrics will populate the data page tabs and the overview display |
+| Selecting multiple buoys on the map will display all associated metrics from all buoys combined | Select more than one buoy on the map | All associated metrics will populate the data page and each buoy's associated metrics will populate the data page in order of buoy id numerical order |
+| When no buoy is selected, no buoy data will be displayed on the data page | Deselect all buoys and navigate to the data page | The message "No buoy selected" will be displayed and no tabs appear |
+| Quantitative metrics will display a time series graph on the detailed data page | query data from a buoy with metrics that measure quanitative data | A time series graph data wll be displayed when that metric's tab is selected |
+| Only numerical values are allowed when filtering table values for quantitative data | Enter any non-number | Error message appears asking the user to enter a numerical value |
+| Qualitative metrics will allow the user to filter table values by all existing values that have been measured in the buoy within the time range | Use data from a buoy with metrics that measure qualitative data | The filter table values dropdown menu will be populated with all existing values that have been measured in the buoy |
+| Values outside of the set threshold associated with that buoy will display as red in the overview tab and in the data tables | Query data from a buoy which returns values outside of the set threshold | Values will display as red in the overview tab and data tables |
 
-## Edit Device Tests
+## Edit Device Tab Tests
 
 | Description      | Steps | Expected Result |
 | ----------- | ----------- | ----------- |
