@@ -16,7 +16,7 @@ Once a thing has been registered and is transmitting data through a topic outlin
 The MQTT Test client allows us to not only see data but also interact with clients in the MQTT network. This is done by subscribing or publishing to MQTT topics which is outlined in their official website [here](https://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices/).
 
 ### MQTT test client
-Once in the IoT Core AWS service the the test client should be accesible in the side bar near the bottom.
+Once in the IoT Core AWS service the test client should be accesible in the side bar near the bottom.
 
 ![Test client sidebar location](/cloud/assets/dataflow/1_test_client_sidebar.png)
 <figcaption align="center"><b>MQTT test client location in sidebar</b></figcaption>
