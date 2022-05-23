@@ -2,7 +2,7 @@
 layout: default
 title: IoT to S3
 has_children: false
-permalink: /docs/cloud/Dataflow
+permalink: /docs/cloud/iot-s3
 parent: Cloud
 has_toc: false
 nav_order: 7
