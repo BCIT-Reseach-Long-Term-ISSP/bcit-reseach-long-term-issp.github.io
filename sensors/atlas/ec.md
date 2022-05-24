@@ -59,6 +59,7 @@ For hard coatings, the recommended method is using the [cleaner from Atlas Scien
 The grpahite plates in this sensor do not go bad, nor do they change. No additional calibration is needed after initial calibration.
 
 ### Initial Calibration
+Please see:
 
 ## Operational Tips
 The entried conducting area must be submerged in order to get accurate readings. 
