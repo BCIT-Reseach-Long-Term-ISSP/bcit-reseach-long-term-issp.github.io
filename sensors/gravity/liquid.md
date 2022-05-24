@@ -21,9 +21,24 @@ permalink: /docs/sensors/gravity/liq-lev
 
 ## Summary
 
-A Non-Contact Liquid Level sensor.
+A Non-Contact Liquid Level sensor. This sensor detects whether liquid is present or not. 
+
+Name: Gravity: Non-contact Digital Water / Liquid Level Sensor For Arduino
+
+Link: https://www.dfrobot.com/product-1493.html
+
+Type: Analog 
+
+Operational Range: 0 to 105 degrees C
+
+Unit: 1/0
+
 
 ---
+## Notes
+The sensor needs to be placed on a dry side. 
+
+![Diagram](/sensors/assests/liquid_level_diagrama.jpg)
 
 ## JSON 
 
