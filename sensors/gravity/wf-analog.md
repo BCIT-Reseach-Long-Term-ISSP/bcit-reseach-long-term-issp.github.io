@@ -21,10 +21,24 @@ permalink: /docs/sensors/gravity/water-flow
 
 ## Summary
 
-A Water Flow sensor.
+The Gravity Water Flow sensor meansures the rate of a liquid flowing thorugh it. 
+
+Name: Gravity: Water Flow Sensor (1/2") For Arduino
+
+Link: https://www.dfrobot.com/product-1517.html
+
+Type: Analog 
+
+Operational Range: 1 to 120 degrees C
+
+Unit: L/min
 
 ---
 
+## Notes 
+This sensor must be installed vertically.
+
+This sensor can not be tilted no more than 5 degrees.
 ## JSON 
 
 <div class="code-example" markdown="1">

@@ -21,7 +21,17 @@ permalink: /docs/sensors/gravity/water-pressure
 
 ## Summary
 
-A Water Pressure sensor.
+A Water Pressure sensor that will sense whether there is water and how strong the water pressure is. 
+
+Name: Gravity: Analog Water Pressure Sensor
+
+Link: https://www.dfrobot.com/product-1517.html
+
+Type: Analog 
+
+Operational Range: -20 to 85 degrees C
+
+Unit: mPa
 
 ---
 
