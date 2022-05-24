@@ -21,21 +21,19 @@ permalink: /docs/sensors/gravity/tds
 
 ## Summary
 
-A Total Dissolved Solids sensor.
+Total dissolved solids indicates how many milligrams of soluable solids is dissolved in one leter of water. TDS value of water is used to reflect the cleanliness of water. 
 
-Detects water quality by measuring the turbidity/opaqueness. Uses light to detect suspended particles in water by measuring light transmittance and scattering rate. 
+Name: Gravity: Analog TDS Sensor/ Meter for Arduino
 
-Name: Gravity: Analog Turbidity Sensor for Arduino 
+Link: https://www.dfrobot.com/product-1662.html
 
-Link: https://www.dfrobot.com/product-1394.html 
+Type: Analog 
 
-Type: Digital and Analog 
+Operational temperature range: 0 – 55 degrees C
 
-Operational temperature range: 5 – 90 degrees C
+Output range: 0 to 2.3V
 
-Output range: 0-4.5V
-
-Unit: NTU 
+Unit: ppm
 
 
 ---

@@ -60,7 +60,7 @@ Harder coatings can be cleaned by stiring the probe in a light bleach solution.
 
 ### Reconditioning
 Reconditioning is required when the probe has been stored incorrectly or when the probe has dried out. 
-The manufactuer recommends their [pH probe reconditioning kid](https://atlas-scientific.com/calibration-solutions/ph-probe-reconditioning-kit/)
+The manufactuer recommends their [pH probe reconditioning kit](https://atlas-scientific.com/calibration-solutions/ph-probe-reconditioning-kit/)
 
 ## Calibration
 There is no set schedule for recalibration. If the probe is being used in an environment with weak levels of acids and bases, the best practice is to recallibrate every 6 months. If the prove is being used in an environment with strong acids and bases, the best practice is to recallibrate monthly. 
@@ -71,6 +71,7 @@ There is no set schedule for recalibration. If the probe is being used in an env
 Note: the calibration solution is no long suitable after 20 minutes and needs to be disposed of.
 
 ## Notes
+When placing probe in water, gently tap the sensor to ensure there are no air bubbles trapped in the probe.
 
 ## JSON 
 
