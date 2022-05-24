@@ -80,7 +80,7 @@ Calibration value is the reading in air.
 This sensor is designed to read percent saturation only. Reading oxygen in mg/L is more complex and can not be done with this particular device. 
 
 ## Note on the default saturation
-Default constant is 440 since that is the typical oxygen levels in air. 
+Default constant is 440 since that is the typical oxygen levels in air, based on Henry's Law. 
 
 ## JSON 
 
