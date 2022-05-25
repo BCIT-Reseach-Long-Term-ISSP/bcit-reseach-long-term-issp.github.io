@@ -321,7 +321,10 @@ Graph is a component that renders historical data for the selected metric on a l
 - *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
-None
+- *findMin*: Returns the minimum value of a key across an array of arrays of objects.
+    - This is used to find the minimum value within the data passed to the graph for plotting.
+- *findMax*: Returns the maximum value of a key across an array of arrays of objects.
+    - This is used to find the maximum value within the data passed to the graph for plotting.
 
 **Noteworthy components used:**
 - *ChartContainer*: A component from react-timestream-charts which is a container for the whole chart. More information [here](/docs/dashboard/react/react-timestream-charts). 
