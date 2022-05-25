@@ -59,9 +59,9 @@ Single point calibration is suitable for when the temperature of the solution is
 1. Prepare the probe.
 2. Prepared a cup of purified water and use one of the following methods.
 
-a. Use a stirrer or an eggbeater to continously stir for 10 minutes.
+    - Use a stirrer or an eggbeater to continously stir for 10 minutes.
 
-b. Use an air pump to continously inflate the water for 10 minutes.
+    - Use an air pump to continously inflate the water for 10 minutes.
 
 3. Stop stirring/beating/pumping.
 4. Put the prob into the water.
@@ -78,9 +78,9 @@ For each cup of water, do the following:
 1. Prepare the probe.
 2. Use one of the following methods to saturate the the cup of water. 
 
-- Use a stirrer or an eggbeater to continously stir for 10 minutes.
+    - Use a stirrer or an eggbeater to continously stir for 10 minutes.
 
-- Use an air pump to continously inflate the water for 10 minutes.
+    - Use an air pump to continously inflate the water for 10 minutes.
 3. Stop stirring/beating/pumping.
 4. Put the probe into the water.
 5. Stir/beat/pump the water slowly to move the water while not creating any air bubbles.

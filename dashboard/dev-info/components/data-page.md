@@ -25,18 +25,22 @@ permalink: /docs/dashboard/react/data-page
 SingleDevicePage is a component which renders the entirety of the data page for a single device.
 
 **Props used:**
-- *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
+- *selectedDevices*: A list of IDs corresponding to devices which the user has selected for viewing.
     - Example: ["1", "9", "3"]
+- *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
 None
 
 **Noteworthy components used:**
 - *TabsSection*: The tabbed component of the page. Renders data collected from the device selected.
-- *MapWidget*: A component which renders a minimap.
+- *MapWidget*: A component which renders a minimap. Currently only renders when a single device is selected.
 - *WeatherWidget*: A component which renders the current weather display.
 - *TidesWidget*: A component which renders the tide forecast display.
-- *DeviceDescription*: A component which renders a short description of the selected device.
+
+**Currently unused component:**
+- *DeviceDescription*: A component which renders a short description of the selected device; Will include battery life, connectivity information etc.
+
 
 ## TabsSection
 
@@ -44,22 +48,42 @@ TabsSection is the tabbed component of the data page. Displays data collected fr
 
 **Props used:**
 - *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
-    - Example: ["1", "9", "3"]
+    - Example: ["1", "3", "9"]
+- *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
 - *apiCall*: Does not take any arguments. Makes an API call to the cloud data for current readings from the selected device.
 
 **Noteworthy components used:**
 - *Tabs/Tab*: Components from React Bootstrap which renders a tabbed layout. More information [here](/docs/dashboard/react/react-bootstrap).
-- *OverviewDataDisplay*: A component which renders the current reading for a single metric measured by the device selected.
-- *DetailsPanel*: A component which renders a detailed look at data collected for a specific metric for the device selected.
+- *OverviewPanel*: A component which renders an overview display of the current data for each metric collected by a single device.
+- *DetailsPanel*: A component which renders a detailed look at data collected for a specific metric for the selected devices.
+
+
+## OverviewPanel
+
+OverviePanel is a component which renders an overview display of the current data for each metric collected by a single device.
+
+**Props used:**
+- *data*: An array; the current values of all metrics being measured by the device being displayed, in the format given by the API response.
+    - Example: [{"buoy_id":"1","measure_name":"do","time":"2022-04-08 03:53:02.625000000","measure_value::double":"83.61","measure_value::boolean":null}, 
+                {"buoy_id":"1","measure_name":"ph","time":"2022-04-08 03:53:02.625000000","measure_value::double":"7.00","measure_value::boolean":null}]
+- *deviceInfo*: An object; The settings data for the device being displayed.
+    - Example: {id: '1', longitude: -123.17532845257887, latitude: 49.196525732859754, name: 'B0', thresholds: {do: {max: 30, min: 1}, ph: {max: 10, min: 6}}, colour: "#FF8AEA"}
+
+**Functions implemented:**
+None
+
+**Noteworthy components used:**
+- *OverviewDataDisplay*: A component which renders the current reading for a single metric measured by a single device.
+
 
 ## OverviewDataDisplay
 
-OverviewDataDisplay is a component which renders the current reading for a single metric measured by the device selected.
+OverviewDataDisplay is a component which renders the current reading for a single metric measured by a single device.
 
 **Props used:**
-- *data*: The data for display as an onbect, taken from the API response.
+- *data*: An object; the data for one metric from one device, in the format given by the API response.
     - Example: {"buoy_id":"1","measure_name":"do","time":"2022-04-08 03:53:02.625000000","measure_value::double":"83.61","measure_value::boolean":null}
 - *isWithinThreshold*: A boolean indicating whether or not the value given in the data prop is within the set threshold.
 
@@ -81,12 +105,15 @@ DetailsPanel is a component which renders a detailed look at data collected for 
     - Example: ["1", "9", "3"]
 - *metric*: A string. The shorthand for the metric being displayed.
     - Example: "do"
+- *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
 - *applyRange*: Does not take any arguments. Changes the rangeStart and rangeEnd states to their corresponding dates as per the selection indicated by the calendar.
     - This is used to change the date range of data being displayed
 - *handleTimeClick*: Handles the selection at the time range dropdown. Changes the main text on the time range dropdown to indicate the current selection and toggles the range selection menu accordingly. Sets the time range if one of the preset values are selected.
     - This is used for the time range dropdown menu.
+- *isUnique*: Returns whether a value within an array is unique within that array.
+    - This is used to help create a list of unique metrics being measured by the selected devices to name and populate each tab.
 - *handleThresholdClick*: Handles the selection at the threshold dropdown. Changes the main text on the threshold dropdown to indicate the current selection and toggles the range selection menu accordingly.
     - This is used for the threshold dropdown menu.
 - *handleThresholdStartEntry*: Handles the text entry for selecting the start of the threshold range.
@@ -112,19 +139,14 @@ LastUpdateArea is a component which renders the time last updated and the time r
 - *calendarStartDate*: A date object; the start date for the date picker.
     - Example: new Date(2022, 5, 10)
 - *setCalendarStartDate*: A function to set calendarStartDate.
-    - Example: setCalendarStartDate
 - *calendarEndDate*: A date object; the end date for the date picker.
     - Example: new Date(2022, 5, 14)
 - *setCalendarEndDate*: A function to set calendarEndDate.
-    - Example: setCalendarEndDate
 - *timeDropdownSelection*: A string; the time range dropdown item currently selected.
     - Example: "year"
 - *handleTimeClick*: A function handling a selection in the time range dropdown menu.
-    - Example: handleTimeClick
 - *showTimeRange*: A boolean; toggles display of custom time range menu.
-    - Example: true
 - *applyRange*: A function to set the time range of data being displayed.
-    - Example: applyRange
 
 **Functions implemented:**
 None
@@ -144,23 +166,17 @@ QualitativeDetailsPanel is a component which renders a detailed look at qualitat
 - *calendarStartDate*: A date object; the start date for the date picker.
     - Example: new Date(2022, 5, 10)
 - *setCalendarStartDate*: A function to set calendarStartDate.
-    - Example: setCalendarStartDate
 - *calendarEndDate*: A date object; the end date for the date picker.
     - Example: new Date(2022, 5, 14)
 - *setCalendarEndDate*: A function to set calendarEndDate.
-    - Example: setCalendarEndDate
 - *timeDropdownSelection*: A string; the time range dropdown item currently selected.
     - Example: "year"
 - *handleTimeClick*: A function handling a selection in the time range dropdown menu.
-    - Example: handleTimeClick
 - *showTimeRange*: A boolean; toggles display of custom time range menu.
-    - Example: true
 - *applyRange*: A function to set the time range of data being displayed.
-    - Example: applyRange
 - *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
     - Example: "under"
 - *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
-    - Example: handleThresholdClick
 - *valueList*: An array of objects; the historical data received from the cloud API.
     - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
 - *downloadData*: An array of objects; the filtered data ready for download.
@@ -169,8 +185,8 @@ QualitativeDetailsPanel is a component which renders a detailed look at qualitat
     - Example: new Date(2022, 5, 10) 
 - *rangeEnd*: A date object; the end date for the range of data to be displayed.
     - Example: new Date(2022, 5, 14)
-- *metric*: A string. The shorthand for the metric being displayed.
-    - Example: "do"
+- *metricName*: A string. The full name for the metric being displayed.
+    - Example: "dissolved oxygen"
 
 **Functions implemented:**
 None
@@ -204,43 +220,33 @@ QuantitativeDetailsPanel is a component which renders a detailed look at quantit
 - *calendarStartDate*: A date object; the start date for the date picker.
     - Example: new Date(2022, 5, 10)
 - *setCalendarStartDate*: A function to set calendarStartDate.
-    - Example: setCalendarStartDate
 - *calendarEndDate*: A date object; the end date for the date picker.
     - Example: new Date(2022, 5, 14)
 - *setCalendarEndDate*: A function to set calendarEndDate.
-    - Example: setCalendarEndDate
 - *timeDropdownSelection*: A string; the time range dropdown item currently selected.
     - Example: "year"
 - *handleTimeClick*: A function handling a selection in the time range dropdown menu.
-    - Example: handleTimeClick
 - *showTimeRange*: A boolean; toggles display of custom time range menu.
-    - Example: true
 - *applyRange*: A function to set the time range of data being displayed.
-    - Example: applyRange
 - *thresholdDropdownSelection*: A string; the threshold dropdown item currently selected.
     - Example: "under"
 - *handleThresholdClick*: A function handling a selection in the threshold dropdown menu.
-    - Example: handleThresholdClick
 - *thresholdStart*: A float; the start of the selected threshold.
     -Example: 3.5
 - *thresholdEnd*: A float; the end of the selected threshold.
     - Example: 9.9
 - *handleThresholdStartEntry*: A function which handles the text entry of the threshold start.
-    - Example: handleThresholdStartEntry
 - *showThresholdRange*: A boolean; shows the custom threshold range menu.
-    - Example: true
 - *handleThresholdEndEntry*: A function which handles the text entry of the threshold end.
-    - Example: handleThresholdEndEntry
 - *submitThreshold*: A function which handles the submission of a threshold.
-    - Example: submitThreshold
 - *isInvalidSubmission*: A boolean; whether the threshold submission made by the user is valid or not.
-    - Example: true
 - *downloadData*: An array of objects; the filtered data ready for download.
     - Example: [{"buoy_id":"1","measure_name":"ph","time":"2022-03-25 04:45:06.865000000","measure_value::double":"7.03","measure_value::boolean":null,"measure_value::varchar":null}]
 - *rangeStart*: A date object; the start date for the range of data to be displayed.
     - Example: new Date(2022, 5, 10) 
 - *rangeEnd*: A date object; the end date for the range of data to be displayed.
     - Example: new Date(2022, 5, 14)
+- *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
 None
@@ -308,12 +314,11 @@ None
 Graph is a component that renders historical data for the selected metric on a line graph.
 
 **Props used:**
-- *deviceId*: A list of IDs corresponding to devices which the user has selected for viewing.
-    - Example: ["1"]
 - *metric*: A string. The shorthand for the metric being displayed.
     - Example: "do"
 - *graphData*: An array of objects containing the buoy id as a string, x value as a date object, and y value as a float.
-    - Ezample: [[{id: "1", x: new Date(2022, 3, 29), y: 9.5}, {id: "1", x: new Date(2022, 3, 30), y: 10.5}], [{id: "2", x: new Date(2022, 3, 29), y: 7.2}]]
+    - Example: [[{id: "1", x: new Date(2022, 3, 29), y: 9.5}, {id: "1", x: new Date(2022, 3, 30), y: 10.5}], [{id: "2", x: new Date(2022, 3, 29), y: 7.2}]]
+- *getDeviceFromId*: A function which returns settings data for a specified device.
 
 **Functions implemented:**
 None
@@ -426,7 +431,7 @@ None
 
 ## DeviceDescription
 
-DeviceDescription is a component which renders a short description of the selected device.
+DeviceDescription is a component which renders a short description of the selected device. Not currently implemented.
 
 **Props used:**
 - *data*: An object containing data pertaining to the device, such as id, battery level, and connectivity. Currently using dummy data.
