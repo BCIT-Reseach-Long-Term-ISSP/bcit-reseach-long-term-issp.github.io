@@ -65,13 +65,10 @@ The manufactuer recommends their [pH probe reconditioning kit](https://atlas-sci
 ## Calibration
 There is no set schedule for recalibration. If the probe is being used in an environment with weak levels of acids and bases, the best practice is to recallibrate every 6 months. If the prove is being used in an environment with strong acids and bases, the best practice is to recallibrate monthly. 
 
-### Calibration Steps 
-
-
 Note: the calibration solution is no long suitable after 20 minutes and needs to be disposed of.
 
 ## Notes
-When placing probe in water, gently tap the sensor to ensure there are no air bubbles trapped in the probe.
+When placing probe in water, gently tap the sensor to ensure there are no air bubbles trapped in the prob
 
 ## JSON 
 

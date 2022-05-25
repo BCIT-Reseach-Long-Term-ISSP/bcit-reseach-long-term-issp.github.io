@@ -23,7 +23,33 @@ permalink: /docs/sensors/gravity/ph
 
 A PH sensor.
 
+Name: Gravity: Analog pH Sensor/Meter Kit V2
+
+Link: https://www.dfrobot.com/product-1782.html
+
+Calibration: Calibrated against buffer solutions provided in the kit. 
+
+Type: Analog 
+
+Operational Range: 5 to 60 degrees C
+
+Unit: N/A
+
+Range: 1 to 14 
+
+Life Expenctancy: ~0.5 year 
+
 ---
+## Maintenance
+
+### Calibration
+There is no set schedule for calibrating. The length of time between calibration is determined by how often the probe is used. It is typically done once a month. More if needed. 
+
+
+## Note
+It is not recommended to submerge the probe in the measuring liquid for long periods of time. 
+
+The probe should be rinsed and cleaned with distilled water, then placed back into the protective sleeve along with a solution of 3M KCl for storage. 
 
 ## JSON 
 
