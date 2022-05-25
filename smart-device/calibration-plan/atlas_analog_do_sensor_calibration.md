@@ -28,8 +28,6 @@ To be filled in
 
 4. Dip the probe into water
 
-5. Wave the sensor probe in the air for a few minutes
-
 6. Debug the program and view the result of each measurement
 
 7. Once the values have stabilized, record that measurement
@@ -48,7 +46,7 @@ To be filled in
 
 5. Open the serial monitor
 
-6. Wave the sensor probe in the air for a few minutes
+6. Dip the probe into water
 
 7. Type "CAL" into the serial monitor and press enter.
 
