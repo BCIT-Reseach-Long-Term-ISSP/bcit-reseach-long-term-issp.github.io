@@ -40,9 +40,9 @@ To learn how to authorize users to become admins, please navigate to that sectio
 Once you have been authorized as an admin, you can edit device information and save any of your applied changes.
 
 - [Editing Device Name](#editing-device-name)
-- [Editing Device Colour]
-- [Editing Device Thresholds]
-- [Editing Device Locations]
+- [Editing Device Colour](#editing-device-colour)
+- [Editing Device Thresholds](#editing-device-thresholds)
+- [Editing Device Locations](#editing-device-locations)
 
 To begin,
 
