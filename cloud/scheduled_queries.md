@@ -5,7 +5,7 @@ parent: Cloud
 has_children: false
 permalink: /docs/cloud/ts-scheduled-queries
 has_toc: false
-nav_order: 5
+nav_order: 4
 ---
 
 # Introduction
@@ -69,6 +69,7 @@ During the creation phase of a scheduled query, an error message stating "**Fail
 - [x] Appropriate KMS key is used to encrypt and decrypt data during transit of Amazon Timestream data or when it's at rest.
 - [x] Using Wireshark to trace logs in case packets are blocked during transit. 
 - [ ] Using AWS CLI to create and execute a scheduled query. 
+- [ ] Confirm settings regarding Network and Security Groups are correct in AWS VPC (Requires higher-level IAM permissions to access/modification)
 
 # Benefits
 
