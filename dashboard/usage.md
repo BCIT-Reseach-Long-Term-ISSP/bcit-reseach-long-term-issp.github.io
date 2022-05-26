@@ -17,4 +17,6 @@ Here you will be greeted by the map page, and instructions on navigating this pa
 
 Instructions for navigating the device information page can be found [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/info)
 
+Instructions on how to modify device thresholds and locations can be found [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/management)
+
 {: .fs-6 .fw-300 }
