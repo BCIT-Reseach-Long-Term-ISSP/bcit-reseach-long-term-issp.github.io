@@ -5,7 +5,7 @@ parent: Cloud
 has_children: false
 permalink: /docs/cloud/ecs
 has_toc: false
-nav_order: 10
+nav_order: 12
 ---
 
 # Introduction

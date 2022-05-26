@@ -5,7 +5,7 @@ has_children: false
 permalink: /docs/cloud/kinesis
 parent: Cloud
 has_toc: false
-nav_order: 2
+nav_order: 3
 ---
 
 # Serving Data from Cloud through API gateway
