@@ -14,7 +14,11 @@ A walkthrough of the DFRobot Turbidity Sensor calibration procedure
 
 ## Materials
 
-To be filled in
+Arduino Board
+Laptop 
+Wires
+
+Distilled water or tap water
 
 ## Procedure Bare Metal Arduino Zero
 

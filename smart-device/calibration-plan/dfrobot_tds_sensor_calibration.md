@@ -14,7 +14,11 @@ A walkthrough of the DFRobot TDS Sensor calibration procedure
 
 ## Materials
 
-To be filled in
+Arduino Board
+Laptop 
+Wires
+
+Solution of known TDS value or electrical conductivity value 
 
 ## Procedure Bare Metal Arduino Zero
 
