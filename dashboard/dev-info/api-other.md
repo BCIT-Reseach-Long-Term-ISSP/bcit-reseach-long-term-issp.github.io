@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: Dashboard API  
+title: Other APIs  
 has_children: false  
 permalink: /docs/dashboard/api-other
 parent: Dashboard  
