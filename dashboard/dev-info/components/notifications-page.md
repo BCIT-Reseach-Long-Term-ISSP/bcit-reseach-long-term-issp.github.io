@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: Notifications Page Components
+title: Device Management Page Components
 parent: React  
 grand_parent: Dashboard
 has_toc: false
