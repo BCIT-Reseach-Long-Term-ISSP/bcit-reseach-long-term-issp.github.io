@@ -33,7 +33,8 @@ By running a Redis instance on an AWS ECS instance:
 - Having a server on the EC2 node will allow us to create an API for the dashboard hosted on the node which will simplify read requests and publishing for future teams
 - Configuring a Redis instance ourselves VS running AWS Elasticache is more cost efficient
     
-    ![ElastiCache cost](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/cloud/cloud/assets/cache_figure_1.png?raw=true)
+    ![ElastiCache cost](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cache_figure_1.png)
+    
     
     vs for an EC2 instance with 4 vCPUs, 16 GB of memory and 30 GB of storage:
     
