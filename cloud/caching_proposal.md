@@ -34,17 +34,13 @@ By running a Redis instance on an AWS ECS instance:
 - Configuring a Redis instance ourselves VS running AWS Elasticache is more cost efficient
     
     ![ElastiCache cost](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cache_figure_1.png)
-    
-    
-    vs for an EC2 instance with 4 vCPUs, 16 GB of memory and 30 GB of storage:
-    
-    ![Untitled](Redis%20Proposal%20bbf19ce7dfd148e3b6f50cb147e5a6ea/Untitled%201.png)
-    
-    ![Untitled](Redis%20Proposal%20bbf19ce7dfd148e3b6f50cb147e5a6ea/Untitled%202.png)
+       
+    vs for 10 ECS instances (we would only need one to start)    
+    ![ECS cost](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cache_figure_2.png)
     
 - We can configure a Kubernetes cluster to containerize the application allowing for future load balancing.
 
-![A diagram showing the proposed architecture except the ElastiCache instance will be replaced with an ECS instance a Docker image within a Kubernetes container. ](Redis%20Proposal%20bbf19ce7dfd148e3b6f50cb147e5a6ea/Untitled%203.png)
+![A diagram showing the proposed architecture except the ElastiCache instance will be replaced with an ECS instance a Docker image within a Kubernetes container. ](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cache_figure_3.png)
 
 A diagram showing the proposed architecture except the ElastiCache instance will be replaced with an ECS instance a Docker image within a Kubernetes container. 
 
