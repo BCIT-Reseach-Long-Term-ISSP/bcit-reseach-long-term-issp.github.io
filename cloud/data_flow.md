@@ -5,7 +5,7 @@ has_children: false
 permalink: /docs/cloud/dataflow
 parent: Cloud
 has_toc: false
-nav_order: 9
+nav_order: 2
 ---
 # Overview
 Because MQTT decouples the publisher and from the subscriber, client connections are always handled by a broker. As earlier mentioned AWS IoT Core can be thought of as the broker of the IoT network and as such all MQTT communication goes through it. 

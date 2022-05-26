@@ -5,7 +5,7 @@ parent: Cloud
 has_children: false
 permalink: /docs/cloud/timestream
 has_toc: false
-nav_order: 3
+nav_order: 4
 ---
 
 # Choosing The Appropriate Database

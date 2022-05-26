@@ -5,7 +5,7 @@ parent: Cloud
 has_children: false
 permalink: /docs/cloud/ts-scheduled-queries
 has_toc: false
-nav_order: 4
+nav_order: 5
 ---
 
 # Introduction
