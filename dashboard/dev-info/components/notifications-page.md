@@ -24,8 +24,14 @@ permalink: /docs/dashboard/react/device-management-page
 
 Device Management page contains components that helps the user to edit device name, thresholds for entities measured by buoys, buoy name, and buoy location.
 
-<!-- **Props used:**
-No props are being currently used as the component isn't fully functional yet. -->
+**Props used:**
+- *latitude*: The latitude of the selected device.
+- *longitude*:The longitude of the selected device. 
+- *name*: The name of the buoy selected.
+- *colour*: The selected colour for the buoy selected.
+- *threshold*: The threshold for the selected entity of the buoy.
+- *value*: The threshold value.
+- *updateDevice*: Saves the changes made for the selected device.
 
 **Functions implemented:**
 - *deviceManageEditSection*: Displays the available buoys that are transmitting data.
