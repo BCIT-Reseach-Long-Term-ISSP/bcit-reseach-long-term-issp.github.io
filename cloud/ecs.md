@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CI/CD Using ECR, ECS, and GitHub
+title: Proposal - CI/CD Pipeline Using ECR, ECS, and GitHub
 parent: Cloud
 has_children: false
 permalink: /docs/cloud/ecs
