@@ -1,6 +1,6 @@
 ---  
 layout: default  
-title: Dashboard API  
+title: Other APIs  
 has_children: false  
 permalink: /docs/dashboard/api-other
 parent: Dashboard  
@@ -24,7 +24,7 @@ Other public APIs used in the dashboard.
 
 An API which returns the current weather information used on the dashboard. More information can be found [here](https://www.weatherapi.com/).
 
-## Limitations
+**Limitations**
 
 - The API can only be accessed through a key, which one may obtain by signing up.
 - The dashboard is currently using a free plan, which allows for up to 1,000,000 calls per month for real-time weather data.
@@ -38,7 +38,7 @@ An API which returns the current weather information used on the dashboard. More
 
 The official API for the Integrated Water Level System by the government of Canada, used to obtain tide data for the dashboard. More information can be found [here](https://tides.gc.ca/en/stations/07607) and [here](https://api-iwls.dfo-mpo.gc.ca/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/stations/getStation).
 
-## Limitations
+**Limitations**
 
 - The location currently being used is the neighbourhood of Steveston, which is the closest tide station to YVR. The id for Steveton's tide station is 5cebf1e13d0f4a073c4bbf8c.
 
