@@ -64,3 +64,5 @@ AccountSection is a component which handles logging in and out on the website. I
 
 **Notes:**
 - This component will make a pop-up for logging in via Google. This component doesn't need to set the current user because the authorization object state change handles this on its own in the AccountDetails component.
+
+{: .fs-6 .fw-300 }

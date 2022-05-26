@@ -46,4 +46,6 @@ We can also look at this information in table format.
 
 Finally, we can export and download this data as well by clicking on "Download Data"
 
+To move on to the next section, which is the device management page, click [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/management)
+
 {: .fs-6 .fw-300 }
