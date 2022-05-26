@@ -78,10 +78,61 @@ EditThresholdValue is a component that gets used in deviceManagePanel. This comp
 - *metric*: The metric of the selected entity.
 - *type*: The kind of entity selected.
 
-# SaveChangesButton 
+## SaveChangesButton 
 SaveChangesButton is a component that gets used in deviceManagePanel. This component helps in saving all the changes made by the user in the deviceManagePanel.
 
 **Props used:**
 - *updateDevice*: Updates the changes made to the selected device.
+
+## DeviceEditorTab
+DeviceEditorTab is a component that gets used in device management. This component helps in displaying all the different things that the user can edit for a device such as threshold, location colour etc.
+
+**Props used:**
+- *allSensorIds*: The ids assigned to all the sensors.
+- *setSelectedDevices*: Sets the selected devices.
+- *selectedDevices*: The selected devices.
+- *deviceList*: The list of devices that were selected.
+- *db*: The database object.
+
+## DeviceSelection
+DeviceSelection is a component that gets used in device management. This component helps the user in selecting the device by selecting the buoy id.
+
+**Props used:**
+- *allSensorIds*: The ids assigned to all the sensors.
+
+# Notifications
+
+## NotificationsNavbar
+NotificationsNavbar is a component that gets used in device management. This component helps in
+displaying the different notification elements.
+
+**Props used:**
+- *currentTab*: The currently selected tab of the notifications.
+
+## NotificationsNavbarElement
+NotificationsNavbarElement is a component that gets used in device management.
+
+**Props used:**
+- *updateTab*: Updates the notification tab on click.
+- *elementName*: The name of the notification element. 
+
+## NotificationsNavbarMobile
+NotificationsNavbarMobile is a component that gets used in device management.
+
+**Props used:**
+- *currentTab*: The currently selected tab of the notifications page.
+
+## NotificationsPageContent
+NotificationsPageContent is a component that gets used in device management. This component helps in displaying the notification page.
+
+**Props used:**
+- *content*: The content that gets dispayed on the notification page.
+
+## NotificationsSensorDetails
+NotificationsSensorDetails is a component that gets used in device management. This component helps in displaying the notification details of all the sensors.
+
+**Props used:**
+No props used
+
 
 {: .fs-6 .fw-300 }
