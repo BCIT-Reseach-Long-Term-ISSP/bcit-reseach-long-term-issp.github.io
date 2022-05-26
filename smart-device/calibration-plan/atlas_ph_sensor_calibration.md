@@ -14,7 +14,12 @@ A walkthrough of the Atlas EZO pH Sensor calibration procedure
 
 ## Materials
 
-To be filled in
+Arduino Board
+Laptop 
+Wires
+
+Atlas Science pH Calibration Solutions OR 4pH, 7pH, and 10pH solution 
+
 
 ## Proedure Bare Metal Arduino Zero
 

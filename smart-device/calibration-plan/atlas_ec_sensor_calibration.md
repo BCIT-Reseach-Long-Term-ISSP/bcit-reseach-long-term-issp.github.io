@@ -14,7 +14,11 @@ A walkthrough of the Atlas EZO Electrical Conductivity Sensor calibration proced
 
 ## Materials
 
-To be filled in
+Arduino Board
+Laptop 
+Wires
+
+Atlas Science Electrical Conductivity Calibration Solutions
 
 ## Procedure Bare Metal Arduino Zero
 
