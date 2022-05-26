@@ -58,6 +58,18 @@ Before creating a scheduled query, ensure that a destination table has been set 
 
 10. Ensure query settings are correct and click **Create** to create a new scheduled query.
 
+# Errors
+
+During the creation phase of a scheduled query, an error message stating "**Failure** - Network Failure" appears on the final step after clicking **Create**. Below is a checklist of some solutions that can be tried to remedy the problem, but to no avail. Further support from Rackspace may be required due to the current lack of resources that developers can refer to. 
+
+- [x] IAM role for *EMA-timestream-scheduled-query-role* has been remade and checked to ensure appropriate policies have been attached (Full access for Timestream, SNS, and S3). 
+- [x] SNS topic pub/sub is working correctly using an EMAIL protocol.
+- [x] S3 bucket has public access. Other properties should be the default settings. 
+- [x] Using different browsers and incognito mode to create the scheduled query. 
+- [x] Appropriate KMS key is used to encrypt and decrypt data during transit of Amazon Timestream data or when it's at rest.
+- [x] Using Wireshark to trace logs in case packets are blocked during transit. 
+- [ ] Using AWS CLI to create and execute a scheduled query. 
+- [ ] Confirm settings regarding Network and Security Groups are correct in AWS VPC (Requires higher-level IAM permissions to access/modification)
 
 # Benefits
 
@@ -74,6 +86,8 @@ As mentioned in the **Benefits** section, destination tables that are populated 
 # Recommendations
 
 On the dashboard, a possible recommendation for a feature implementation would be to allow users to refresh the map and query the destination table for the latest information on all or a selection of sensors. Maybe tag the map with a *Last Updated* timestamp?
+
+Another possible recommendation is to color code pins on the map itself for any detected skewed data, in addition to the notification system set up on the dashboard. 
 
 # References
 

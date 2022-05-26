@@ -14,21 +14,27 @@ A walkthrough of the Atlas Analog Dissolved Oxygen Sensor calibration procedure
 
 ## Materials
 
-To be filled in
+Arduino Board
+Laptop 
+Wires
+
+Atlas Science Electrolye Solution 
+Water 
+
 
 ## Procedure Bare Metal Arduino Zero
 
 1. Grab the Arduino Zero that you're deploying to the field
 
-2. Connect the sensor to the Arduino board
+2. Fill the membrane with the Electrolyte solution 
 
-3. Verify that measurements are being received
+3. Connect the sensor to the Arduino board
+
+4. Verify that measurements are being received
 
     - It is recommended that you create a new task that only takes a measurement for the DO sensor continuously
 
-4. Dip the probe into water
-
-5. Wave the sensor probe in the air for a few minutes
+5. Dip the probe into water
 
 6. Debug the program and view the result of each measurement
 
@@ -40,16 +46,18 @@ To be filled in
 
 1. Grab the Arduino Uno that you're deploying
 
-2. Follow the process to download and run the sample code: https://www.atlas-scientific.com/files/gravity-DO-ardunio-code.pdf
+2. Fill the membrane with the Electrolyte solution.
 
-3. Connect the DO sensor to the board
+3. Follow the process to download and run the sample code: https://www.atlas-scientific.com/files/gravity-DO-ardunio-code.pdf
 
-4. Flash the sample code to the Arduino Uno
+4. Connect the DO sensor to the board
 
-5. Open the serial monitor
+5. Flash the sample code to the Arduino Uno
 
-6. Wave the sensor probe in the air for a few minutes
+6. Open the serial monitor
 
-7. Type "CAL" into the serial monitor and press enter.
+7. Dip the probe into water
 
-8. You should receive a response on the serial monitor once complete.
+8. Type "CAL" into the serial monitor and press enter.
+
+9. You should receive a response on the serial monitor once complete.
