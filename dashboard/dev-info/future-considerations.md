@@ -12,6 +12,8 @@ has_toc: true
 
 This page contains recommendations for potential future features of and adjustments to the dashboard, as well as some warnings for issues that may come up in the future.
 
+Note that these are fully unordered; they aren't listed in order of priority or anything.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -33,6 +35,24 @@ Currently, as of the end of May, the Mapbox API key (as defined in src/extras/co
 This key is on a free plan, which allows 50,000 map loads per month. This is not a dire issue, but it could become an issue in the event that the number of users becomes much higher, or if a problem ever occurs that results in the public token being revoked.
 
 Therefore, it would be beneficial, though not exactly dire, to have a permanent Mapbox account associated with the project.
+
+The Mapbox website can be found [here](https://www.mapbox.com/).
+
+## WeatherAPI key
+
+Currently, as of the end of May, the WeatherAPI key (as defined in src/components/device/widgets/weatherWidget.jsx) which is required in order to grab the current weather in YVR is Denise Chew's.
+
+Much like the Mapbox key, this key is on a free plan. While it allows 1 million calls per month, it would be beneficial to have a permanent WeatherAPI account associated with the project, in case of any potential unforeseen circumstances.
+
+The WeatherAPI website can be found [here](https://www.weatherapi.com/).
+
+## General speed improvements
+
+Some queries can be somewhat slow, which means that some pages can take a good bit to load. The priority thus far has just been to focus on implementing the features, with speed as a less important factor, so there's a good chance that there's a fair number of ways that the site can be sped up.
+
+In the future, it would be great if it's possible to pinpoint some of these issues (and possible ways to speed things up).
+
+One way that was planned for speed up was usage of AWS's scheduled queries. These can be used to create aggregates and other such preprocessed data periodically. The cloud team was able to implement it on their end, but the dashboard team was not able to find time to implement it on our end. More information on these scheduled queries can be found [here](/docs/cloud/ts-scheduled-queries).
 
 ## Boolean thresholds
 
