@@ -12,4 +12,4 @@ The GitHub Organization that contains all of the code repositories used for this
 
 Name: BCIT-Reseach-Long-Term-ISSP
 
-Link: https://github.com/BCIT-Reseach-Long-Term-ISSP
+Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP">https://github.com/BCIT-Reseach-Long-Term-ISSP</a>
