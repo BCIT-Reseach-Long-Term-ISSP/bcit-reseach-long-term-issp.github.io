@@ -3,7 +3,7 @@ layout: default
 title: device-firmware Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/device-firmware-repo/
-nav_order: 2
+nav_order: 1
 ---
 
 # device-firmware Repository

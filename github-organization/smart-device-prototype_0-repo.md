@@ -3,7 +3,7 @@ layout: default
 title: smart-device-prototype_0 Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/smart-device-prototype_0-repo/
-nav_order: 8
+nav_order: 5
 ---
 
 # smart-device-prototype_0 Repository

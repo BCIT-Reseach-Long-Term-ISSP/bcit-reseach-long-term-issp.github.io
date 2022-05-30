@@ -3,7 +3,7 @@ layout: default
 title: smart-device-sensor-docs Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/smart-device-sensor-docs-repo/
-nav_order: 1
+nav_order: 11
 ---
 
 # smart-device-sensor-docs Repository

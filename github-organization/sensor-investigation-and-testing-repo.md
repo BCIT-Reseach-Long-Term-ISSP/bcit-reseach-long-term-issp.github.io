@@ -3,7 +3,7 @@ layout: default
 title: sensor-investigation-and-testing Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/sensor-investigation-and-testing-repo/
-nav_order: 7
+nav_order: 4
 ---
 
 # sensor-investigation-and-testing Repository

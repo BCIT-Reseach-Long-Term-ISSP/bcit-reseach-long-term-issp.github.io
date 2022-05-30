@@ -3,7 +3,7 @@ layout: default
 title: cloud Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/cloud-repo/
-nav_order: 1
+nav_order: 7
 ---
 
 # cloud Repository

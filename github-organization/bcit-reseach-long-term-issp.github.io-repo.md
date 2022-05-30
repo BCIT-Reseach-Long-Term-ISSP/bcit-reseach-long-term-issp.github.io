@@ -3,7 +3,7 @@ layout: default
 title: bcit-reseach-long-term-issp.github.io Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/bcit-reseach-long-term-issp.github.io-repo/
-nav_order: 1
+nav_order: 10
 ---
 
 # bcit-reseach-long-term-issp.github.io Repository

@@ -3,7 +3,7 @@ layout: default
 title: dashboard-workspace Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/dashboard-workspace-repo/
-nav_order: 1
+nav_order: 9
 ---
 
 # dashboard-workspace Repository

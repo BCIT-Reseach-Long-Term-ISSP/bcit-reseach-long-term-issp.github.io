@@ -3,7 +3,7 @@ layout: default
 title: FreeRTOS-Cellular-Interface Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/freertos-cellular-interface-repo/
-nav_order: 1
+nav_order: 2
 ---
 
 # FreeRTOS-Cellular-Interface Repository

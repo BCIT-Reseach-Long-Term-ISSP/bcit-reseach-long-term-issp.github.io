@@ -3,7 +3,7 @@ layout: default
 title: arduino-lmic Repo
 parent: GitHub Organization
 permalink: /docs/github-organization/arduino-lmic-repo/
-nav_order: 1
+nav_order: 3
 ---
 
 # arduino-lmic Repository
