@@ -11,3 +11,5 @@ nav_order: 1
 Name: cloud2022
 
 Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud2022">https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud2022</a>
+
+This repository contains timestream query samples for the AWS cloud.
