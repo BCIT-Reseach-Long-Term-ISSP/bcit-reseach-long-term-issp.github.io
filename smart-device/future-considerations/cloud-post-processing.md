@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cloud Post-Processing
-permalink: /docs/smart-device/future-considerations/cloud-post-processing
+permalink: /docs/smart-device/future-considerations/cloud-post-processing/
 parent: Future Considerations
 grand_parent: Smart Device
 ---
