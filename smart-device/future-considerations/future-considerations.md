@@ -7,7 +7,7 @@ parent: Smart Device
 nav_order: 5
 ---
 
-# Smart-Device Team
+# Smart-Device Future Considerations
 
-Documentation for the Smart-Device team.
+Future Considerations and Improvements for the Smart-Device.
 {: .fs-6 .fw-300 }
