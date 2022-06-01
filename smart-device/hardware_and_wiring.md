@@ -1,19 +1,29 @@
 ---
 layout: default
-title: Smart Device Wiring
-parent: Sensor Integration
-grand_parent: Smart Device
+title: Smart Device Hardware + Wiring
+parent: Smart Device
 ---
 
-# Smart Device Wiring
+# Smart Device Hardware + Wiring
+{: .no_toc }
 
-This section provides an overview of how to wire a new sensor to the smart device and wiring considerations that should be taken into account.
+This section provides an overview of what hardware is required for the smart device and how the sensors are wired to it.
 {: .fs-6 .fw-300 }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## Arduino Board
 
 The buoy device uses an Arduino Zero board as the brain of the device.
 This Arduino Zero performs all processing and sensor mesaurements.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_wiring_image.png?raw=true)
 
 We will not go into the specifics of the Arduino Zero in this documentation as there are sources online.
 However, there are some important points that should be noted.
@@ -37,6 +47,30 @@ This shield uses some of the pins on the Arduino Zero to function.
 <p style="color:red;">These pins cannot be used for any other purpose and attempting to do so will likely fry the board.</p>
 
 With regards to wiring the sensors, the particular pins that care should be taken to avoid are the Digital 0, 10, and 11 pins.
+
+## PERF Shield
+
+To orgnaize the wiring and create the appropriate sensor circuits, an Arduino PERF shield is used.
+
+An image of the PERF shield circuitry can be seen below.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/perf_shield.jpg?raw=true)
+
+As identified on the image above, the PERF Shield has hardware for various purposes.
+
+The board uses four transistors to turn off and on the more power hungry sensors. By using one of the digital pins to supply voltage to the transistor, power from the constant power supply pins can be controlled.
+
+Additionally, a group of resistors act as a voltage divider, downscaling the return voltage of the turbidity sensor from the max 4.5 volts to a max 3.0 volts. This is essential as the turbidity sensor requires 5.0 volts to operate and the return volatge of 4.5 volts is abovce the maximum 3.3 volts that the Arduino Zero can accept without frying the board.
+
+### PERF Shield Wiring
+
+The PERF Sheild is where all the sensors are wired to the device.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/perf_shield_wiring.jpg?raw=true)
+
+The image above shows the pins and important locations on the PERF shield where the sensors are wired.
+
+Some sensors can only be wired to the specific pins, while other sensors can be moved.
 
 ## Taking Sensor Readings
 
