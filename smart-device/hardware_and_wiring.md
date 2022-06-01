@@ -58,9 +58,19 @@ An image of the PERF shield circuitry can be seen below.
 
 As identified on the image above, the PERF Shield has hardware for various purposes.
 
-The board uses four transistors to turn off and on the more power hungry sensors. By using one of the digital pins to supply volatge to the transistor, voltage from the contant pwoer pins can be controlled.
+The board uses four transistors to turn off and on the more power hungry sensors. By using one of the digital pins to supply voltage to the transistor, power from the constant power supply pins can be controlled.
 
 Additionally, a group of resistors act as a voltage divider, downscaling the return voltage of the turbidity sensor from the max 4.5 volts to a max 3.0 volts. This is essential as the turbidity sensor requires 5.0 volts to operate and the return volatge of 4.5 volts is abovce the maximum 3.3 volts that the Arduino Zero can accept without frying the board.
+
+### PERF Shield Wiring
+
+The PERF Sheild is where all the sensors are wired to the device.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/perf_shield_wiring.jpg?raw=true)
+
+The image above shows the pins and important locations on the PERF shield where the sensors are wired.
+
+Some sensors can only be wired to the specific pins, while other sensors can be moved.
 
 ## Taking Sensor Readings
 
