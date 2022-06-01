@@ -6,9 +6,18 @@ grand_parent: Smart Device
 ---
 
 # Smart Device Wiring
+{: .no_toc }
 
 This section provides an overview of how to wire a new sensor to the smart device and wiring considerations that should be taken into account.
 {: .fs-6 .fw-300 }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## Arduino Board
 
@@ -37,6 +46,10 @@ This shield uses some of the pins on the Arduino Zero to function.
 <p style="color:red;">These pins cannot be used for any other purpose and attempting to do so will likely fry the board.</p>
 
 With regards to wiring the sensors, the particular pins that care should be taken to avoid are the Digital 0, 10, and 11 pins.
+
+## PERF Shield
+
+To orgnaize the wiring and create the appropriate sensor circuits, an Arduino PERF shield is used.
 
 ## Taking Sensor Readings
 
