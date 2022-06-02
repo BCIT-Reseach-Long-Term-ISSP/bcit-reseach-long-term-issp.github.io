@@ -66,7 +66,7 @@ Additionally, a group of resistors act as a voltage divider, downscaling the ret
 
 The PERF Sheild is where all the sensors are wired to the device.
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/perf_shield_wiring.jpg?raw=true)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/perf_shield_wiring_v2.jpg?raw=true)
 
 The image above shows the pins and important locations on the PERF shield where the sensors are wired.
 
