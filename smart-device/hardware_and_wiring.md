@@ -120,6 +120,22 @@ Most OneWire sensor connector cables have 3 wires, the power wire (red), the gro
 
 The wire shown above is a connector cable between an Arduino Board and a Gravity Terminal Sensor Adapter V2.0 Board, such as needed by the OneWire Gravity: Waterproof DS18B20 Sensor.
 
+### UART Sensor
+
+UART is a hardware communication protocol that uses asynchronous serial communication with configurable speed.
+
+Devices using this protocol communciate using two Arduino digital pins, an Rx and a Tx pin for recievin gand tarnsmittin gmessages.
+
+The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_digital_ports_highlight.jpg?raw=true)
+
+Most Atlas UART sensors use an Electrically Isolated EZO™ Carrier Board. This board has 5 pins, the VCC pin for power, the OFF pin, the GND pin connects to ground, the Rx pin connect to the Tx port of the Arduino board, and the Tx pin connect to the Rx port of the Arduino board.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/electrically_isolated_ezo_carrier_board.jpg?raw=true)
+
+This carrier board is where the sensor specific EZO board would be placed and the sensor probe would be connected.
+
 ### Wiring Multiple Sensors
 
 To measure multiple sensors, you will need to create a simple circuit, using a breadbaord during development or a perf board for the actual device.
