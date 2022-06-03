@@ -72,19 +72,29 @@ The image above shows the pins and important locations on the PERF shield where 
 
 Some sensors can only be wired to the specific pins, while other sensors can be moved.
 
-## Taking Sensor Readings
+## General Sensor Wiring
+
+There are three main types of sensors being used, analog, OneWire, and UART sensors.
+
+### Analog Sensor
 
 The Arduino Zero has 6 built-in analog ports that can be used to take analog sensor measurements directly.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/analog_ports_highlight.jpg?raw=true)
 
-Most sensors have 3 wires, the power wire (red), the ground wire (black), and the reading wire (other colour), that need to be connected to take these measurements.
+The reading wire of the Analog sensors would plug into one of these ports.
 
-### Single Sensor Reading
+Most analog sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the reading wire (other colour), that needs to be connected to the board to take analog measurements.
 
-To take a single sensor's measuremnt, you can directly wire the sensor to the pins on the board.
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/analog_sensor_connector_cable.jpg?raw=true)
 
-For example, below is a diagram displaying a single sensor, with reading being taken on Analog Pin 0.
+The wire shown above is a connector cable between an Arduino Board and a Gravity Analog Peripheral Device Board.
+
+#### Example Sensor Wiring
+
+To take a single analog sensor's measuremnt, you can directly wire the sensor to the pins on the board.
+
+For example, below is a diagram displaying a single sensor with readings being taken on Analog Pin 0.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/single_sensor_reading_diagram.jpg?raw=true)
 
@@ -92,7 +102,7 @@ For example, below is a diagram displaying a single sensor, with reading being t
 
 As you can see the sensor is powered by the 3.3 Volt pin and connected to the ground pin. The 3.3V pin is used as the 5V pin would fry an Arduino Zero.
 
-### Multiple Sensor Reading
+### Wiring Multiple Sensors
 
 To measure multiple sensors, you will need to create a simple circuit, using a breadbaord during development or a perf board for the actual device.
 
