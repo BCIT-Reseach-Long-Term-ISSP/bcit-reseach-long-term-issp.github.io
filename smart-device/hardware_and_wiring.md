@@ -18,6 +18,17 @@ This section provides an overview of what hardware is required for the smart dev
 
 ---
 
+## Hardware List
+
+- 1x Arduino Zero
+- 1x Arduino Micro Jumper
+- 1x NB-IoT Shield
+- 1x PERF Shield
+- 3x 10 kΩ Resistor
+- 4x 2N7000-G Transistors
+- 11x Arduino Male Pin Header
+- Wires
+
 ## Arduino Board
 
 The buoy device uses an Arduino Zero board as the brain of the device.
