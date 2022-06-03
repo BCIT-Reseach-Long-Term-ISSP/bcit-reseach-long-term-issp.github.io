@@ -43,6 +43,24 @@ However, there are some important points that should be noted.
 
 - The Arduino Zero does not have persistant memory, unlike the Arduino Uno.
 
+The Arduino Zero includes a debugger chip, however this chip, even when off, draws too much power. To minimize the power draw for the Arduino Zero a jumper is soldered to the Arduino Zero to completely cut power to the debugger chip.
+
+To enable the debugger chip, the 0Ω resistor highlighted on the image below must be shorted. The jumper allows this circuit to be cut, which would completely cut power to the debugger chip.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_debugger_resistor_highlight.jpg?raw=true)
+
+Once the jumper reciever is successfully soldered on, the board should look like below:
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_jumper_soldered_highlight.jpg?raw=true)
+
+With this receiver now attached, the Arduino Micro Jumper, shown below, can be used to enable the debugger chip.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_micro_jumper.jpg?raw=true)
+
+<div >
+<p><span style="color:red;">WARNING:</span> The debugger chip must be enabled whgen cflashing teh Arduino Zero. Once the Arduino Zero ahas been flashed, the jumper can be remvoed and the debugger chip disabled to save power.</p>
+</div>
+
 ## NB-IoT Shield
 
 The module that allows the buoy device to send signals and communicate with the cloud is the NB-IoT shield.
