@@ -80,13 +80,13 @@ There are three main types of sensors being used, analog, OneWire, and UART sens
 
 The Arduino Zero has 6 built-in analog ports that can be used to take analog sensor measurements directly.
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/analog_ports_highlight.jpg?raw=true)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_analog_ports_highlight.jpg?raw=true)
 
 The reading wire of the Analog sensors would plug into one of these ports.
 
 Most analog sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the reading wire (other colour), that needs to be connected to the board to take analog measurements.
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/analog_sensor_connector_cable.jpg?raw=true)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/three_wire_interface_cable.jpg?raw=true)
 
 The wire shown above is a connector cable between an Arduino Board and a Gravity Analog Peripheral Device Board.
 
@@ -101,6 +101,24 @@ For example, below is a diagram displaying a single sensor with readings being t
 <i>Note: the Arduino board dispalyed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
 
 As you can see the sensor is powered by the 3.3 Volt pin and connected to the ground pin. The 3.3V pin is used as the 5V pin would fry an Arduino Zero.
+
+### OneWire Sensor
+
+The one wire protocol uses a single wire interface for data communication between devices.
+
+Devices using this protocol communciate over the Arduino digital pins.
+
+The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_digital_ports_highlight.jpg?raw=true)
+
+The data wire of the OneWire sensor would plug into one of these digital pins setup for OneWire communication.
+
+Most OneWire sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the data wire (other colour), that needs to be connected to the board for OneWire communciation.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/three_wire_interface_cable.jpg?raw=true)
+
+The wire shown above is a connector cable between an Arduino Board and a Gravity Terminal Sensor Adapter V2.0 Board, such as needed by the OneWire Gravity: Waterproof DS18B20 Sensor.
 
 ### Wiring Multiple Sensors
 
