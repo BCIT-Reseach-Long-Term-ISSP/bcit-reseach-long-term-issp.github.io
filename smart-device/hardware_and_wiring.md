@@ -63,7 +63,7 @@ With this receiver now attached, the Arduino Micro Jumper, shown below, can be u
 
 ## NB-IoT Shield
 
-The module that allows the buoy device to send signals and communicate with the cloud is the NB-IoT shield.
+The module that allows the buoy device to send data and communicate with the cloud is the NB-IoT shield.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/NB-IoT_shield.jpg?raw=true)
 
@@ -75,7 +75,27 @@ This shield uses some of the pins on the Arduino Zero to function.
 
 <p style="color:red;">These pins cannot be used for any other purpose and attempting to do so will likely fry the board.</p>
 
-With regards to wiring the sensors, the particular pins that care should be taken to avoid are the Digital 0, 10, and 11 pins.
+With regards to wiring the sensors, the particular pins that care should be taken to avoid are the Digital pins 10 and 11.
+
+### Power Saving Mode
+
+The narrowband network has a power saving mode that NB-IoT shield can use to draw less pwoer. However, this pwoer saving mode has specific periods for sleep and wake time.
+
+As such, a GPIO (General Purpose Input / Output) pin is used to wake up the NB-IoT shield for transmitting.
+
+However, there is no way to access the power key pin, that will wake up teh NB-IoT shield for tarnsmissions, normally.
+
+To access this pin, a wire must be attached (soldered) to the bottom of the NB-IoT shield.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/NB-IoT_shield_psm_mode_wire_connection_highlight.jpg?raw=true)
+
+The middle pin of the middle three pin set, highlighted above, is linked to the NB-IoT module power key pin.
+
+The other end of the wire should be plugged into digital pin 12.
+
+Digital pin 12 was coded to power on the NB-IoT module. However, this pin is not special, any pin could be set to power on the NB-IoT module.
+
+### Narrow Band Sim Card for Rogers
 
 ## PERF Shield
 
