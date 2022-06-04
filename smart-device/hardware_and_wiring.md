@@ -95,7 +95,15 @@ The other end of the wire should be plugged into digital pin 12.
 
 Digital pin 12 was coded to power on the NB-IoT module. However, this pin is not special, any pin could be set to power on the NB-IoT module.
 
-### Narrow Band Sim Card for Rogers
+### Narrow Band Sim Card for Rogers Network
+
+The NB-IoT module has been setup to use a Rogers Narrow Band Sim Card.
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/narrow_band_rogers_sim_card.jpg?raw=true)
+
+The sim cards must follow the following format, 89302820… . The 820 part of the number is the important part.
+
+If the sim card has the following format, 89302720… . Then the sim card will connect to the LTE M1 Network for Rogers. This network does not have PSM (Power saving mode) or E-I-DRX (Extended Idle Discontinuous Reception), all of which is needed for power saving on the device.
 
 ## PERF Shield
 
