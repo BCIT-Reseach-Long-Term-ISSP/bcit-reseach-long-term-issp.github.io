@@ -32,7 +32,7 @@ This section provides an overview of what hardware is required for the smart dev
 ## Arduino Board
 
 The buoy device uses an Arduino Zero board as the brain of the device.
-This Arduino Zero performs all processing and sensor mesaurements.
+This Arduino Zero performs all processing and sensor measurements.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_wiring_image.png?raw=true)
 
@@ -41,7 +41,7 @@ However, there are some important points that should be noted.
 
 - <p style="color:red;">The Arduino Zero can only handle voltages of 3.3 volts and lower, any voltage greater than this will fry the board.</p>
 
-- The Arduino Zero does not have persistant memory, unlike the Arduino Uno.
+- The Arduino Zero does not have persistent memory, unlike the Arduino Uno.
 
 The Arduino Zero includes a debugger chip, however this chip, even when off, draws too much power. To minimize the power draw for the Arduino Zero a jumper is soldered to the Arduino Zero to completely cut power to the debugger chip.
 
@@ -49,7 +49,7 @@ To enable the debugger chip, the 0Ω resistor highlighted on the image below mus
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_debugger_resistor_highlight.jpg?raw=true)
 
-Once the jumper reciever is successfully soldered on, the board should look like below:
+Once the jumper receiver is successfully soldered on, the board should look like below:
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_jumper_soldered_highlight.jpg?raw=true)
 
@@ -58,7 +58,7 @@ With this receiver now attached, the Arduino Micro Jumper, shown below, can be u
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_micro_jumper.jpg?raw=true)
 
 <div >
-<p><span style="color:red;">WARNING:</span> The debugger chip must be enabled whgen cflashing teh Arduino Zero. Once the Arduino Zero ahas been flashed, the jumper can be remvoed and the debugger chip disabled to save power.</p>
+<p><span style="color:red;">WARNING:</span> The debugger chip must be enabled when the Arduino Zero is first turned on. Once the Arduino Zero has been flashed and turned on, the jumper can be removed, and the debugger chip disabled to save power.</p>
 </div>
 
 ## NB-IoT Shield
@@ -79,11 +79,11 @@ With regards to wiring the sensors, the particular pins that care should be take
 
 ### Power Saving Mode
 
-The narrowband network has a power saving mode that NB-IoT shield can use to draw less pwoer. However, this pwoer saving mode has specific periods for sleep and wake time.
+The narrowband network has a power saving mode that NB-IoT shield can use to draw less power. However, this power saving mode has specific periods for sleep and wake time.
 
 As such, a GPIO (General Purpose Input / Output) pin is used to wake up the NB-IoT shield for transmitting.
 
-However, there is no way to access the power key pin, that will wake up teh NB-IoT shield for tarnsmissions, normally.
+However, there is no way to access the power key pin, which will wake up the NB-IoT shield for transmissions, normally.
 
 To access this pin, a wire must be attached (soldered) to the bottom of the NB-IoT shield.
 
@@ -107,7 +107,7 @@ If the sim card has the following format, 89302720… . Then the sim card will c
 
 ## PERF Shield
 
-To orgnaize the wiring and create the appropriate sensor circuits, an Arduino PERF shield is used.
+To organize the wiring and create the appropriate sensor circuits, an Arduino PERF shield is used.
 
 An image of the PERF shield circuitry can be seen below.
 
@@ -115,9 +115,9 @@ An image of the PERF shield circuitry can be seen below.
 
 As identified on the image above, the PERF Shield has hardware for various purposes.
 
-The board uses four transistors to turn off and on the more power hungry sensors. By using one of the digital pins to supply voltage to the transistor, power from the constant power supply pins can be controlled.
+The board uses four transistors to turn off and on the more power-hungry sensors. By using one of the digital pins to supply voltage to the transistor, power from the constant power supply pins can be controlled.
 
-Additionally, a group of resistors act as a voltage divider, downscaling the return voltage of the turbidity sensor from the max 4.5 volts to a max 3.0 volts. This is essential as the turbidity sensor requires 5.0 volts to operate and the return volatge of 4.5 volts is abovce the maximum 3.3 volts that the Arduino Zero can accept without frying the board.
+Additionally, a group of resistors act as a voltage divider, downscaling the return voltage of the turbidity sensor from the max 4.5 volts to a max 3.0 volts. This is essential as the turbidity sensor requires 5.0 volts to operate and the return voltage of 4.5 volts is above the maximum 3.3 volts that the Arduino Zero can accept without frying the board.
 
 ### PERF Shield Wiring
 
@@ -153,13 +153,13 @@ The wire shown above is a connector cable between an Arduino Board and a Gravity
 
 #### Example Sensor Wiring
 
-To take a single analog sensor's measuremnt, you can directly wire the sensor to the pins on the board.
+To take a single analog sensor's measurement, you can directly wire the sensor to the pins on the board.
 
 For example, below is a diagram displaying a single sensor with readings being taken on Analog Pin 0.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/single_sensor_reading_diagram.jpg?raw=true)
 
-<i>Note: the Arduino board dispalyed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
+<i>Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
 
 As you can see the sensor is powered by the 3.3 Volt pin and connected to the ground pin. The 3.3V pin is used as the 5V pin would fry an Arduino Zero.
 
@@ -167,7 +167,7 @@ As you can see the sensor is powered by the 3.3 Volt pin and connected to the gr
 
 The one wire protocol uses a single wire interface for data communication between devices.
 
-Devices using this protocol communciate over the Arduino digital pins.
+Devices using this protocol to communicate over the Arduino digital pins.
 
 The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
 
@@ -175,7 +175,7 @@ The Arduino Zero has 13 built-in digital ports that can be used for the OneWire 
 
 The data wire of the OneWire sensor would plug into one of these digital pins setup for OneWire communication.
 
-Most OneWire sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the data wire (other colour), that needs to be connected to the board for OneWire communciation.
+Most OneWire sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the data wire (other colour), that needs to be connected to the board for OneWire communication.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/three_wire_interface_cable.jpg?raw=true)
 
@@ -185,7 +185,7 @@ The wire shown above is a connector cable between an Arduino Board and a Gravity
 
 UART is a hardware communication protocol that uses asynchronous serial communication with configurable speed.
 
-Devices using this protocol communciate using two Arduino digital pins, an Rx and a Tx pin for recievin gand tarnsmittin gmessages.
+Devices using this protocol communicate using two Arduino digital pins, a Rx and a Tx pin for receiving and transmitting messages.
 
 The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
 
@@ -195,16 +195,16 @@ Most Atlas UART sensors use an Electrically Isolated EZO™ Carrier Board. This 
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/electrically_isolated_ezo_carrier_board.jpg?raw=true)
 
-This carrier board is where the sensor specific EZO board would be placed and the sensor probe would be connected.
+This carrier board is where the sensor specific EZO board would be placed, and where the sensor probe would be connected.
 
 ### Wiring Multiple Sensors
 
-To measure multiple sensors, you will need to create a simple circuit, using a breadbaord during development or a perf board for the actual device.
+To measure multiple sensors, you will need to create a simple circuit, using a breadboard during development or a perf board for the actual device.
 
-For example, below is a diagram displaying two sensors connected to a breadbaord, with reading being taken on Analog Pin 0 and 5.
+For example, below is a diagram displaying two sensors connected to a breadboard, with reading being taken on Analog Pin 0 and 5.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/multiple_sensor_reading_diagram.jpg?raw=true)
 
-<i>Note: the Arduino board dispalyed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
+<i>Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
 
-As you can see power is being supplied to the breadbaord by the 3.3 Volt pin, with the second line grounded. The two sensors then branch off those lines, with their respective reading lines connected to the Arduino analog pins.
+As you can see power is being supplied to the breadboard by the 3.3 Volt pin, with the second line grounded. The two sensors then branch off those lines, with their respective reading lines connected to the Arduino analog pins.
