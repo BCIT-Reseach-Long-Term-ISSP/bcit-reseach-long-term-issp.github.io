@@ -129,6 +129,10 @@ The image above shows the pins and important locations on the PERF shield where 
 
 Some sensors can only be wired to the specific pins, while other sensors can be moved.
 
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/proto_shield_circuit_diagram.jpg?raw=true)
+
+The circuit diagram for the perf shield can be seen above. This diagram can be used to properly wire the current sensors.
+
 ## General Sensor Wiring
 
 There are three main types of sensors being used, analog, OneWire, and UART sensors.
