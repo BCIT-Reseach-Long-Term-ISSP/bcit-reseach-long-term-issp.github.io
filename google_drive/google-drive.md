@@ -16,4 +16,4 @@ Link: <a href="https://drive.google.com/drive/folders/17rk7mtYaoGwYtALVcNgwv_hw7
 
 This google drive is used to store all of the open source project resoruces and is open to the public.
 
-If you are a developer working on the BCIT led project, there is a different Google Drive that contains more resources, including certs, and other more cofidential materials.
+If you are a developer working on the BCIT led project, there is a different Google Drive that contains more resources, including certs, and other more cofidential materials. Please refer to the Contact Us page to request access.
