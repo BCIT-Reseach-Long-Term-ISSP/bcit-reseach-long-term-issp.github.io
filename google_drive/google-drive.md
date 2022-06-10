@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Google Drive
-has_children: true
+has_children: false
 permalink: /docs/google-drive/
 ---
 
@@ -10,9 +10,9 @@ permalink: /docs/google-drive/
 The Google Drive is where many of the datasheets, images, and other non-code resources can be found.
 {: .fs-6 .fw-300 }
 
-Name: EMA YVR Water Monitoring System
+<b>Name:</b> EMA YVR Water Monitoring System
 
-Link: <a href="https://drive.google.com/drive/folders/17rk7mtYaoGwYtALVcNgwv_hw7-y3KGJ-?usp=sharing">https://drive.google.com/drive/folders/17rk7mtYaoGwYtALVcNgwv_hw7-y3KGJ-?usp=sharing</a>
+<b>Link:</b> <a href="https://drive.google.com/drive/folders/17rk7mtYaoGwYtALVcNgwv_hw7-y3KGJ-?usp=sharing">https://drive.google.com/drive/folders/17rk7mtYaoGwYtALVcNgwv_hw7-y3KGJ-?usp=sharing</a>
 
 This google drive is used to store all of the open source project resoruces and is open to the public.
 
