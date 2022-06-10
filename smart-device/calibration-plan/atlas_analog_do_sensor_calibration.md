@@ -16,50 +16,76 @@ A walkthrough of the Atlas Analog Dissolved Oxygen Sensor calibration procedure.
 
 1x Arduino Zero
 1x Laptop
-1x USB to micro-usb cable
+1x USB to micro-USB cable
 3x M-F Jumper Wires
 1x Arduino Micro Jumper
-1x Bottle of Atlas Science Electrolye Solution
+1x Bottle of Atlas Science Electrolyte Solution
 1x Bowl of Tap Water
 
 ## Calibration Procedure
 
 1. Grab the Arduino Zero that's being deployed in the field
 
-2. If the dissolved oxygen sensor has not been serviced in over a month, replace / fill the Electrolyte solution in the sensor membrane
+2. Attach the micro jumper to the debugger chip enable wires
 
-3. Wire the dissolved oxygen sensor to the Arduino Zero board
+3. If the dissolved oxygen sensor has not been serviced in over a month, replace / fill the Electrolyte solution in the sensor membrane
 
-4. Open the Visual Studio Code IDE
+4. Wire the dissolved oxygen sensor to the Arduino Zero board
 
-5. Open the device-firmware project
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/do_sensor_calibration/do_sensor_connection_zero.jpg?raw=true)
 
-6. Set the program to run the test tasks
+5. Connect the laptop to the Arduino Zero using a USB - micro-USB cable.
 
-7. Set the test task to the CALIBRATE_DO_SENSOR task
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/do_sensor_calibration/do_sensor_full_setup_zero.jpg?raw=true)
 
-8. Plug the laptop into the Arduino Zero programming port
+6. Open the Visual Studio Code IDE
 
-9. Attach the micro jumper to the debugger chip enable wires
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/do_sensor_calibration/visual_studio_code_icon.png?raw=true)
 
-10. Run the program in debug mode
+7. Open the device-firmware project
 
-11. Add a debug point to the vtask delay after the sensor measure command
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_open_device-firmware_project_highlight.jpg?raw=true)
 
-12. Verify that measurements are being received
+8. Open the Command Palette
 
-13. If successfully recieiving emasurmenets, contine, else check the sensor wiring
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_open_command_palette.png?raw=true)
 
-14. Dip the probe into water
+9. Open the CMake Cache Editor by entering the command "CMake: Edit CMake Cahce (UI)" into the Command Palett
 
-15. Remove the probe from the water and twirl it around in the air
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_open_cmake_cache_editor.png?raw=true)
 
-16. Twirl the probe for a few minutes and start debigging teh program
+10. Check the EMA_BUILD_TESTS to ON, to set the program to run the test tasks
 
-17. Once the sensor measurments have stabilized, record the milivoltage of the measurement
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_ema_build_tests_field_highlight.jpg?raw=true)
 
-18. Edit the calibration variable to succesfully claibrate the sensor
+11. Enter CALIBRATE_DO_SENSOR into the EMA_TEST field to set the conditional compilation for the ifdef CALIBRATE_DO_SENSOR task
 
-19. Repeat steps 14 - 16
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_ema_test_field_highlight.jpg?raw=true)
 
-20. If successfully calibrated the sensor should show the dissolved oxygen percentage of around 100%
+12. Click the <b>Save</b> button to save the updates to the CMake Cache Editor
+
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/visual_studio_code_cmake_cache_editor_save_button_highlight.jpg?raw=true)
+
+13. Press "F7" to flash the device with the new code
+
+14. Run the program in debug mode
+
+15. Add a debug point to the vtask delay after the sensor measure command
+
+16. Verify that measurements are being received
+
+17. If successfully receiving measurements, continue, else check the sensor wiring
+
+18. Dip the probe into water
+
+19. Remove the probe from the water and twirl it around in the air
+
+20. Twirl the probe for a few minutes and start debugging the program
+
+21. Once the sensor measurements have stabilized, record the millivoltage of the measurement
+
+22. Edit the calibration variable to successfully calibrate the sensor
+
+23. Repeat steps 14 - 16
+
+24. If successfully calibrated the sensor should show the dissolved oxygen percentage of around 100%
