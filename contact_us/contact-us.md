@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact Us
-has_children: true
+has_children: false
 permalink: /docs/contact-us/
 ---
 
@@ -14,14 +14,15 @@ This project was hosted by the BCIT Applied Research Department.
 
 ## Organization
 
-Name: BCIT Centre for Applied Research & Innovation
+<b>Name:</b> BCIT Centre for Applied Research & Innovation
 
-Phone: (604) 434-5734
+<b>Phone:</b> (604) 434-5734
 
-Address: 4355 Mathissi Pl, Burnaby, BC, V5G 4S8
+<b>Address:</b> 4355 Mathissi Pl, Burnaby, BC, V5G 4S8
 
 ---
 
 ## Project Lead
 
-Name: Jonathan Bassan
+<b>Name:</b> Jonathan Bassan
+<b>Email:</b> <a href="jbassan@bcit.ca">jbassan@bcit.ca</a>
