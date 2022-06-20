@@ -25,3 +25,4 @@ This project was hosted by the BCIT Applied Research Department.
 ## Project Lead
 
 <b>Name:</b> Jonathan Bassan
+<b>Email:</b> <a href="jbassan@bcit.ca">jbassan@bcit.ca</a>
