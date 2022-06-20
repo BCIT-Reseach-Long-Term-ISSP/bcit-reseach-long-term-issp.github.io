@@ -8,10 +8,10 @@ nav_order: 8
 
 # dashboard2022 Repository
 
-Name: dashboard2022
+**Name:** dashboard2022
 
-Repo Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard2022">https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard2022</a>
+**Repo Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard2022](https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard2022)
 
-Dahsboard Link: <a href="https://bcitema-f85bf.web.app/">https://bcitema-f85bf.web.app/</a>
+**Dahsboard Link:** [https://bcitema-f85bf.web.app/](https://bcitema-f85bf.web.app/)
 
 This repository contains the React javascript code used to create the Dashboard.

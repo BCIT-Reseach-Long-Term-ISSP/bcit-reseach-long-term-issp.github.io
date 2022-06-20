@@ -12,8 +12,8 @@ A more robust JSON packaging function for the smart-device should be developed t
 
 ## Problem Statement
 
-<p>The current JSON function manually generates the JSON string due to unusual memory issues with the JSON library that was being used. This method is not scalable and limits the sensor measurememt types to numeric data.</p>
+The current JSON function manually generates the JSON string due to unusual memory issues with the JSON library that was being used. This method is not scalable and limits the sensor measurememt types to numeric data.
 
 ## Suggested Solution
 
-<p>No specific solution provided, too many possible solutions exist.</p>
+No specific solution provided, too many possible solutions exist.

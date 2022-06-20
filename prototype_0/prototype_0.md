@@ -27,4 +27,4 @@ The second, Comm Device, is constantly waiting for data to come in from the Sens
 
 ## Resources
 
-Refer to the <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0">smart-device-prototype_0</a> repository for the code.
+Refer to the [smart-device-prototype_0](https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0) repository for the code.

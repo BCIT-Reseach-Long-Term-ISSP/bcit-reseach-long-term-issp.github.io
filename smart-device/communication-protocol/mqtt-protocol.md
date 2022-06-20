@@ -38,5 +38,4 @@ The interactions between the Buoy Device (MQTT client) and the Dashboard (MQTT c
 All MQTT message payloads will be in JSON form.
 The specific structure, key-value pairs, for these payloads can be found in the relevant subsections for the different message types.
 
-
 {: .no_toc }

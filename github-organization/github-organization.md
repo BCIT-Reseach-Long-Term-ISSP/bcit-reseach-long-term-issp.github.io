@@ -10,6 +10,6 @@ permalink: /docs/github-organization/
 The GitHub Organization that contains all of the code repositories used for this project.
 {: .fs-6 .fw-300 }
 
-Name: BCIT-Reseach-Long-Term-ISSP
+**Name:** BCIT-Reseach-Long-Term-ISSP
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP">https://github.com/BCIT-Reseach-Long-Term-ISSP</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP](https://github.com/BCIT-Reseach-Long-Term-ISSP)

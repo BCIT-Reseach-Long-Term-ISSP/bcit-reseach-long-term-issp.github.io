@@ -8,9 +8,9 @@ nav_order: 5
 
 # smart-device-prototype_0 Repository
 
-Name: smart-device-prototype_0
+**Name:** smart-device-prototype_0
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0">https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0](https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-prototype_0)
 
 This repository contains the Arduino code for the initial prorotype designed to provide a simple device to take measurements and send data to the cloud.
 

@@ -13,7 +13,6 @@ Each buoy device will be subscribed to two endpoints, one related to sensors con
 
 ## Sensor Configurations
 
-
 <div class="code-example" markdown="1">
 ```
 config/sensor/

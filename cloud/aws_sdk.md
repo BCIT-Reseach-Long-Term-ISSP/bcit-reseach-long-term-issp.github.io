@@ -7,9 +7,10 @@ permalink: /docs/cloud/aws_sdk
 has_toc: false
 nav_order: 10
 ---
+
 # AWS SDKs & Accessing Timestream
 
-We can use the AWS SDK to access Timestream outside of the console - ie. to serve the data so that the dashboard team is able to get and display data for the dashboard. Specifically, Timestream supports two SDKS: the Write SDK and the Query SDK (see [Using the AWS SDKs](https://docs.aws.amazon.com/timestream/latest/developerguide/getting-started-sdks.html) ). 
+We can use the AWS SDK to access Timestream outside of the console - ie. to serve the data so that the dashboard team is able to get and display data for the dashboard. Specifically, Timestream supports two SDKS: the Write SDK and the Query SDK (see [Using the AWS SDKs](https://docs.aws.amazon.com/timestream/latest/developerguide/getting-started-sdks.html) ).
 
 ### Write SDK
 
@@ -37,6 +38,5 @@ The general steps are listed below, with links to the detailed AWS documentation
     2. [Loading your AWS Credentials](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/loading-node-credentials-shared.html)
 4. Create Package.json as needed (or just install the required packages if using samples)
 5. Write the node.js code, which includes the new instances of the Timestream clients for both Write and Query SDKs, SQL queries to query the specific data you’re looking for, and the code to use the functions provided by the SDKs to retrieve data from the database ([docs](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.html)).
-
 
 {: .fs-6 .fw-300 }

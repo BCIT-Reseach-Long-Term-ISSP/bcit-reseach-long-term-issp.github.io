@@ -8,9 +8,9 @@ nav_order: 4
 
 # sensor-investigation-and-testing Repository
 
-Name: sensor-investigation-and-testing
+**Name:** sensor-investigation-and-testing
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/sensor-investigation-and-testing">https://github.com/BCIT-Reseach-Long-Term-ISSP/sensor-investigation-and-testing</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/sensor-investigation-and-testing](https://github.com/BCIT-Reseach-Long-Term-ISSP/sensor-investigation-and-testing)
 
 This repository contains all the sensor sample code, library stripped sample code, testing code, and calibration code.
 
