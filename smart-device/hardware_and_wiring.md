@@ -5,12 +5,14 @@ parent: Smart Device
 ---
 
 # Smart Device Hardware + Wiring
+
 {: .no_toc }
 
 This section provides an overview of what hardware is required for the smart device and how the sensors are wired to it.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -20,12 +22,12 @@ This section provides an overview of what hardware is required for the smart dev
 
 ## Hardware List
 
-- 1x <a href="https://store-usa.arduino.cc/products/arduino-zero?selectedStore=us">Arduino Zero</a>
-- 1x <a href="https://www.amazon.ca/Gikfun-Micro-Jumper-Arduino-EK1025C/dp/B06XGSZ91M">Arduino Micro Jumper</a>
-- 1x <a href="https://www.dragino.com/products/nb-iot/item/130-nb-iot-shield.html">NB-IoT Shield</a>
-- 1x <a href="https://store-usa.arduino.cc/products/proto-shield-rev3-uno-size?pr_prod_strat=description&pr_rec_id=dd93c3241&pr_rec_pid=6544125264079&pr_ref_pid=6544117334223&pr_seq=uniform">Proto Shield Rev3 (Uno Size)</a>
-- 4x <a href="https://www.digikey.ca/en/products/detail/microchip-technology/2N7000-G/4902350">2N7000-G Transistors</a>
-- 11x <a href="https://www.amazon.ca/Gikfun-Breakable-Header-2-54mm-Arduino/dp/B01LYYUSOH/ref=asc_df_B01LYYUSOH/?tag=googleshopc0c-20&linkCode=df0&hvadid=292968375828&hvpos=&hvnetw=g&hvrand=15737558842213826949&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001531&hvtargid=pla-494462262875&psc=1">Arduino Male Pin Header</a>
+- 1x [Arduino Zero](https://store-usa.arduino.cc/products/arduino-zero?selectedStore=us)
+- 1x [Arduino Micro Jumper](https://www.amazon.ca/Gikfun-Micro-Jumper-Arduino-EK1025C/dp/B06XGSZ91M)
+- 1x [NB-IoT Shield](https://www.dragino.com/products/nb-iot/item/130-nb-iot-shield.html)
+- 1x [Proto Shield Rev3 (Uno Size)](https://store-usa.arduino.cc/products/proto-shield-rev3-uno-size?pr_prod_strat=description&pr_rec_id=dd93c3241&pr_rec_pid=6544125264079&pr_ref_pid=6544117334223&pr_seq=uniform)
+- 4x [2N7000-G Transistors](https://www.digikey.ca/en/products/detail/microchip-technology/2N7000-G/4902350)
+- 11x [Arduino Male Pin Header](https://www.amazon.ca/Gikfun-Breakable-Header-2-54mm-Arduino/dp/B01LYYUSOH/ref=asc_df_B01LYYUSOH/?tag=googleshopc0c-20&linkCode=df0&hvadid=292968375828&hvpos=&hvnetw=g&hvrand=15737558842213826949&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001531&hvtargid=pla-494462262875&psc=1)
 - 3x 10kΩ Resistor
 - Wires
 

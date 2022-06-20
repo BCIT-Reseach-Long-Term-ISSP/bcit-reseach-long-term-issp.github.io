@@ -8,8 +8,8 @@ nav_order: 3
 
 # arduino-lmic Repository
 
-Name: arduino-lmic
+**Name:** arduino-lmic
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/arduino-lmic">https://github.com/BCIT-Reseach-Long-Term-ISSP/arduino-lmic</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/arduino-lmic](https://github.com/BCIT-Reseach-Long-Term-ISSP/arduino-lmic)
 
 This repository contains the Arduino-LMIC library for LoRaWAN communication.

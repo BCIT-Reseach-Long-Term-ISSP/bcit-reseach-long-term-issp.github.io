@@ -8,9 +8,9 @@ nav_order: 9
 
 # dashboard-workspace Repository
 
-Name: dashboard-workspace
+**Name:** dashboard-workspace
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard-workspace">https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard-workspace</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard-workspace](https://github.com/BCIT-Reseach-Long-Term-ISSP/dashboard-workspace)
 
 This repository contains the React javascript code for the old dashboard.
 

@@ -8,8 +8,8 @@ nav_order: 7
 
 # cloud Repository
 
-Name: cloud
+**Name:** cloud
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud">https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud](https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud)
 
 This repo serves to store and document the scripts used in the cloud services, most of which being AWS. Instructions are provided to indicate how to set them up.

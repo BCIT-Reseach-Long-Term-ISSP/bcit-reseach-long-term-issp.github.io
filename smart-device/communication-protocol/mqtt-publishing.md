@@ -20,7 +20,6 @@ clarity.
 | *$aws/<buoy_id>/data/*  | Destination of raw collected client sensor data. |
 | *$aws/<buoy_id>/error/* | Reserved for logging of errors                   |
 
-
 ### JSON Shorthand Abbreviations
 
 The packet payload is published as a serialized JSON string. The values
@@ -43,7 +42,7 @@ abbreviations is presented below:
 | temp                        | Temperature Sensor                      | *Degrees Celsius* |
 
 
-### Payload: *$aws/<buoy_id>/error/*
+### Payload: *$aws/<buoy_id>/data/*
 
 ```json
 {
@@ -60,6 +59,7 @@ abbreviations is presented below:
 ```
 
 ### Payload: *$aws/<buoy_id>/error/*
+
 ```json
 {
   "errno": 4,
@@ -67,5 +67,4 @@ abbreviations is presented below:
 }
 ```
 
-
- *For more specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).*
+ *For more specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](/docs/sensors/).*

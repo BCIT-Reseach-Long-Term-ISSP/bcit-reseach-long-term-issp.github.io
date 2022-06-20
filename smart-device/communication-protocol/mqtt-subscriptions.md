@@ -56,6 +56,7 @@ abbreviations is presented below:
 ```
 
 ### Payload: *$aws/<buoy_id>/config/sensor/*
+
 ```json
 {
   "id": 1,
@@ -65,5 +66,4 @@ abbreviations is presented below:
 }
 ```
 
-
-*For more specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md).*
+*For more specific sensor information breakdown (name, data type, and data value) please refer to the relevant [sensors docs pages](/docs/sensors/).*

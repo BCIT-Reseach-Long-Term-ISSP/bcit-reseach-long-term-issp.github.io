@@ -10,7 +10,6 @@ nav_order: 1
 
 # Overview
 
-
 ## Topic Table
 
 This table provides every namespace topic and a description of its purpose.
@@ -24,7 +23,6 @@ This table provides every namespace topic and a description of its purpose.
 | config /           | $aws / *buoy_id* / config / | The configuration namespace path. Used for topic organisation only.  |
 | sensor /           | $aws / *buoy_id* / config / sensor / | Designated for <span style="text-decoration: underline;">subscription</span> and <span style="text-decoration: underline;">publishing</span> of sensor specific configuration options.  |
 | global /           | $aws / *buoy_id* / config / global / | Designated for <span style="text-decoration: underline;">subscription</span> and <span style="text-decoration: underline;">publishing</span> of global client node properties and configuration options. <br/><br/> <span style="text-decoration: underline;">NOTE: Access to this topic should be restricted to admin privileges only.</span> |
-
 
 <sup>1</sup> All *italicized text* denote topic strings that are dynamic in nature (i.e. it’s value will change depending on the particular client node it is referencing).
 {: .fs-2 .fw-300 }
@@ -51,6 +49,5 @@ In this section, two tables are provided for further clarity regarding MQTT subs
 | Dashboard           | $aws / *buoy_id* / config / global / | Remote setting of global configuration options.  |
 | Dashboard           | $aws / *buoy_id* / config / sensor / | Remote setting of sensor specific configuration options.  |
 | Dashboard           | $aws / *buoy_id* / error / | Remote detection and correction of client node errors.  |
-
 
 {: .no_toc }

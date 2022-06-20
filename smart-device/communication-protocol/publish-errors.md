@@ -70,4 +70,3 @@ For example (Buoy with all the errors):
 </div>
 
 For specific error breakdown please refer to the relevant pages (under construction).
-<!-- [error docs pages](https://github.com/just-the-docs/just-the-docs/tree/main/docs/CODE_OF_CONDUCT.md). -->

@@ -8,11 +8,11 @@ nav_order: 10
 
 # bcit-reseach-long-term-issp.github.io Repository
 
-Name: bcit-reseach-long-term-issp.github.io
+**Name:** bcit-reseach-long-term-issp.github.io
 
-Repository Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io">https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io</a>
+**Repository Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io)
 
-Documentation Page Link: https://bcit-reseach-long-term-issp.github.io/
+**Documentation Page Link:** [https://bcit-reseach-long-term-issp.github.io/](https://bcit-reseach-long-term-issp.github.io/)
 
 This repository is used to generate the Just the Docs Documentation page that contains all the dcoumentation for the EMA YVR Project.
 

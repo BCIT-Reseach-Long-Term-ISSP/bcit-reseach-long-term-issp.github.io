@@ -12,12 +12,12 @@ Integration of USB communication would allow technicians in the field to directl
 
 ## Problem Statement
 
-<p>There is no way for a technician to interact with the device while in use. Currently, the only way to modify the device is to change the code and reflash the device.</p>
+There is no way for a technician to interact with the device while in use. Currently, the only way to modify the device is to change the code and reflash the device.
 
 ## Suggested Solution
 
-<p>The USB driver already exists, but it is not integrated into the main loop. A new task will need to be created to manage it's communication.</p>
+The USB driver already exists, but it is not integrated into the main loop. A new task will need to be created to manage it's communication.
 
 ## Complexities
 
-<p>You get a read and write function that both come from buffers. There is a library that handles this, but all the commands and responses will need to be programmed.</p>
+You get a read and write function that both come from buffers. There is a library that handles this, but all the commands and responses will need to be programmed.

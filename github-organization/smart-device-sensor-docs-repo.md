@@ -8,9 +8,9 @@ nav_order: 11
 
 # smart-device-sensor-docs Repository
 
-Name: smart-device-sensor-docs
+**Name:** smart-device-sensor-docs
 
-Link: <a href="https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-sensor-docs">https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-sensor-docs</a>
+**Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-sensor-docs](https://github.com/BCIT-Reseach-Long-Term-ISSP/smart-device-sensor-docs)
 
 This repository contains the old Just the Docs documentation.
 

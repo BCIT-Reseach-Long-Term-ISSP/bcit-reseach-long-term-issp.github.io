@@ -10,15 +10,15 @@ grand_parent: Smart Device
 
 ## Problem Statement
 
-<p>Calibration is to check, adjust, or determine by comparison with a standard value. Sensor calibration adjustment is necessary for the Dissolved Oxygen, Turbidity, and TDS sensors. Introducing this adjustment introduces out of scope complexities to the microcontroller (Arduino Zero).</p>
+Calibration is to check, adjust, or determine by comparison with a standard value. Sensor calibration adjustment is necessary for the Dissolved Oxygen, Turbidity, and TDS sensors. Introducing this adjustment introduces out of scope complexities to the microcontroller (Arduino Zero).
 
 ## Suggested Solution
 
-<p>Considering the scope of the current project, our solution involves post-processing raw sensor values on the cloud. The microcontroller would send raw values from the sensors and the cloud would post-process those values.</p>
+Considering the scope of the current project, our solution involves post-processing raw sensor values on the cloud. The microcontroller would send raw values from the sensors and the cloud would post-process those values.
 
 ## Microcontroller Complexities
 
-<p>To detail the aforementioned complexities, the smart device team has strived to create a uniform, reusable C environment. In C, we have created a sensor object that encapsulates all sensors.</p>
+To detail the aforementioned complexities, the smart device team has strived to create a uniform, reusable C environment. In C, we have created a sensor object that encapsulates all sensors.
 
 <div class="code-example" markdown="1">
 ```
