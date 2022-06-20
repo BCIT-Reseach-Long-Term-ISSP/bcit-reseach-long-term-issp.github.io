@@ -26,4 +26,4 @@ This project was hosted by the BCIT Applied Research Department.
 
 **Name:** Jonathan Bassan
 
-**Email:** [jbassan@bcit.ca](jbassan@bcit.ca)
+**Email:** [jbassan@bcit.ca](mailto:jbassan@bcit.ca)
