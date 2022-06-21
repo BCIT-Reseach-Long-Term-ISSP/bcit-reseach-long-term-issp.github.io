@@ -79,6 +79,8 @@ This shield uses some of the pins on the Arduino Zero to function.
 
 With regards to wiring the sensors, the particular pins that care should be taken to avoid are the Digital pins 10 and 11.
 
+Further information can be found here: [https://github.com/dragino/NB-IoT](https://github.com/dragino/NB-IoT)
+
 ### Power Saving Mode
 
 The narrowband network has a power saving mode that NB-IoT shield can use to draw less power. However, this power saving mode has specific periods for sleep and wake time.
@@ -161,7 +163,7 @@ For example, below is a diagram displaying a single sensor with readings being t
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/single_sensor_reading_diagram.jpg?raw=true)
 
-<i>Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
+_Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same._
 
 As you can see the sensor is powered by the 3.3 Volt pin and connected to the ground pin. The 3.3V pin is used as the 5V pin would fry an Arduino Zero.
 
@@ -207,6 +209,6 @@ For example, below is a diagram displaying two sensors connected to a breadboard
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/multiple_sensor_reading_diagram.jpg?raw=true)
 
-<i>Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same.</i>
+_Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same._
 
 As you can see power is being supplied to the breadboard by the 3.3 Volt pin, with the second line grounded. The two sensors then branch off those lines, with their respective reading lines connected to the Arduino analog pins.
