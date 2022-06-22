@@ -22,7 +22,7 @@ This section outlines the fabrication and hardware for protype 0.9
 
 ## Device Hardware
 
-This secttion is only a snapshot for this protype's smart device hardware. This is not the most up to date hardware, please refer to the [Smart Device](/docs/smart-device/) Section for the most recent smart device information.
+This section is only a snapshot for this protype's smart device hardware. This is not the most up to date hardware, please refer to the [Smart Device](/docs/smart-device/) Section for the most recent smart device information.
 
 ### Hardware List
 
@@ -145,40 +145,40 @@ The circuit diagram for the perf shield can be seen above. This diagram can be u
 
 This prototype is powered by an [Infinity IT12-12 F2 Rechargeable Sealed Lead Acid (VRLA) Battery](https://drive.google.com/file/d/1LKWog5QfrddDNbIFoLfEZsNzhezZadNT/view?usp=sharing).
 
-This battery provides 12 volts, however any volatge supply above approximately 11 volts seems to garble the messgaes sent to the NB-IoT shield. To fix this issue, a DFR0205 power module, a small size 5A 350KHz 25V Buck DC to DC Converter, is used to step down the voltage from the battery from 12 volts to 9 volts.
+This battery provides 12 volts, however any voltage supply above approximately 11 volts seems to garble the messages sent to the NB-IoT shield. To fix this issue, a DFR0205 power module, a small size 5A 350KHz 25V Buck DC to DC Converter, is used to step down the voltage from the battery from 12 volts to 9 volts.
 
 Product Link: [https://www.digikey.ca/en/products/detail/dfrobot/DFR0205/6588491?s=N4IgTCBcDaIDoBcAEg4AgIwHYDMAOAtGgAwBsAnHgHIAiKIAugL5A](https://www.digikey.ca/en/products/detail/dfrobot/DFR0205/6588491?s=N4IgTCBcDaIDoBcAEg4AgIwHYDMAOAtGgAwBsAnHgHIAiKIAugL5A)
 
 ## Device Enclosure
 
-The device enclosure prtects and stores the device hardware and power supply.
+The device enclosure protects and stores the device hardware and power supply.
 
 The general layout of the hardware can be seen below.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/prototype_0.9/assets/prototype_0.9_enclosure_layout.jpg?raw=true)
 
-This layout does not include measurments and is intended to guide installlation of the hardware compoenets once the backplate has been fabricated.
+This layout does not include measurements and is intended to guide installation of the hardware components once the backplate has been fabricated.
 
 ## Sensor Tether
 
 The sensors wires had to be lengthened to reach from the device enclosure down into the water. This was generally not a problem with the exception of the temperature sensor and calibration.
 
-The temperature sensor uses the OneWire Protocol to communciate and this protocl uses priod of high and low voltage to reprent the messages. With teh longer wires indocutance becomes an issue and the messages become garbled.
+The temperature sensor uses the OneWire Protocol to communicate and this protocol uses periods of high and low voltage to represent the messages. With the longer wires inductance becomes an issue and the messages become garbled.
 
-To address this issue, a resistor was added to teh temoerature sensor baord to pull more current. This higehr current reduced teh idnuctance and allowe dteh messages to become clearer.
+To address this issue, a resistor was added to the temperature sensor board to pull more current. This higher current reduced the inductance and allowed the messages to become clearer.
 
 ![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/prototype_0.9/assets/temperature_board_with_resistor_highlight.jpg?raw=true)
 
-The image above shows the tempertaure sensor baord and the 10k ohm resistor beteween the power and data lines, that is being used to pull this extra current.
+The image above shows the temperature sensor board and the 10k ohm resistor between the power and data lines, which is being used to pull this extra current.
 
-Finally, these longer wires will affect the calibration of the sensors. Once the sensors are attached to the tether, all snesor must be recalibrated to take into accoutn the longer wire.
+Finally, these longer wires will affect the calibration of the sensors. Once the sensors are attached to the tether, all sensors must be recalibrated to take into account the longer wire.
 
 ## Sensor Floaty
 
-A float was created to keep the sensor in a consistant formation and at a consistant depth.
+A float was created to keep the sensor in a consistent formation and at a consistent depth.
 
 ## Sensor Pipe
 
 A pipe was fabricated to house the sensor floaty and extended from the device enclosure down to the water.
 
-This pipe was perferated on the bottom to allow water to travel through it, so tah tteh sensor could properly measure the water quality.
+This pipe has been perforated on the bottom to allow water to travel through it, so that the sensor could properly measure the water quality.
