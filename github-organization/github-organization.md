@@ -3,7 +3,7 @@ layout: default
 title: GitHub Organization
 has_children: true
 permalink: /docs/github-organization/
-order: 97
+nav_order: 97
 ---
 
 # BCIT-Reseach-Long-Term-ISSP GitHub Organization

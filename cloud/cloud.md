@@ -4,7 +4,7 @@ title: Cloud
 has_children: true
 permalink: /docs/cloud/
 has_toc: true
-order: 3
+nav_order: 4
 ---
 
 # Cloud team

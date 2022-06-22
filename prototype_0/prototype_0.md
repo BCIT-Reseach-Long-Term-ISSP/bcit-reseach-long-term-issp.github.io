@@ -3,7 +3,7 @@ layout: default
 title: Prototype 0
 has_children: false
 permalink: /docs/prototype-0/
-order: 6
+nav_order: 7
 ---
 
 # Smart Device Prototype 0

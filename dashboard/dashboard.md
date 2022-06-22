@@ -4,7 +4,7 @@ title: Dashboard
 has_children: true
 permalink: /docs/dashboard/
 has_toc: true
-order: 4
+nav_order: 5
 ---
 
 # Dashboard Team

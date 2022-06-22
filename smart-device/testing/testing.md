@@ -3,7 +3,7 @@ layout: default
 title: Testing
 has_children: true
 permalink: /docs/testing/
-order: 5
+nav_order: 6
 ---
 
 # Testing

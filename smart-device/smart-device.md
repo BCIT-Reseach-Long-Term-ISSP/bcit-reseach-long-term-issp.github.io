@@ -3,7 +3,7 @@ layout: default
 title: Smart Device
 has_children: true
 permalink: /docs/smart-device/
-order: 2
+nav_order: 3
 ---
 
 # Smart-Device Team
