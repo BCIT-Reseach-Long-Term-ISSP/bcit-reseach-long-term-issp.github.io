@@ -3,6 +3,7 @@ layout: default
 title: Google Drive
 has_children: false
 permalink: /docs/google-drive/
+order: 98
 ---
 
 # EMA YVR Water Monitoring System Google Drive

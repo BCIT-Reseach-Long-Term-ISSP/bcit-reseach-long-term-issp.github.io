@@ -3,6 +3,7 @@ layout: default
 title: Contact Us
 has_children: false
 permalink: /docs/contact-us/
+order: 99
 ---
 
 # Contact Us

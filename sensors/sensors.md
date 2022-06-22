@@ -3,6 +3,7 @@ layout: default
 title: Sensors
 has_children: true
 permalink: /docs/sensors/
+order: 1
 ---
 
 # Sensors
