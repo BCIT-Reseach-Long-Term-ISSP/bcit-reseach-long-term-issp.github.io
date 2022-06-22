@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Prototype 0.9
-has_children: false
+has_children: true
 permalink: /docs/prototype-0.9/
 ---
 

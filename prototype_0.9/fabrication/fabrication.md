@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Smart Device Hardware + Wiring
-parent: Smart Device
+title: Fabrication
+has_children: false
+permalink: /docs/prototype-0.9/fabrication/
+parent: Prototype 0.9
 ---
 
-# Smart Device Hardware + Wiring
+# Prototype 0.9 Fabrication
 
-{: .no_toc }
-
-This section provides an overview of what hardware is required for the smart device and how the sensors are wired to it.
+This section outlines the fabrication and hardware for protype 0.9
 {: .fs-6 .fw-300 }
+
+---
 
 ## Table of contents
 
@@ -18,9 +20,11 @@ This section provides an overview of what hardware is required for the smart dev
 1. TOC
 {:toc}
 
----
+## Device Hardware
 
-## Hardware List
+This section is only a snapshot for this protype's smart device hardware. This is not the most up to date hardware, please refer to the [Smart Device](/docs/smart-device/) Section for the most recent smart device information.
+
+### Hardware List
 
 - 1x [Arduino Zero](https://store-usa.arduino.cc/products/arduino-zero?selectedStore=us)
 - 1x [Arduino Micro Jumper](https://www.amazon.ca/Gikfun-Micro-Jumper-Arduino-EK1025C/dp/B06XGSZ91M)
@@ -31,7 +35,7 @@ This section provides an overview of what hardware is required for the smart dev
 - 3x 10kΩ Resistor
 - Wires
 
-## Arduino Board
+### Arduino Board
 
 The buoy device uses an Arduino Zero board as the brain of the device.
 This Arduino Zero performs all processing and sensor measurements.
@@ -63,7 +67,7 @@ With this receiver now attached, the Arduino Micro Jumper, shown below, can be u
 <p><span style="color:red;">WARNING:</span> The debugger chip must be enabled when the Arduino Zero is first turned on. Once the Arduino Zero has been flashed and turned on, the jumper can be removed, and the debugger chip disabled to save power.</p>
 </div>
 
-## NB-IoT Shield
+### NB-IoT Shield
 
 The module that allows the buoy device to send data and communicate with the cloud is the NB-IoT shield.
 
@@ -81,7 +85,7 @@ With regards to wiring the sensors, the particular pins that care should be take
 
 Further information can be found here: [https://github.com/dragino/NB-IoT](https://github.com/dragino/NB-IoT)
 
-### Power Saving Mode
+#### Power Saving Mode
 
 The narrowband network has a power saving mode that NB-IoT shield can use to draw less power. However, this power saving mode has specific periods for sleep and wake time.
 
@@ -99,7 +103,7 @@ The other end of the wire should be plugged into digital pin 12.
 
 Digital pin 12 was coded to power on the NB-IoT module. However, this pin is not special, any pin could be set to power on the NB-IoT module.
 
-### Narrow Band Sim Card for Rogers Network
+#### Narrow Band Sim Card for Rogers Network
 
 The NB-IoT module has been setup to use a Rogers Narrow Band Sim Card.
 
@@ -109,7 +113,7 @@ The sim cards must follow the following format, 89302820… . The 820 part of th
 
 If the sim card has the following format, 89302720… . Then the sim card will connect to the LTE M1 Network for Rogers. This network does not have PSM (Power saving mode) or E-I-DRX (Extended Idle Discontinuous Reception), all of which is needed for power saving on the device.
 
-## PERF Shield
+### PERF Shield
 
 To organize the wiring and create the appropriate sensor circuits, an Arduino PERF shield is used.
 
@@ -123,7 +127,7 @@ The board uses four transistors to turn off and on the more power-hungry sensors
 
 Additionally, a group of resistors act as a voltage divider, downscaling the return voltage of the turbidity sensor from the max 4.5 volts to a max 3.0 volts. This is essential as the turbidity sensor requires 5.0 volts to operate and the return voltage of 4.5 volts is above the maximum 3.3 volts that the Arduino Zero can accept without frying the board.
 
-### PERF Shield Wiring
+#### PERF Shield Wiring
 
 The PERF Sheild is where all the sensors are wired to the device.
 
@@ -137,78 +141,44 @@ Some sensors can only be wired to the specific pins, while other sensors can be 
 
 The circuit diagram for the perf shield can be seen above. This diagram can be used to properly wire the current sensors.
 
-## General Sensor Wiring
+## Power Supply
 
-There are three main types of sensors being used, analog, OneWire, and UART sensors.
+This prototype is powered by an [Infinity IT12-12 F2 Rechargeable Sealed Lead Acid (VRLA) Battery](https://drive.google.com/file/d/1LKWog5QfrddDNbIFoLfEZsNzhezZadNT/view?usp=sharing).
 
-### Analog Sensor
+This battery provides 12 volts, however any voltage supply above approximately 11 volts seems to garble the messages sent to the NB-IoT shield. To fix this issue, a DFR0205 power module, a small size 5A 350KHz 25V Buck DC to DC Converter, is used to step down the voltage from the battery from 12 volts to 9 volts.
 
-The Arduino Zero has 6 built-in analog ports that can be used to take analog sensor measurements directly.
+Product Link: [https://www.digikey.ca/en/products/detail/dfrobot/DFR0205/6588491?s=N4IgTCBcDaIDoBcAEg4AgIwHYDMAOAtGgAwBsAnHgHIAiKIAugL5A](https://www.digikey.ca/en/products/detail/dfrobot/DFR0205/6588491?s=N4IgTCBcDaIDoBcAEg4AgIwHYDMAOAtGgAwBsAnHgHIAiKIAugL5A)
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_analog_ports_highlight.jpg?raw=true)
+## Device Enclosure
 
-The reading wire of the Analog sensors would plug into one of these ports.
+The device enclosure protects and stores the device hardware and power supply.
 
-Most analog sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the reading wire (other colour), that needs to be connected to the board to take analog measurements.
+The general layout of the hardware can be seen below.
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/three_wire_interface_cable.jpg?raw=true)
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/prototype_0.9/assets/prototype_0.9_enclosure_layout.jpg?raw=true)
 
-The wire shown above is a connector cable between an Arduino Board and a Gravity Analog Peripheral Device Board.
+This layout does not include measurements and is intended to guide installation of the hardware components once the backplate has been fabricated.
 
-#### Example Sensor Wiring
+## Sensor Tether
 
-To take a single analog sensor's measurement, you can directly wire the sensor to the pins on the board.
+The sensors wires had to be lengthened to reach from the device enclosure down into the water. This was generally not a problem with the exception of the temperature sensor and calibration.
 
-For example, below is a diagram displaying a single sensor with readings being taken on Analog Pin 0.
+The temperature sensor uses the OneWire Protocol to communicate and this protocol uses periods of high and low voltage to represent the messages. With the longer wires inductance becomes an issue and the messages become garbled.
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/single_sensor_reading_diagram.jpg?raw=true)
+To address this issue, a resistor was added to the temperature sensor board to pull more current. This higher current reduced the inductance and allowed the messages to become clearer.
 
-_Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same._
+![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/prototype_0.9/assets/temperature_board_with_resistor_highlight.jpg?raw=true)
 
-As you can see the sensor is powered by the 3.3 Volt pin and connected to the ground pin. The 3.3V pin is used as the 5V pin would fry an Arduino Zero.
+The image above shows the temperature sensor board and the 10k ohm resistor between the power and data lines, which is being used to pull this extra current.
 
-### OneWire Sensor
+Finally, these longer wires will affect the calibration of the sensors. Once the sensors are attached to the tether, all sensors must be recalibrated to take into account the longer wire.
 
-The one wire protocol uses a single wire interface for data communication between devices.
+## Sensor Floaty
 
-Devices using this protocol to communicate over the Arduino digital pins.
+A float was created to keep the sensor in a consistent formation and at a consistent depth.
 
-The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
+## Sensor Pipe
 
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_digital_ports_highlight.jpg?raw=true)
+A pipe was fabricated to house the sensor floaty and extended from the device enclosure down to the water.
 
-The data wire of the OneWire sensor would plug into one of these digital pins setup for OneWire communication.
-
-Most OneWire sensor connector cables have 3 wires, the power wire (red), the ground wire (black), and the data wire (other colour), that needs to be connected to the board for OneWire communication.
-
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/three_wire_interface_cable.jpg?raw=true)
-
-The wire shown above is a connector cable between an Arduino Board and a Gravity Terminal Sensor Adapter V2.0 Board, such as needed by the OneWire Gravity: Waterproof DS18B20 Sensor.
-
-### UART Sensor
-
-UART is a hardware communication protocol that uses asynchronous serial communication with configurable speed.
-
-Devices using this protocol communicate using two Arduino digital pins, a Rx and a Tx pin for receiving and transmitting messages.
-
-The Arduino Zero has 13 built-in digital ports that can be used for the OneWire Protocol.
-
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/arduino_zero_digital_ports_highlight.jpg?raw=true)
-
-Most Atlas UART sensors use an Electrically Isolated EZO™ Carrier Board. This board has 5 pins, the VCC pin for power, the OFF pin, the GND pin connects to ground, the Rx pin connect to the Tx port of the Arduino board, and the Tx pin connect to the Rx port of the Arduino board.
-
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/electrically_isolated_ezo_carrier_board.jpg?raw=true)
-
-This carrier board is where the sensor specific EZO board would be placed, and where the sensor probe would be connected.
-
-### Wiring Multiple Sensors
-
-To measure multiple sensors, you will need to create a simple circuit, using a breadboard during development or a perf board for the actual device.
-
-For example, below is a diagram displaying two sensors connected to a breadboard, with reading being taken on Analog Pin 0 and 5.
-
-![Untitled](https://github.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/blob/master/smart-device/assets/multiple_sensor_reading_diagram.jpg?raw=true)
-
-_Note: the Arduino board displayed in the diagram is an Arduino Uno, not an Arduino Zero. However, regarding the wiring configuration, the Arduino Uno and Zero are the same._
-
-As you can see power is being supplied to the breadboard by the 3.3 Volt pin, with the second line grounded. The two sensors then branch off those lines, with their respective reading lines connected to the Arduino analog pins.
+This pipe has been perforated on the bottom to allow water to travel through it, so that the sensor could properly measure the water quality.
