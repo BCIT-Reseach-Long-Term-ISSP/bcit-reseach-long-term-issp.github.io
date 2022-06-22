@@ -20,6 +20,8 @@ This project was hosted by the BCIT Applied Research Department.
 
 **Address:** 4355 Mathissi Pl, Burnaby, BC, V5G 4S8
 
+**Project Email:** [bcit.applied.research.iot@gmail.com](mailto:bcit.applied.research.iot@gmail.com)
+
 ---
 
 ## Project Lead
