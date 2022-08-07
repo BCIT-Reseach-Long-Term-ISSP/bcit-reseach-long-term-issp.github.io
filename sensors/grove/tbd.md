@@ -3,7 +3,7 @@ layout: default
 title: Turbidity
 parent: Grove
 grand_parent: Sensors
-permalink: /docs/sensors/grove/tbd
+permalink: /docs/sensors/grove/tbd/
 ---
 
 # Turbidity Sensor

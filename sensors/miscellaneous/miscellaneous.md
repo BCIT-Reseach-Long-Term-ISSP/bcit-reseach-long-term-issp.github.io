@@ -2,7 +2,7 @@
 layout: default
 title: Miscellaneous
 has_children: true
-permalink: /docs/sensors/miscellaneous
+permalink: /docs/sensors/miscellaneous/
 has_toc: false
 parent: Sensors
 ---

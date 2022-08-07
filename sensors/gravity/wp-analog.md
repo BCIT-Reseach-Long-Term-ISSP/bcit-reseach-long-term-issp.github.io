@@ -3,7 +3,7 @@ layout: default
 title: Water Pressure
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/water-pressure
+permalink: /docs/sensors/gravity/water-pressure/
 ---
 
 # Water Pressure Sensor

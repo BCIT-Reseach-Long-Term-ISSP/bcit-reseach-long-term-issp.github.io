@@ -2,7 +2,7 @@
 layout: default
 title: Grove
 has_children: true
-permalink: /docs/sensors/grove
+permalink: /docs/sensors/grove/
 has_toc: false
 parent: Sensors
 ---

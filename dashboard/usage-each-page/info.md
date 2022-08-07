@@ -6,6 +6,7 @@ permalink: /docs/dashboard/user-manual/info
 parent: User Manual
 grand_parent: Dashboard
 has_toc: false
+nav_order: 2
 ---  
 
 # Getting Started 

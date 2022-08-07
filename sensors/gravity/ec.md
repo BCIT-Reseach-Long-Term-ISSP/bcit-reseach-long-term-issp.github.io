@@ -3,7 +3,7 @@ layout: default
 title: Electrical Conductivity
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/ec
+permalink: /docs/sensors/gravity/ec/
 ---
 
 # Electrical Conductivity Sensor

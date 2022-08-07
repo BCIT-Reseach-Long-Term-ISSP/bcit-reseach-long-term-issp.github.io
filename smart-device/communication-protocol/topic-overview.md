@@ -17,7 +17,7 @@ This table provides every namespace topic and a description of its purpose.
 | Relative        | Absolute Path                 | Description |
 |:-----------|:----------------------|:------|
 | $aws /           | $aws / | MQTT Broker root path.  |
-| *version#* <sup>1</sup> / | $aws / *version#*    | The major version of the cloud postprocessing that will operate on the data. |
+| *version#* <sup>1</sup> / | $aws / *version#* /   | The major version of the cloud postprocessing that will operate on the data. |
 | *buoy_id* <sup>1</sup> / | $aws / *version#* / *buoy_id* /   | The buoy identifier. Used to uniquely identify a client node in the MQTT ecosystem  |
 | data /           | $aws / *version#* / *buoy_id* / data /      | Designated for <span style="text-decoration: underline;">subscription</span> and <span style="text-decoration: underline;">publishing</span> of client node data. |
 | error /           | $aws / *version#* / *buoy_id* / error / | Designated for <span style="text-decoration: underline;">publishing</span> of error messages from client nodes. |

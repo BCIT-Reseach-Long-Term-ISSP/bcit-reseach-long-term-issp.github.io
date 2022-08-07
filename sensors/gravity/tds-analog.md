@@ -3,7 +3,7 @@ layout: default
 title: Total Dissolved Solids
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/tds
+permalink: /docs/sensors/gravity/tds/
 ---
 
 # Total Dissolved Solids Sensor

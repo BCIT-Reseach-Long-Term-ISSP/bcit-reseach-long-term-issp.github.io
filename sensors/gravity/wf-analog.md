@@ -3,7 +3,7 @@ layout: default
 title: Water Flow
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/water-flow
+permalink: /docs/sensors/gravity/water-flow/
 ---
 
 # Water Flow Sensor

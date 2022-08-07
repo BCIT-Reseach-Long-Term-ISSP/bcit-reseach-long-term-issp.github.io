@@ -3,7 +3,7 @@ layout: default
 title: Digital Temperature
 parent: Miscellaneous
 grand_parent: Sensors
-permalink: /docs/sensors/miscellaneous/d-temp
+permalink: /docs/sensors/miscellaneous/d-temp/
 ---
 
 # Digital Temperature Sensor
