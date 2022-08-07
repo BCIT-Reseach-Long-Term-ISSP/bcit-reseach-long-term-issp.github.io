@@ -3,7 +3,7 @@ layout: default
 title: Turbidity
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/tbd
+permalink: /docs/sensors/gravity/tbd/
 ---
 
 # Turbidity Sensor

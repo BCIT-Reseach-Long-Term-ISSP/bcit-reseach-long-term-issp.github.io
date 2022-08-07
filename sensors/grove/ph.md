@@ -3,7 +3,7 @@ layout: default
 title: PH
 parent: Grove
 grand_parent: Sensors
-permalink: /docs/sensors/grove/ph
+permalink: /docs/sensors/grove/ph/
 ---
 
 # PH Sensor

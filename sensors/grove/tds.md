@@ -3,7 +3,7 @@ layout: default
 title: Total Dissolved Solids
 parent: Grove
 grand_parent: Sensors
-permalink: /docs/sensors/grove/tds
+permalink: /docs/sensors/grove/tds/
 ---
 
 # Total Dissolved Solids Sensor

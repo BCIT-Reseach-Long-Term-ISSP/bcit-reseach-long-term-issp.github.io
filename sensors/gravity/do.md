@@ -3,7 +3,7 @@ layout: default
 title: Dissolved Oxygen
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/do
+permalink: /docs/sensors/gravity/do/
 ---
 
 # Dissolved Oxygen Sensor
