@@ -6,6 +6,7 @@ permalink: /docs/dashboard/user-manual/map
 parent: User Manual
 grand_parent: Dashboard
 has_toc: false
+nav_order: 1
 ---  
 
 # Getting Started
