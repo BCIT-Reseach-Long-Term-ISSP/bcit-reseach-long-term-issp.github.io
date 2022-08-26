@@ -186,9 +186,6 @@ Thus, it would be helpful if the page checked for unsaved changes, and prompted 
 
 ## Manual
 
-- Manual reads really well, it walks through each section of the dashboard in a clear and well-ordered fashion, and the embedded links are good for navigating between the right pages. Instructions are easy to read and follow. On the navigation pane on the left, the order of the different pages should read the same as the way it navigates in the dashboard and within the manual (first should be Map page, then Device Information Page, then Device Management and Notifications Page) AGREE
-- Under 'Currently Used Sensors' - Diffuse Oxygen should be changed to Dissolved Oxygen
-  - TDS - when I clicked on it the page was not found, same with turbidity, maybe still under development?
 - I noticed when data is downloaded the date/time stamp is in UTC. Ability to change to PST or whatever time zone would be nice.
 
 {: .fs-6 .fw-300 }
