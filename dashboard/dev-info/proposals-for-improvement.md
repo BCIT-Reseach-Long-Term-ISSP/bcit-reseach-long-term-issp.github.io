@@ -1,16 +1,16 @@
 ---  
 layout: default  
-title: Future Considerations
+title: Proposals for Improvement
 has_children: false  
-permalink: /docs/dashboard/future-considerations
+permalink: /docs/dashboard/proposals-for-improvement
 parent: Dashboard  
 has_toc: true
 ---  
 
-# Future Considerations
+# Proposals for Improvement
 {: .no_toc }
 
-This page contains recommendations for potential future features of and adjustments to the dashboard, as well as some warnings for issues that may come up in the future.
+This page contains recommendations for potential future features of and adjustments to the dashboard, as well as some questions and warnings for issues that may come up in the future.
 
 Note that these are fully unordered; they aren't listed in order of priority or anything.
 
@@ -134,5 +134,61 @@ When a device is being edited, the user is able to freely and instantly switch t
 This could be troublesome, however, if the user didn't intend to do so, and had just done several changes only for all of them to crumble through their fingers like ash.
 
 Thus, it would be helpful if the page checked for unsaved changes, and prompted the user to either go back or discard their changes when they attempt to leave without saving.
+
+## General comments
+
+- Ability to download data in different formats, i.e. .csv and .xlsx
+- If there is the ability to create a histogram for a selected parameter for a given amount of time such that the system recognizes data ranges based on the minimum, maximum, mean and mode, and creates a histogram depicting frequency of data – this gives us an additional tool for storytelling, whether it tells a good story or not. This could be asking for too much, but I think that at the very least a histogram that can show a distribution of minimum to maximum values can be useful.
+- Ability to toggle between different charts that display the data in different formats, e.g. histogram, or the ability to create comparison graphs that can show two time variables (e.g. how does 2022 differ from 2021?) – note this only works for one site at a time
+
+## Map page
+
+- All devices should be shown within “selected devices” window with a toggle check box to select them similar to selecting them on the map.
+- Does mapbox allow for satellite imagery? It would be nice to be able to toggle between layers.
+- Labels on the stations in the map so it is clear to the user where each station is located (this might not be as applicable since we know where our stations are, but in making the system as user-friendly as possible I think it is a good tool to have, especially if we want to utilize this with people who may not be as familiar).
+- Box button: should allow for dragging to create a box instead of having to grab the corners of the existing box to alter the size (similar to the “identify” function on GIS). The way that the box is set up now in which you have to drag either end of the corners reduces ease of access.
+- Ability for the stations to flash or have some kind of alert to let us know exceedances have occurred without actually clicking the station (ex. flashing red/orange/yellow depending on the severity of the exceedance). At a glance you would be able to open the map and know where exceedances have occurred without having to click anything. Then click to find out further details. Then the alarm can only be deactivated once it has been clicked through to view the problem. Similar to the overview data page where some of the parameter squares are Red rather than blue when stations are selected.
+
+## Data page
+
+- Overview dashboard
+  - Top “device” shown should be the highest value for all devices selected and identify which device its coming from (ideally as click through). In other words, this will show all the worst water quality at a glance and let you drill down to the specifics.
+  - I was unclear on whether these values update in real time in the information page, or will only the latest timestamped data recording from when the user navigates to the information page?
+  - Ability to click specific parameters for more detail on the overview page to take us to the selected parameter. Another way to click to each parameter rather than only being able to get there from the parameters listed at the top beside Overview.
+  - Ability to select the meters of interest from Overview Data Page without having to click back to the map to select.
+  - Ability to change between units for each parameter if needed (ex. L/s to gallons/min,  ppm to ppt, mS/cm to µS/cm)
+  - Weather and Tide Schedule should include the date for clarity, ability to view future, present and historical weather/tide data.
+  - If possible alerts for King Tides, Freshet Melts, atmospheric rivers, etc…
+- Dissolved Oxygen
+- Electrical Conductivity
+  - Units should be micro Simens/centimeter (µS/cm)
+- pH
+  - set the data range for pH, i.e. 1 to 14
+- Turbidity
+- TSS
+- Temp
+  - An alarm when temperatures reach 4°C or lower
+- Liquid Level
+  - This should be water level?
+  - what does 'true' mean?
+  - This should be relative to tide, to tell us whether the water level is at low, mid or high tide along with a numeric value – ideally in geodetic.
+- Water flow
+  - TBD
+- Water pressure
+  - Is this water level?
+
+## Alarm page
+
+- 72 hours is a good timeline for receiving device warnings that have been logged. I would suggest the ability to change that time range (e.g. for a long weekend when we ideally wouldn’t be reading these alerts for over 72 hours) up to a maximum of five days if the system cannot store alerts for very long. Realistically data can be retrieved and those exceedances can also be read through the data but having the alert is a good shortcut way to determine that.
+- Alarms should be able to be forwarded to email accounts with customizable messages and triggers.
+- In the Device Management, this would be a good place to be able to select whether to display a label for each station on the map.
+- Edit Device - this function should only be accessible to certain users (ex. admin for ENV only)
+
+## Manual
+
+- Manual reads really well, it walks through each section of the dashboard in a clear and well-ordered fashion, and the embedded links are good for navigating between the right pages. Instructions are easy to read and follow. On the navigation pane on the left, the order of the different pages should read the same as the way it navigates in the dashboard and within the manual (first should be Map page, then Device Information Page, then Device Management and Notifications Page) AGREE
+- Under 'Currently Used Sensors' - Diffuse Oxygen should be changed to Dissolved Oxygen
+  - TDS - when I clicked on it the page was not found, same with turbidity, maybe still under development?
+- I noticed when data is downloaded the date/time stamp is in UTC. Ability to change to PST or whatever time zone would be nice.
 
 {: .fs-6 .fw-300 }
