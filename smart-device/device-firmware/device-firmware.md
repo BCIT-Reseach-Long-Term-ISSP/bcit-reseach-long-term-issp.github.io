@@ -48,6 +48,9 @@ Instructions on how to set things up on most major operating systems are provide
 ### Microsoft Windows
 On Windows, these packages are accessible using a single "toolchain.zip" package [on the Google Drive](https://drive.google.com/file/d/1bYFQPA6Cd6zoyujSbzcGzjMOZFkS-vox/view?usp=sharing). Once downloaded, the "bin" directory should be put on your PATH variable. This can be done either within your IDE or on a system-wide basis.
 
+> **_WARNING:_** This toolchain does not automaticlly update. As such, this toolchain may contain older verisons of the required software. This should not cause any major problems, but may require the use of older versions of extensions and other tools. For example, the Visual Studio Code extensions may need to be reverted to an older version.
+
+
 ### MacOS
 On MacOS, all of these programs are available through `brew`:
 ```
@@ -81,6 +84,7 @@ To set-up the toolchain for visual studio code, follow these steps:
 
 - Install Visual Studio Code
 - Open up Visual Studio Code and under the "Extensions" tab install "C/C++ Extension Pack" and "Cortex-Debug"
+> **_Warning:_** If you used the Windows Toolchain, you must revert the Cortex-Debug VS Code extension to Version 1.4.4. If you do not revert to this version, the debugger will fail.
 - Under the "Explorer" tab, click on "Open Folder" and navigate to the downloaded repo
 - Click on "Yes, I Trust the authors"
 - Press "f7" to do an inital build. It will ask which kit to use, select "[Unspecified]"
