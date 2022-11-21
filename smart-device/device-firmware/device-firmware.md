@@ -87,6 +87,7 @@ To set-up the toolchain for visual studio code, follow these steps:
 > **_Warning:_** If you used the Windows Toolchain, you must revert the Cortex-Debug VS Code extension to Version 1.4.4. If you do not revert to this version, the debugger will fail.
 - Under the "Explorer" tab, click on "Open Folder" and navigate to the downloaded repo
 - Click on "Yes, I Trust the authors"
+> **_Note:_** Ensure you have the Arduino connected or else the build will fail.
 - Press "f7" to do an inital build. It will ask which kit to use, select "[Unspecified]"
 
 ### CLion
