@@ -62,6 +62,7 @@ This sensor detects a variety of gases including methane. However, please note t
 ### Winsen NDIR Infrared CH4 Sensor C3H8 Sensor (MH-440D)
 
 This sensor detects methane and propane, and has a detection range of 0~10% vol. It only has a 3 minute warmup time as well.
+
 [Link](https://shop.winsen-sensor.com/products/mh-440d-ndir-infrared-ch4-sensor-c3h8-sensor?variant=42124558860480)
 
 ## CO2 Sensors
