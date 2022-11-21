@@ -20,6 +20,8 @@ Each subsection will provide an overview of the sensor, whether it has been scra
 
 We initially started off with 5 sensors, 4 of which is scrapped, and only 1 is in use.
 
+
+
 ## Water Pressure Sensor
 
 ### DFRobot Gravity Water Pressure Sensor (SEN0257)
@@ -30,6 +32,8 @@ This water pressure sensor has been scrapped due to the impractical calibration 
 
 [Datasheet](https://wiki.dfrobot.com/Gravity__Water_Pressure_Sensor_SKU__SEN0257)
 
+
+
 ## Methane Sensors
 
 ### Winsen Flammable Gas Sensor (MQ-4)
@@ -39,6 +43,7 @@ This water pressure sensor has been scrapped due to the impractical calibration 
 Initially purchased to measure methane, this sensor has been scrapped due to its impractical preheat time of 48 hours.
 
 [Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-4%20Ver1.3%20-%20Manual.pdf)
+
 
 ### Winsen Toxic Gas Sensor (MQ-9B)
 
@@ -59,11 +64,14 @@ This sensor detects a variety of gases including methane. However, please note t
 
 [Link](https://www.dfrobot.com/product-2419.html)
 
+
 ### Winsen NDIR Infrared CH4 Sensor C3H8 Sensor (MH-440D)
 
 This sensor detects methane and propane, and has a detection range of 0~10% vol. It only has a 3 minute warmup time as well.
 
 [Link](https://shop.winsen-sensor.com/products/mh-440d-ndir-infrared-ch4-sensor-c3h8-sensor?variant=42124558860480)
+
+
 
 ## CO2 Sensors
 
@@ -74,6 +82,7 @@ This sensor detects methane and propane, and has a detection range of 0~10% vol.
 We decided to keep this sensor over the Sensirion SGP30, as it uses UART communication, which is already present in the codebase.
 
 [Datasheet](https://sensirion.com/media/documents/4EAF6AF8/61652C3C/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf)
+
 
 ### Sensirion Gas Platform (SGP30)
 
