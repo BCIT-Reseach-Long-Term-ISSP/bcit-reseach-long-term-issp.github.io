@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Calibration Plan
-has_children: true
-permalink: /docs/smart-device/calibration-plan/
+title: December 2022 Devices
+has_children: false
+permalink: /docs/firmware/dec-2022-devices
 parent: Smart Device
-nav_order: 4
+nav_order: 1
 ---
 
 # December 2022 Devices
