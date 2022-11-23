@@ -16,10 +16,9 @@ A record of the devices that have been scrapped or are currently being used for 
 
 This section will cover the sensors used in the December 2022 deliverable. It is a record of the sensors scrapped or are currently being used for future teams.
 
-Each subsection will provide an overview of the sensor, whether it has been scrapped, and the reasons for why it has been scrapped.
+We initially started off with 5 sensors, 4 of which is scrapped, and only 1 (CO2 sensor - SCD30) is in use.
 
-We initially started off with 5 sensors, 4 of which is scrapped, and only 1 is in use.
-
+The SCD30 will include a quick setup guide.
 
 
 ## Water Pressure Sensor
@@ -80,6 +79,17 @@ This sensor detects methane and propane, and has a detection range of 0~10% vol.
 **Status: In Use**
 
 We decided to keep this sensor over the Sensirion SGP30, as it uses UART communication, which is already present in the codebase.
+
+CO2 measurement range: 0 - 40,000PPM
+> **_NOTE:_** We have been using the 3.3V supply from the Arduino. We are unsure if using differing voltages may affect value readings.
+DC Supply Voltage: 3.3V (minimum) - 5.5V (maximum)
+Communication: I2C, UART
+
+Connecting this sensor to the Arduino is relatively straightforward:
+- Connect VDD and SEL to 3.3V
+- Connect GND to GND
+- Connect TX/SCL to SCL
+- Connect RX/SDA to SDA
 
 [Datasheet](https://sensirion.com/media/documents/4EAF6AF8/61652C3C/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf)
 
