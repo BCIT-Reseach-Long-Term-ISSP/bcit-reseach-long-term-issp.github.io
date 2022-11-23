@@ -24,5 +24,9 @@ The operation relies on two cmake options, one boolean and one string. The first
 ## Making new tests
 To make a new test, open the file "test/test.c". Within this file is a large `#ifdef`/`#elif` structure. Just add a new `#elif` section in here and name the define similarly to the others. Keep the name you chose in mind, as this name is what you must set `EMA_TEST` to in order to use the new test.
 
-## Setting CMake options in VSCode
-After setting up the firmware toolchain as per [Device Firmware](/docs/firmware), you should have a working visual studio setup. From the command pallete (Ctrl+Shift+p), select "Cmake: Edit Cmake Cache (ui)". From here you can search for `EMA_BUILD_TESTS` and `EMA_TEST` in order to set them. When finished, press the button labeled "SAVE".
+## Running Tests
+
+> **_NOTE:_** If you don't have access to the cloud, the values will not print when running tests. You will have to place checkpoints in your test code and use the VS Code debugger to see values. Ensure you do not place too many checkpoints as this might prevent the code from building.
+
+After setting up the firmware toolchain as per [Device Firmware](/docs/firmware), you should have a working visual studio setup. From the command palette (Ctrl+Shift+p), select "Cmake: Edit Cmake Cache (ui)". From here you can search for `EMA_BUILD_TESTS` and `EMA_TEST` in order to set them. When finished, press the button labeled "SAVE".
+
