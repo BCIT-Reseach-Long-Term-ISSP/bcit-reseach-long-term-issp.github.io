@@ -88,8 +88,9 @@ Communication: I2C, UART
 Connecting this sensor to the Arduino is relatively straightforward:
 - Connect VDD and SEL to 3.3V
 - Connect GND to GND
-- Connect TX/SCL to SCL
-- Connect RX/SDA to SDA
+> **_NOTE:_** when creating the sensor in the code, you will need to set the ports in code
+- Connect TX/SCL to any numbered port
+- Connect RX/SDA to any numbered port 
 
 [Datasheet](https://sensirion.com/media/documents/4EAF6AF8/61652C3C/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf)
 
