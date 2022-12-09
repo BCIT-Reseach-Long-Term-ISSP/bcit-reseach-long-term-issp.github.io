@@ -91,6 +91,8 @@ Connecting this sensor to the Arduino is relatively straightforward:
 > **_NOTE:_** when creating the sensor in the code, you will need to set the ports in code
 - Connect TX/SCL to any numbered port
 - Connect RX/SDA to any numbered port 
+- You can split the 3.3V connection in a breadboard to get 3.3V tom both the SEL and the VDD ports as seen below.
+![Diagram](/dec-2022-devices/assets/wiring.png)
 
 [Datasheet](https://sensirion.com/media/documents/4EAF6AF8/61652C3C/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf)
 
