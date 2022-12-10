@@ -10,6 +10,8 @@ nav_order: 1
 # December 2022 Devices
 
 A record of the devices that have been scrapped or are currently being used for the December 2022 deliverable.
+Some arduino code can be found here: [Datasheet](https://github.com/BCIT-Reseach-Long-Term-ISSP/sensor-investigation-and-testing)
+
 {: .fs-6 .fw-300 }
 
 ## Overview
@@ -91,7 +93,7 @@ Connecting this sensor to the Arduino is relatively straightforward:
 > **_NOTE:_** when creating the sensor in the code, you will need to set the ports in code
 - Connect TX/SCL to any numbered port
 - Connect RX/SDA to any numbered port 
-- You can split the 3.3V connection in a breadboard to get 3.3V tom both the SEL and the VDD ports as seen below.
+- The 3.3V power can be split in a breadboard to get 3.3V to both the SEL and the VDD ports as seen below.
 ![Diagram](/assets/wiring.png)
 
 [Datasheet](https://sensirion.com/media/documents/4EAF6AF8/61652C3C/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf)
