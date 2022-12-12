@@ -1,0 +1,22 @@
+# Fall 2022 Smart Device Team Recommendations
+
+## Revert firmware to using C++ from C
+
+We believe that project should revert to a C++ codebase. This is because:
+
+- The sensor libraries from the manufacturer are written in C++ and widely used making it easier to implement sensors and reduces time spent debugging.
+- Recreating existing communications protocols like modbus and I2C are incredibly demanding and difficult to debug
+
+Overall we believe that making the swap will substantially cut down on development time, reduce bugs and increase readability of code.
+
+This will make it easier for the project to transition to an open source model in the future as well.
+
+## Ongoing Documentation
+
+Thorough and ongoing documentation will help future teams onboard quicker and will also help with the transition to an open source model.
+
+## Sensor Vetting
+
+2 of the sensors slated for implementation this term had inherent performance flaws that made them inviable for the project.
+
+We recommend a vetting process to determine if the senors are viable before being passed onto the smart device team for implementation.
