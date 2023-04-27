@@ -31,6 +31,7 @@ Link: [google-docs](https://docs.google.com/document/d/1C9eDuQhJmmj8J4Q0ALxR8ywi
 
 
 ![Diagram](/sensors/assests/co2_diagram.jpeg)
+
 | Num | Label  | Description            |
 |-----|--------|------------------------|
 | 1   | Signal | Analog Output (0.4~2V) |
