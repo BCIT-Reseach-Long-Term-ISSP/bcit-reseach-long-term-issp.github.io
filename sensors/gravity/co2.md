@@ -29,6 +29,9 @@ Name: Gravity: Gravity Analog Infrared CO2 Sensor For Arduino SKU SEN0219
 Link: [web-archive link](https://web.archive.org/web/20220130200826/https://wiki.dfrobot.com/Gravity__Analog_Infrared_CO2_Sensor_For_Arduino_SKU__SEN0219)
 Link: [google-docs](https://docs.google.com/document/d/1C9eDuQhJmmj8J4Q0ALxR8ywix4w81ExK/edit)
 
+
+![Diagram](/sensors/assests/co2_diagram.jpeg)
+
 Calibration: Single-point and two-point. 
 
 Gas Detection: Carbon Dioxide (CO2)
