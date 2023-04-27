@@ -31,31 +31,44 @@ Link: [google-docs](https://docs.google.com/document/d/1C9eDuQhJmmj8J4Q0ALxR8ywi
 
 
 ![Diagram](/sensors/assests/co2_diagram.jpeg)
+| Num | Label  | Description            |
+|-----|--------|------------------------|
+| 1   | Signal | Analog Output (0.4~2V) |
+| 2   | VCC    | VCC (4.5~5.5V)         |
+| 3   | GND    | GND                    |
+
 
 Calibration: Single-point and two-point. 
 
-Gas Detection: Carbon Dioxide (CO2)
-Operating Voltage: 4.5 ~ 5.5V DC
-Average Current: <60mA @ 5V
-Peak Current: 150mA @ 5V
-Output Signal: Analog output (0.4 ~ 2V)
-Measuring Range: 0 ~ 5000ppm
-Accuracy: ± (50ppm 3% reading)
-Preheating Time: 3min
-Response Time: 120s
-Operating Temperature: 0 ~ 50 ℃
-Operating Humidity: 0 ~ 95% RH (no condensation)
-Service Life: >5 years
-Size: 37mm * 69mm
+* Gas Detection: Carbon Dioxide (CO2)
+* Operating Voltage: 4.5 ~ 5.5V DC
+* Average Current: <60mA @ 5V
+* Peak Current: 150mA @ 5V
+* Output Signal: Analog output (0.4 ~ 2V)
+* Measuring Range: 0 ~ 5000ppm
+* Accuracy: ± (50ppm 3% reading)
+* Preheating Time: 3min
+* Response Time: 120s
+* Operating Temperature: 0 ~ 50 ℃
+* Operating Humidity: 0 ~ 95% RH (no condensation)
+* Service Life: >5 years
+* Size: 37mm * 69mm
 
 ---
 ## Calibration
 Q. Can I use the CO2 sensor with 3.3V microcontroller?
+
 A. Yes, but you need to power the C02 sensor with 5V power supply seperately, and change the conversion formula * float voltage = sensorValue\(3300/1024.0)**
+
 Q. How do I calibrate?
+
 A. The sensor should be calibrated regularly. The cycle time should be no more than 6 months. Manual calibration of zero point is to calibrate the sensor's HD pin input low level (0V) to calibrate the zero point, and the low level shall last more than 7 seconds.The calibration of zero point is 400 ppm, Please ensure that the sensor is stable for more than 20 minutes at 400ppm.
 
+Method 1: Manual zero calibration Manual calibration of zero point is to short-circuit the HD and GND of the sensor (as shown below) to calibrate the zero point. It always needs to last for more than 7 seconds. Before calibrating the zero point, make sure that the sensor runs stably for more than 20 minutes at a concentration of 400ppm.
 
+![Method1](https://web.archive.org/web/20220130200826im_/https://dfimg.dfrobot.com/nobody/wiki/8fa5d642448de6b4bb9eb603d40e9b8d.jpg)
+
+Method 2: Automatic zero calibration The automatic calibration function means that the sensor will intelligently judge the zero point according to the environmental concentration and calibrate itself after a period of continuous operation. The calibration cycle starts from power-on operation, and it is automatically calibrated once every 24 hours. The zero point for automatic calibration is 400 ppm. The automatic zero calibration function is suitable for office environment and home environment.
 
 
 ## Notes
