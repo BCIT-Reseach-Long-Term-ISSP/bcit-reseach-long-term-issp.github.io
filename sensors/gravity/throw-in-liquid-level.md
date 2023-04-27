@@ -3,7 +3,7 @@ layout: default
 title: Throw-in Type Liquid Level Transmitter 
 parent: Gravity
 grand_parent: Sensors
-permalink: /docs/sensors/gravity/throw-in-liquid/
+permalink: /docs/sensors/gravity/throw-in-liquid-level/
 ---
 
 # Throw-in Type Liquid Level Transmitter 
