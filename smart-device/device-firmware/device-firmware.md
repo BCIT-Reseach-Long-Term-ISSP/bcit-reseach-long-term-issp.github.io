@@ -31,7 +31,7 @@ Detailed instructions for each are provided below:
 
 To get started, you first need to clone the code repository. The git repository is located at <https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware> and includes git submodules. When cloning this repository *make sure* to also download the submodules. This can be done through the command line by adding the argument `--recursive` when cloning:
 
-`git clone --recursive git@github.com:BCIT-Reseach-Long-Term-ISSP/device-firmware.git`
+`git clone --recursive https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware.git`
 
 The above command clones through SSH, which allows you to push changes back to github.
 
