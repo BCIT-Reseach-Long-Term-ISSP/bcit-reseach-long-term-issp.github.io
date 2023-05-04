@@ -1,0 +1,9 @@
+service: cloud-dtc-lambda
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+functions:
+  generateRandomNumber:
+    handler: src/handler.generateRandomNumber
