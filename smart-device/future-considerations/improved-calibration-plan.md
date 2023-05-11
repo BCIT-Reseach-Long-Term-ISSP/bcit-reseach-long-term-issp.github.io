@@ -16,6 +16,8 @@ Currently there is insufficient buffer solutions to properly calibrate the senso
 
 Additionally, for the analog sensors (turbidity, total dissolved solids, and dissolved oxygen), calibration currently requires a user to manually debug the code and update calibration variables in the code. They would then need to reflash the device with this updated code. This can lead to unforeseen problems, as code is improperly modified, and the calibration method of debugging the code to see the measurements makes it difficult to see when values stabilize or to get an overall picture of the sensors current function.
 
+Furthermore, during the installation of the new CO2 and CH4 sensors, the smart device team did not have access to a controlled environment in which they could safely test the sensors. As a result, the accuracy of the measurements is currently rather anecdotal.
+
 ## Suggested Solution
 
 At a minimum it is recommended that appropriate buffer solutions be purchased for every sensor being used. This would allow for more accurate calibration and therefore more accurate measurements.
@@ -25,6 +27,8 @@ The following two suggestion are only theoretical and may add significant comple
 1. USB Communication + Calibration Mode: If USB communication is implemented, as mentioned in the [Integrate USB Debugging and Communication Future Consideration Section](https://bcit-reseach-long-term-issp.github.io/docs/smart-device/future-considerations/integrate-usb-debugging-and-communication/), a user could input a command to enter the device into calibration mode, where they could calibrate the sensors without needing to manually modify the code.
 
 2. Cloud Calibration: Most analog sensors use only one or two k-values for calibration, which could be stored on the AWS Cloud. Using a calibration mode on the dashboard, a user could input the buffer solution parameters into the dashboard, which the cloud would use in conjunction with the actual values being measured by the device to modify the k-values (calibrate the sensors). This method would work particularly well if implemented with the [Cloud Post-Processing Future Consideration](https://bcit-reseach-long-term-issp.github.io/docs/smart-device/future-considerations/cloud-post-processing/), but would require significant changes to the Cloud and Dashboard architecture.
+
+3. Get a chemistry lab access to work with methane gas to be able to safely calibrate the sensor.
 
 ## Complexities
 
