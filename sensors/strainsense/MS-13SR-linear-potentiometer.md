@@ -31,39 +31,39 @@ Accessories available in our Accessory Datasheet such as, protective sleeve, bod
 ## Measurement ranges
 
 
-![Diagram](/assests/measurement_ranges.png)
+![Diagram](/sensors/assests/measurement_ranges.png)
 
 
 
 ## Diagrams and Dimensions
 
 
-![Diagram](/assests/diagramns_and_dimensions.png)
+![Diagram](/sensors/assests/diagramns_and_dimensions.png)
 
 
 
-![Diagram](/assests/dimensions.png)
+![Diagram](/sensors/assests/dimensions.png)
 
 
 
 ## Specifications
 
 
-![Diagram](/assests/specifications.png)
+![Diagram](/sensors/assests/specifications.png)
 
 
 
 ## Electrical Characteristics
 
 
-![Diagram](/assests/electrical_characteristics.png)
+![Diagram](/sensors/assests/electrical_characteristics.png)
 
 
 
 ## Ordering Information
 
 
-![Diagram](/assests/ordering_information.png)
+![Diagram](/sensors/assests/ordering_information.png)
 
 
 
