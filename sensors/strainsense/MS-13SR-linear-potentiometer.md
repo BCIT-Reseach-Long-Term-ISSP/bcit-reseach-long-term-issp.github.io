@@ -89,4 +89,4 @@ Accessories available in our Accessory Datasheet such as, protective sleeve, bod
 
 * Motorsport control monitoring
 * Vehicle and machine controls
-* Structural monitroing
+* Structural monitoring
