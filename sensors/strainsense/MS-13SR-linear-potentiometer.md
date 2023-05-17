@@ -31,7 +31,7 @@ Accessories available in our Accessory Datasheet such as, protective sleeve, bod
 ## Measurement ranges
 
 
-![Diagram](/assests/measurement_ranges.png)
+![Diagram](assests\measurement_ranges.png)
 
 
 
