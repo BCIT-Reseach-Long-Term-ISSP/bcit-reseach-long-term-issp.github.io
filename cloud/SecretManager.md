@@ -12,9 +12,9 @@ nav_order: 15
 
 Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant operations. This tool safeguards access to our resources by encrypting and storing sensitive credentials and API keys. We use Secrets Manager for managing confidential data, including authorization keys and database credentials like username, password, database engine, host, port, and dbInstanceIdentifier. 
 
-<!-- ## Current Usage
+## Current Usage
 
-<show diagram > -->
+<!-- <show diagram > -->
 
 ## How to Use
 
@@ -27,12 +27,12 @@ Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant o
     
     - if you choose the type as “Credentials for Amazon RDS database”, the secret can only store values for “username” and “passowrd”
         
-        <!-- ![Untitled](AWS%20Secret%20Manager%20c4692c43a7544b179ec1b6030a3960df/Untitled.png) -->
+        ![secret_m_1](cloud/assets/secretmanager/secret_m_1.png)
         
     
     - if you choose Other type of secret, you can customize your own key value pairs
         
-        <!-- ![Untitled](AWS%20Secret%20Manager%20c4692c43a7544b179ec1b6030a3960df/Untitled%201.png) -->
+        ![secret_m_2](cloud/assets/secretmanager/secret_m_2.png)
         
 3. config the secret with it’s name and description, with no tags and no permission policies 
 
@@ -95,7 +95,7 @@ Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant o
             ```
             
     
-    **********Note:********** 
+    **Note:**
     
     We have created a **layer** in Lambda function, named **secretm**, that is used from retrive secret values from a secret, using the sample code provided previously, to avoid code repitition in every lambda function. 
     
@@ -105,12 +105,12 @@ Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant o
 1. click into the secret you want to retrive the value from
 2. scrolling donw to “Secret value” section and click “Retrieve secret value”
     
-    <!-- ![Untitled](AWS%20Secret%20Manager%20c4692c43a7544b179ec1b6030a3960df/Untitled%202.png) -->
+    ![secret_m_3](cloud/assets/secretmanager/secret_m_3.png)
     
 3. click “edit” to edit secret values orr add new entry 
     
-    <!-- ![Untitled](AWS%20Secret%20Manager%20c4692c43a7544b179ec1b6030a3960df/Untitled%203.png)
-     -->
+    ![secret_m_4](cloud/assets/secretmanager/secret_m_4.png)
+    
 
 ## Benifits:
 
