@@ -1,8 +1,8 @@
 ---
 layout: default
-title: AWS Cloudformation
+title: Cloud CICD
 has_children: false
-permalink: /docs/cloud/aws-cloudformation
+permalink: /docs/cloud/cloud-cicd
 parent: Cloud
 has_toc: false
 nav_order: 14
