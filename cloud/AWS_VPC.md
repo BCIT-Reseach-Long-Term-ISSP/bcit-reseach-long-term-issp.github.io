@@ -5,7 +5,7 @@ has_children: true
 permalink: /docs/cloud/aws-vpc
 parent: Cloud
 has_toc: true
-nav_order: 16
+nav_order: 17
 ---
 
 # AWS Virtual Private Cloud
