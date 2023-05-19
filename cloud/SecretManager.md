@@ -14,7 +14,7 @@ Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant o
 
 ## Current Usage
 
-<show diagram >
+<!-- <show diagram > -->
 
 ## How to Use
 
