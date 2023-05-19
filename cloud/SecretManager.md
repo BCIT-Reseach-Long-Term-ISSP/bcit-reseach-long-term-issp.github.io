@@ -8,16 +8,19 @@ has_toc: false
 nav_order: 15
 ---
 
-# Overview:
+# AWS Secret Manager
+
+## Overview:
 Amazon Web Services (AWS) Secrets Manager is integral to our secure, compliant operations. This tool safeguards access to our resources by encrypting and storing sensitive credentials and API keys. 
 
-# Current Usage
+## Current Usage
 We use Secrets Manager for managing confidential data, including authorization keys and database credentials like username, password, database engine, host, port, and dbInstanceIdentifier. 
 
 
-# How to Use
 
-## Store a New Secret
+## How to Use
+
+### Store a New Secret
 
 1. Natigate to Secret Manager Panel and click “Store a new Secret”
 2. Choose a secret type
@@ -37,7 +40,7 @@ We use Secrets Manager for managing confidential data, including authorization k
 
  
 
-## Retrive Secret Values from a Secret
+### Retrive Secret Values from a Secret
 
 - **From Lambda Functions**
     1. Create policy to allow access to the secret
@@ -99,7 +102,7 @@ We use Secrets Manager for managing confidential data, including authorization k
     We have created a **layer** in Lambda function, named **secretm**, that is used from retrive secret values from a secret, using the sample code provided previously, to avoid code repitition in every lambda function. 
     
 
-## Modify Secret Values
+### Modify Secret Values
 
 1. click into the secret you want to retrive the value from
 2. scrolling donw to “Secret value” section and click “Retrieve secret value”
@@ -111,13 +114,13 @@ We use Secrets Manager for managing confidential data, including authorization k
     ![secret_m_4](assets/secretmanager/secret_m_4.png)
     
 
-# Benifits:
+## Benifits:
 
 - **Enhanced Security**: AWS Secrets Manager ensures that sensitive information such as credentials and API keys are securely encrypted and stored, reducing the risk of unauthorized access or breaches.
 - **Improved Compliance**: The service aids in meeting regulatory compliance requirements by providing a secure method to manage and rotate secrets, offering detailed auditing capabilities via AWS CloudTrail.
 - **Operational Efficiency**: Secrets Manager simplifies the process of rotating, managing, and retrieving secrets, eliminating the overhead of manual secret management and reducing potential human error.
 
-# Costs:
+## Costs:
 
 **PER SECRET PER MONTH**
 
@@ -127,7 +130,7 @@ $0.40 per secret per month. A replica secret is considered a distinct secret an
 
 $0.05 per 10,000 API calls.
 
-# References:
+## References:
 
 **AWS Secrets Manager User Guide**
 
