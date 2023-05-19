@@ -29,12 +29,12 @@ We use Secrets Manager for managing confidential data, including authorization k
     
     - if you choose the type as “Credentials for Amazon RDS database”, the secret can only store values for “username” and “passowrd”
         
-        ![secret_m_1](assets/secretmanager/secret_m_1.png)
+        ![secret_m_1](assets/secretmanager/secret_m_4.png)
         
     
     - if you choose Other type of secret, you can customize your own key value pairs
         
-        ![secret_m_2](assets/secretmanager/secret_m_2.png)
+        ![secret_m_2](assets/secretmanager/secret_m_1.png)
         
 3. config the secret with it’s name and description, with no tags and no permission policies 
 
@@ -107,11 +107,11 @@ We use Secrets Manager for managing confidential data, including authorization k
 1. click into the secret you want to retrive the value from
 2. scrolling donw to “Secret value” section and click “Retrieve secret value”
     
-    ![secret_m_3](assets/secretmanager/secret_m_3.png)
+    ![secret_m_3](assets/secretmanager/secret_m_2.png)
     
 3. click “edit” to edit secret values orr add new entry 
     
-    ![secret_m_4](assets/secretmanager/secret_m_4.png)
+    ![secret_m_4](assets/secretmanager/secret_m_3.png)
     
 
 ## Benifits:
