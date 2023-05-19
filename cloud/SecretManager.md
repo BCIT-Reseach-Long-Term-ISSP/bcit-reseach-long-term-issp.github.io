@@ -1,6 +1,12 @@
-# AWS Secret Manager
-
-Tags: AWS Documentation
+---
+layout: default
+title: AWS Secret Manager
+has_children: false
+permalink: /docs/cloud/aws-secret-manager
+parent: Cloud
+has_toc: false
+nav_order: 15
+---
 
 ## Overview:
 
