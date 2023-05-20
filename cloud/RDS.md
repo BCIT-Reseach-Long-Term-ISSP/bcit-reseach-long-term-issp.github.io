@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cloud CICD
+title: RDS Database
 has_children: false
 permalink: /docs/cloud/RDS
 parent: Cloud
