@@ -12,9 +12,9 @@ nav_order: 14
 
 ## Introduction
 
-A relational database management system (RDBMS) is a collection of programs and capabilities that manage data and the relationships among the data in tables. These systems use SQL (Structured Query Language) for querying and maintaining the database.
+This documentation provides an overview of our database schema designed for managing devices and sensors. The database is implemented using Amazon RDS (Relational Database Service), a scalable database service provided by Amazon Web Services for easily setting up, operating, and scaling a relational database in the cloud.
 
-This documentation provides an overview of our specific relational database schema, which is focused on tracking devices and sensors and their respective statuses.
+This documentation provides an overview of our specific relational database schema, and how to connect to the Database locally.
 
 ## Database Schema
 
@@ -22,7 +22,7 @@ Our schema is composed of three tables.
 
 ### Tables
 
-![Diagram](/cloud/assests/RDS/DB_Schema.png)
+![Diagram](/cloud/assets/RDS/DB_Schema.png)
 
 ## Queries (DDL)
 
