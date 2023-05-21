@@ -21,7 +21,8 @@ nav_order: 2
 ---
 
 ## Outdated Endpoints
-**🚧 <span style="color:orange">The following endpoints are not updated and must be modified in collaboration with the Cloud team to utilize the AWS RDS: `/createDevice`, `/updateDevice`, `/deleteDevice`, `/getAllDevices`, `/getSingleDevice`, `/getDevicesWithinRadius`</span>**
+
+|**🚧 <span style="color:orange">The following endpoints are not updated and must be modified in collaboration with the Cloud team to utilize the AWS RDS: `/createDevice`, `/updateDevice`, `/deleteDevice`, `/getAllDevices`, `/getSingleDevice`, `/getDevicesWithinRadius`</span>**|
 
 At the end of the sprint in the Spring of 2023, the project has been directed to have Device Settings, Sensor Details, and Calibration details to be pulled from Cloud team's AWS RDS.
 
