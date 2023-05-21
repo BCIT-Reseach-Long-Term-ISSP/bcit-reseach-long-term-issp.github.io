@@ -3,7 +3,7 @@ layout: default
 title: Warnings
 has_children: false  
 permalink: /docs/dashboard/v2-2022/warnings
-parent: Dashboard v2 (2022)
+parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: true
 ---  

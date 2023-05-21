@@ -9,5 +9,8 @@ nav_order: 5
 
 # Dashboard Team
 
-Documentation section of the Dashboard team. 
+This is the documentation section of the Dashboard team. 
 {: .fs-6 .fw-300 }
+
+The current documentation under this parent page pertains to documentation for the v3 iteration of Dashboard.
+

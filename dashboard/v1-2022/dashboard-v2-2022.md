@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dashboard v2 (2022)
+title: Archive - Dashboard v2 (2022)
 parent: Dashboard
 has_children: true
 permalink: /docs/dashboard/v2-2022

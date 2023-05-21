@@ -1,7 +1,7 @@
 ---  
 layout: default  
 title: react-map-gl  
-parent: Dashboard v2 (2022)
+parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
 permalink: /docs/dashboard/v2-2022/react-map-gl
