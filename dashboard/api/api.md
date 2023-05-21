@@ -9,22 +9,24 @@ nav_order: 2
 ---
 
 # Server APIs
-The backend provides APIs to grab data from AWS Timestream, our own MongoDB, and AWS DynamoDB set up with Device, Thresholds, and Calibration details.
+The backend provides APIs to grab data from AWS Timestream, our own MongoDB, and AWS RDS set up with Device, Thresholds, and Calibration details.
 {: .fs-6 .fw-300 }
 
 ## Where is data coming from?
 
+| Data                    | Source            | Owner      | Dashboard API Route   
+| -------------           |:-------           | :-----     | :------------
+| Real-time Sensor Data   | AWS Timestream    | Cloud      | `/api/ts`
+| Device Settings         | AWS RDS           | Cloud      | `/api/device`
+| Sensor Settings         | AWS RDS           | Cloud      | `/api/device`
+| Calibration             | AWS RDS           | Cloud      | `/api/calibration`
+| User Alert Thresholds   | MongoDB           | Dashboard  | `/api/userThreshold`
+| Default Thresholds      | MongoDB           | Dashboard  | `/api/defaultThreshold`
+| Sessions                | MongoDB           | Dashboard  | `/api/session`
+| Users                   | MongoDB           | Dashbaoard | `/api/user`
 
 
-# Devices
-
-![Untitled](Back-end%20Server%20Architecture%205c3544028faa4c38964c5714a72d8b8b/Untitled%2015.png)
-
-When a device is deployed in the field, and begins transmitting data to the cloud, its unique ID value, the coordinates which the device is deployed in, and the list of all measurable metrics, each represented with boolean value indicating if that metric is measurable by the device at that moment or not, are stored in the database. Every sensor on device can function properly, or some sensors may be missing on a device due to design choice or malfunctioning. Relevant document for a device in the database should be updated according to the device’s status. Necessary functions to manage device collection can be found in related directories.
-
-![Untitled](Back-end%20Server%20Architecture%205c3544028faa4c38964c5714a72d8b8b/Untitled%2016.png)
-
-Documents storing device information should only be created, updated, and deleted by “admin” type user. 
+The child pages in this section will detail what each of these data sources and API routes are.
 
 # Thresholds
 
