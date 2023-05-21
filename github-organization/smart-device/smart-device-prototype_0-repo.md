@@ -1,8 +1,9 @@
 ---
 layout: default
 title: smart-device-prototype_0 Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/smart-device-prototype_0-repo/
+parent: Smart Devices Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/smart-devices-repos/smart-device-prototype_0-repo/
 nav_order: 5
 ---
 

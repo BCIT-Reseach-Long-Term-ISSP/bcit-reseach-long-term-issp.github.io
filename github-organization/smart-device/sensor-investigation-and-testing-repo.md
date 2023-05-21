@@ -1,8 +1,9 @@
 ---
 layout: default
 title: sensor-investigation-and-testing Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/sensor-investigation-and-testing-repo/
+parent: Smart Devices Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/smart-devices-repos/sensor-investigation-and-testing-repo/
 nav_order: 4
 ---
 

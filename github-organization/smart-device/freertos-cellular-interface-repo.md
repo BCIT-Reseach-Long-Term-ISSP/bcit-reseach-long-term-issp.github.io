@@ -1,9 +1,10 @@
 ---
 layout: default
 title: FreeRTOS-Cellular-Interface Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/freertos-cellular-interface-repo/
-nav_order: 2
+parent: Smart Devices Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/smart-devices-repos/freertos-cellular-interface-repo/
+nav_order: 3
 ---
 
 # FreeRTOS-Cellular-Interface Repository

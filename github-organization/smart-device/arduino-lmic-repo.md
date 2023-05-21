@@ -1,9 +1,10 @@
 ---
 layout: default
 title: arduino-lmic Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/arduino-lmic-repo/
-nav_order: 3
+parent: Smart Devices Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/smart-devices-repos/arduino-lmic-repo/
+nav_order: 1
 ---
 
 # arduino-lmic Repository

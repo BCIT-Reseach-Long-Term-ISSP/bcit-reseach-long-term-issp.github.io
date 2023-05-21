@@ -1,14 +1,17 @@
 ---
 layout: default
 title: cloud Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/cloud-repo/
-nav_order: 7
+parent: Cloud Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/cloud-repos/cloud-repo
+nav_order: 1
 ---
 
 # cloud Repository
 
 **Name:** cloud
+
+**Status:** <span style="color:green">Active</span>
 
 **Link:** [https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud](https://github.com/BCIT-Reseach-Long-Term-ISSP/cloud)
 

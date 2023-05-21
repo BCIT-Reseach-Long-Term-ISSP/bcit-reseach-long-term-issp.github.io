@@ -1,9 +1,10 @@
 ---
 layout: default
 title: smart-device-sensor-docs Repo
-parent: GitHub Organization
-permalink: /docs/github-organization/smart-device-sensor-docs-repo/
-nav_order: 11
+parent: Smart Devices Repositories
+grand_parent: GitHub Organization
+permalink: /docs/github-organization/smart-devices-repos/smart-device-sensor-docs-repo/
+nav_order: 6
 ---
 
 # smart-device-sensor-docs Repository
