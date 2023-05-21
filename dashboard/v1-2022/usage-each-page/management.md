@@ -1,9 +1,9 @@
 ---  
 layout: default  
-title: Device Management and Notifications Page
+title: User Manual - Device Management and Notifications Page
 has_children: false  
-permalink: /docs/dashboard/user-manual/management  
-parent: User Manual
+permalink: /docs/dashboard/v2-2022/management  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
 nav_order: 3

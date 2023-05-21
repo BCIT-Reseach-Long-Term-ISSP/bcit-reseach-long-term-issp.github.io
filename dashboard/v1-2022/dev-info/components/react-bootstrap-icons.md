@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: react-bootstrap-icons
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/react-bootstrap-icons
+permalink: /docs/dashboard/v2-2022/react-bootstrap-icons
 ---  
 
 # react-bootstrap-icons

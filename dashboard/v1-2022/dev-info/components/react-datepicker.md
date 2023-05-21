@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: react-datepicker
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/react-datepicker
+permalink: /docs/dashboard/v2-2022/react-datepicker
 ---  
 
 # react-datepicker

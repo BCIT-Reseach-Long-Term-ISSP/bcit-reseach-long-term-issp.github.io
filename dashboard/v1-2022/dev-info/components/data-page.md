@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: Data Page Components
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/data-page
+permalink: /docs/dashboard/v2-2022/data-page
 ---  
 
 # Data Page Components

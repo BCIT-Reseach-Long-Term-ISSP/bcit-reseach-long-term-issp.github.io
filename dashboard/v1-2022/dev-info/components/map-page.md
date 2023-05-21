@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: Map Page Components
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/map-page
+permalink: /docs/dashboard/v2-2022/map-page
 ---  
 
 # Map Page Components

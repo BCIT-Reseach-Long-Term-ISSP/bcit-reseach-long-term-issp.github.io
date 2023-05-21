@@ -1,10 +1,10 @@
 ---  
 layout: default  
-title: Dashboard API Helper
-parent: React  
+title: React - Dashboard API Helper
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/cloudAPIHelper
+permalink: /docs/dashboard/v2-2022/cloudAPIHelper
 ---  
 
 # Dashboard API Helper

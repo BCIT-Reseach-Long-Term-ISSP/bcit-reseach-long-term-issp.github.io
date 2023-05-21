@@ -1,9 +1,9 @@
 ---  
 layout: default  
-title: Map Page
+title: User Manual - Map Page
 has_children: false  
-permalink: /docs/dashboard/user-manual/map  
-parent: User Manual
+permalink: /docs/dashboard/v2-2022/map  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
 nav_order: 1

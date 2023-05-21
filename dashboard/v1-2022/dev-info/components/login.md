@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: Login Components
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/login-page
+permalink: /docs/dashboard/v2-2022/login-page
 ---  
 
 # Log In Components

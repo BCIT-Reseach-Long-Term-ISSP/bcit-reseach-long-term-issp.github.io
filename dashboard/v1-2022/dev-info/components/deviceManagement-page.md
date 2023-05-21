@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: Device Management Page Components
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/device-management-page
+permalink: /docs/dashboard/v2-2022/device-management-page
 ---  
 
 # Device Management Page Components

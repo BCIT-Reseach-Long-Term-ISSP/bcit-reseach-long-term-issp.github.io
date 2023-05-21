@@ -3,7 +3,8 @@ layout: default
 title: Test Cases
 has_children: false  
 permalink: /docs/dashboard/test-cases  
-parent: Dashboard  
+parent: Dashboard v2 (2022)
+grand_parent: Dashboard 
 has_toc: true
 ---  
 

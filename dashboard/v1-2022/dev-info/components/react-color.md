@@ -1,10 +1,10 @@
 ---  
 layout: default  
 title: react-color
-parent: React  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
-permalink: /docs/dashboard/react/react-color
+permalink: /docs/dashboard/v2-2022/react-color
 ---  
 
 # React Color

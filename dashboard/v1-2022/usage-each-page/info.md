@@ -1,9 +1,9 @@
 ---  
 layout: default  
-title: Device Information Page
+title: User Manual - Device Info
 has_children: false  
-permalink: /docs/dashboard/user-manual/info  
-parent: User Manual
+permalink: /docs/dashboard/v1-2022/user-manual-info  
+parent: Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false
 nav_order: 2
@@ -12,6 +12,18 @@ nav_order: 2
 # Getting Started 
 
 This section contains information about how to use the device information page of the dashboard to see information.
+
+# Getting Started / Setup 
+
+This section contains information about how to use the dashboard to see information.
+
+To begin, we must first visit our hosted webapp by clicking on [this link.](https://bcitema-f85bf.web.app/)
+
+Here you will be greeted by the map page, and instructions on navigating this page can be found [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/map)
+
+Instructions for navigating the device information page can be found [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/info)
+
+Instructions on how to modify device thresholds and locations can be found [here.](https://bcit-reseach-long-term-issp.github.io/docs/dashboard/user-manual/management)
 
 ## Viewing Device and Sensor Statistics
 
