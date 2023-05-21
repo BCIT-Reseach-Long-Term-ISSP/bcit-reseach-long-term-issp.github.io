@@ -29,6 +29,151 @@ The only endpoints at this time that are doing so are `/getAllDevicesSettings` a
 
 
 
+# /getAllDeviceSettings
+
+| <b>Description</b>    | Retrieves all valid devices and their sensor configurations. |
+| <b>HTTP Verb</b>      | GET |
+| <b>Success Codes</b>  | 200 |
+| <b>Failure Codes</b>  | 400, 500 |
+| <b>Request Schema</b> | N/A |
+| <b>Sample Request</b> | N/A |
+
+### Response Schema
+```
+[
+    {
+        id: number,
+        name: string,
+        description: string,
+        locationX: number,
+        locationY: number,
+        active: boolean,
+        timeInterval: int,
+        sensors: [
+            {
+                id: number,
+                deviceId: number,
+                lastCalibrationDate: string,
+                minCalibrationPts: number,
+                metric: string,
+                defaultUnit: string,
+                calibrated: boolean,
+                enabled: boolean,
+                minVal: number,
+                maxVal: number,
+            }, ...
+        ]
+    }
+]
+```
+
+### Sample Response
+```
+[
+    {
+        "id": 0,
+        "name": "Guichon",
+        "description": "Device in Guichon",
+        "locationX": -123.1495,
+        "locationY": 49.1999,
+        "active": true,
+        "timeInterval": null,
+        "sensors": [
+            {
+                "id": 10,
+                "deviceId": 0,
+                "lastCalibrationDate": "",
+                "minCalibrationPts": 2,
+                "metric": "ph",
+                "defaultUnit": "pH",
+                "calibrated": true,
+                "enabled": true,
+                "minVal": 0,
+                "maxVal": 13
+            },
+            {
+                "id": 11,
+                "deviceId": 0,
+                "lastCalibrationDate": "2023-05-10T04:18:23.545772",
+                "minCalibrationPts": 2,
+                "metric": "tds",
+                "defaultUnit": "ppm",
+                "calibrated": true,
+                "enabled": true,
+                "minVal": 2,
+                "maxVal": 5
+            }, ...
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Expo",
+        "description": "Device in Expo",
+        "locationX": -123.205,
+        "locationY": 49.19,
+        "active": true,
+        "timeInterval": null,
+        "sensors": [ ... ]
+    }
+]
+```
+
+# /updateDeviceSettings
+
+| <b>Description</b>    | Updates a device's settings with the given body. |
+| <b>HTTP Verb</b>      | PUT |
+| <b>Success Codes</b>  | 200 |
+| <b>Failure Codes</b>  | 400, 500 |
+
+### Request Schema
+```
+{
+    device_id: number,
+    device_name: string,
+    device_description: string,
+    location_x: number,
+    location_y: number,
+    time_interval: number,
+    active: boolean
+}
+```
+
+### Sample Request
+```
+{
+    "device_id": 1006,
+    "device_name": "Device A",
+    "device_description": "A device description here!",
+    "location_x": 48.123,
+    "location_y": -129.746,
+    "time_interval": 60,
+    "active": true
+}
+```
+
+### Response Schema
+```
+{
+    message: string
+}
+```
+
+### Sample Success Response
+```
+{
+    "message": "Successfully updated the device"
+}
+```
+
+### Sample Fail Response
+```
+{
+    "message": "No device found with the given device_id"
+}
+```
+
+
+
 # /createDevice
 **🚧<span style="color:orange"> This endpoint is using MongoDB and must be updated to use AWS RDS</span>**
 
