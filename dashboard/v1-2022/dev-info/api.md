@@ -2,7 +2,7 @@
 layout: default  
 title: Dashboard API  
 has_children: false  
-permalink: /docs/dashboard/api
+permalink: /docs/dashboard/v2-2022/api
 parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: false

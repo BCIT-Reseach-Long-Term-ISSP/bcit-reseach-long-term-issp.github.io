@@ -2,7 +2,7 @@
 layout: default  
 title: Proposals for Improvement
 has_children: false  
-permalink: /docs/dashboard/proposals-for-improvement
+permalink: /docs/dashboard/v2-2022/proposals-for-improvement
 parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: true

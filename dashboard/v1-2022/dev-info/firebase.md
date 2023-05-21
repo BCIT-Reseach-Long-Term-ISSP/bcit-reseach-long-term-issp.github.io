@@ -2,7 +2,7 @@
 layout: default  
 title: Firebase
 has_children: false  
-permalink: /docs/dashboard/firestore
+permalink: /docs/dashboard/v2-2022/firestore
 parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard
 has_toc: true

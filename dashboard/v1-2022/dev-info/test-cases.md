@@ -2,7 +2,7 @@
 layout: default  
 title: Test Cases
 has_children: false  
-permalink: /docs/dashboard/test-cases  
+permalink: /docs/dashboard/v2-2022/test-cases  
 parent: Archive - Dashboard v2 (2022)
 grand_parent: Dashboard 
 has_toc: true
