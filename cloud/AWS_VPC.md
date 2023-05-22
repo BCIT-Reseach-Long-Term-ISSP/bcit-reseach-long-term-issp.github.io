@@ -21,10 +21,15 @@ We use VPC to isolate our resources of DB and Lambda functions from the public i
 - **main route table and ACL**
   autometically generated in the creation of VPC
   ![main_route_table](assets/vpc/vpc_main_route_table.png)
+  
 - **subnets**
   ![subnets](assets/vpc/vpc_subnets.png)
+
 - **security groups**
   ![security_groups](assets/vpc/vpc_security_groups.png)
+
+  **Note**:
+  the current security group is allowing all the inbound traffic of all the protocols and ports, and outbound traffic from of IPv4 and IPv6. 
 
 ## Benefits
 
