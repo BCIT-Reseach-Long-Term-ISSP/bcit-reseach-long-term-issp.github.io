@@ -24,7 +24,9 @@ To start running the project locally, run:
 ```
 bundle exec jekyll serve -lI
 ```
-Note that, while running locally will detect your saved changes and refresh hosting, at times, this refresh rate is slow and you may have to restart the server.
+The project will start running on: http://127.0.0.1:4000//
+
+Note that, while there is Live Reload to reflect your saved changes locally, at times, this refresh rate is slow and you may have to restart the server.
 
 By merging your branch or changes to `master`, github will automatically run build and deploy the changes to the github.io site. Perhaps sometimes a branch is handy to manage your changes!
 
