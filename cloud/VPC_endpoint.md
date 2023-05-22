@@ -19,7 +19,7 @@ We created Interface Endpoints powered by AWS PrivateLink, to provide private co
 
 ## Current VPC Endpoint Configuration
 
-- **Service Name**
+- **service name**
     The service name has to be `com.amazonaws.us-west-2.secretsmanager` to connect to Secrets Manager in us-west-2 region.
 
 - **subnets**
