@@ -4,7 +4,7 @@ title: API
 parent: Client Architecture
 grand_parent: Dashboard
 has_children: true
-permalink: /docs/dashboard/frontend-api
+permalink: /docs/dashboard/client/frontend-api
 has_toc: true
 nav_order: 1
 ---

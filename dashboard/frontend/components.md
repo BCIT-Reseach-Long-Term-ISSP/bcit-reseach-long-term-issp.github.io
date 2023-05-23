@@ -3,7 +3,7 @@ layout: default
 title: Components
 parent: Client Architecture
 grand_parent: Dashboard
-permalink: /docs/dashboard/components
+permalink: /docs/dashboard/client/components
 nav_order: 2
 ---
 

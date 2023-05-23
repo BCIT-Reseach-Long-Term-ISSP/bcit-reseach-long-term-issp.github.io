@@ -3,7 +3,7 @@ layout: default
 title: Client Architecture
 parent: Dashboard
 has_children: true
-permalink: /docs/dashboard/frontend
+permalink: /docs/dashboard/client
 has_toc: true
 nav_order: 2
 ---
