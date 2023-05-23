@@ -12,7 +12,7 @@ nav_order: 7
 **Base route**: `/api/calibration`
 {: .fs-6 .fw-300 }
 
-| 📚 Read more about Calibration in [Back-end Server Architecture Weather & Tide documentation](/docs/dashboard/backend/weather-tide).|
+| 📚 Read more about Calibration in [Back-end Server Architecture Device, Sensor, & Calibration documentation](/docs/dashboard/backend/device-sensor-calibration).|
 
 ## Table of contents
 {: .no_toc .text-delta }
