@@ -122,7 +122,7 @@ We can enable caching for a specific stage or for all stages in the API. We can 
 
 The TTL for the cache can be set to a specific value or to a value that is based on the response from the API. For example, we can set the TTL for the cache to 5 minutes or to a value that is based on the response from the API.
 
-![Caching](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_api_caching.png)
+![Caching](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_api_cache.png)
 <figcaption align="center"><b>Caching</b></figcaption>
 
 In our case, we will enable caching for all resources in the API.
