@@ -5,7 +5,7 @@ parent: Dashboard
 has_children: true
 permalink: /docs/dashboard/backend
 has_toc: true
-nav_order: 2
+nav_order: 3
 ---
 
 # Server Architecture
@@ -17,6 +17,8 @@ The Server (back-end) is built with TypeScript, Express, and NodeJS.
 We use the **MVC pattern** in our server design in order to construct **REST API**s. All our REST APIs must be **Level 2** or above as quantified by the [Richardson REST Maturity Model](https://blog.restcase.com/4-maturity-levels-of-rest-api-design/). 
 
 In order to test our APIs, we use **Postman**, although as we move closer to production a unit test tool like Thunderclient can be leveraged as well. 
+
+---
 
 ## Environment Variables
 
@@ -33,15 +35,14 @@ You must create the file locally at the root level of the repository.
 
 The previous Dashboard team will provide the keys via a document in an email. Copy and paste the keys into your file.
 
+---
+
 ## Back-end Repository Structure
 
 The way that our server is set up is based on **Movel-View-Controller** design. 
 
-<aside>
-💡 We want to think: **Routes** (direction) → **Controllers** (validation) → **Models** (logic)
-Likewise, the ***reverse*** is true for data coming ***from*** the server.
-
-</aside>
+| 💡 We want to think: **Routes** (direction) → **Controllers** (validation) → **Models** (logic)
+Likewise, the ***reverse*** is true for data coming ***from*** the server. |
 
 Here is a top level overview of the back-end repository. We will be going over the purpose of each directory and how they relate to the server architecture.
 

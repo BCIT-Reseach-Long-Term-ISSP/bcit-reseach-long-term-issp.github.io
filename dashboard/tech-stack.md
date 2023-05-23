@@ -7,8 +7,6 @@ nav_order: 1
 ---
 
 # Tech Stack & Bookmarks
-Last updated: May 1, 2023 3:02 PM
-
 
 ## Tech Stack Overview
 

@@ -5,7 +5,7 @@ parent: Dashboard
 has_children: true
 permalink: /docs/dashboard/client
 has_toc: true
-nav_order: 2
+nav_order: 4
 ---
 
 # Client Architecture
