@@ -26,7 +26,6 @@ nav_order: 9
 
 | <b>Description</b>    | Get today’s weather and the upcoming weather 3-day weather forecast. |
 | <b>HTTP Verb</b>      | GET |
-| <b>HTTP Verb</b>      | GET |
 | <b>Success Codes</b>  | 200 |
 | <b>Failure Codes</b>  | 500 server error |
 | <b>Request Schema</b> | Endpoint does not expect a request body or parameters. |
