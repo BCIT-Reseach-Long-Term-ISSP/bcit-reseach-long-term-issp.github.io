@@ -11,7 +11,8 @@ nav_order: 1
 {: .no_toc }
 **Base route**: `/api/ts`
 {: .fs-6 .fw-300 }
-The Timestream API utilizes AWS Timestream to retrieve real-time device sensor data.
+
+| 📚 Read more about Timestream data in the [Back-end Server Architecture AWS Timestream](/docs/dashboard/backend/aws-timestream) documentation.|
 
 ## Table of contents
 {: .no_toc .text-delta }
