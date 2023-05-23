@@ -11,7 +11,6 @@ nav_order: 3
 {: .no_toc }
 **Base route**: `/api/userThreshold`
 {: .fs-6 .fw-300 }
-The Timestream API utilizes AWS Timestream to retrieve real-time device sensor data.
 
 ## Table of contents
 {: .no_toc .text-delta }
