@@ -5,7 +5,7 @@ parent: Dashboard
 has_children: true
 permalink: /docs/dashboard/api
 has_toc: true
-nav_order: 2
+nav_order: 3
 ---
 
 # Server APIs
