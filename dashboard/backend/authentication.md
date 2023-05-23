@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Authentication & Session Management
-parent: Back-end Server Architecture
+parent: Server Architecture
 grand_parent: Dashboard
 permalink: /docs/dashboard/backend/authentication
 nav_order: 3

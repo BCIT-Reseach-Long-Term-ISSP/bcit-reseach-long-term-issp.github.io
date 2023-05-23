@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Back-end Server Architecture
+title: Server Architecture
 parent: Dashboard
 has_children: true
 permalink: /docs/dashboard/backend
@@ -8,7 +8,9 @@ has_toc: true
 nav_order: 2
 ---
 
-# Back-end/Server Architecture
+# Server Architecture
+The Server (back-end) is built with TypeScript, Express, and NodeJS.
+{: .fs-6 .fw-300 }
 
 ## Server Design Overview
 

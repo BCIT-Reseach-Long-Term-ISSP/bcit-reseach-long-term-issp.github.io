@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Devices, Sensors, & Calibration
-parent: Back-end Server Architecture
+parent: Server Architecture
 grand_parent: Dashboard
 permalink: /docs/dashboard/backend/device-sensor-calibration
 nav_order: 6

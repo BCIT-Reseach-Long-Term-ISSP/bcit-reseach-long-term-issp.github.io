@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Weather & Tide
-parent: Back-end Server Architecture
+parent: Server Architecture
 grand_parent: Dashboard
 permalink: /docs/dashboard/backend/weather-tide
 nav_order: 1
