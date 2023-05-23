@@ -4,7 +4,7 @@ title: Weather & Tide /api/weather
 parent: API Endpoints
 grand_parent: Dashboard
 permalink: /docs/dashboard/api/weatherTide
-nav_order: 9
+nav_order: 8
 ---
 
 # Weather & Tide
@@ -12,7 +12,7 @@ nav_order: 9
 **Base route**: `/api/weather`
 {: .fs-6 .fw-300 }
 
-| 📚 Read more about how Weather and Tide in [Back-end Server Architecture Weather & Tide documentation](/docs/dashboard/backend/weather-tide).|
+| 📚 Read more about Weather and Tide in [Back-end Server Architecture Weather & Tide documentation](/docs/dashboard/backend/weather-tide).|
 
 ## Table of contents
 {: .no_toc .text-delta }
