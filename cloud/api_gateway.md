@@ -36,6 +36,29 @@ https://<api-id>.execute-api.<region>.amazonaws.com/test/devices
 
 Methods are the actions that can be performed on a resource ie GET, POST, PUT, DELETE etc. 
 
+When we create a method, we need to specify the integration type. The integration type is the type of integration that we want to use to integrate the API with the backend. We can use HTTP, Lambda, or AWS services as the integration type.
+
+### How it works
+
+We are using Lambda functions as the integration type for the API. This means that when we call the API, the API will call the Lambda function that is associated with the method.
+
+We can create a method and associate it with a Lambda function using the following steps:
+
+1. Create a Lambda function that will be used to process the request.
+
+2. Create a method that will be used to call the Lambda function.
+
+![API Gateway Method Creation](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_api_gateway.png)
+<figcaption align="center"><b>API Gateway Method Creation</b></figcaption>
+
+3. Associate the Lambda function with the method.
+
+![API Gateway Method Integration](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/2_api_gateway.png)
+<figcaption align="center"><b>API Gateway Method Integration</b></figcaption>
+
+The Lambda Proxy Integration is used to pass the request to the Lambda function. The Lambda function will then process the request and return the response to the API Gateway. The API Gateway will then return the response to the client.
+The default Lambda offers more control over the transmission data. The request data can be modified before it is passed to the Lambda function. The response data can also be modified before it is returned to the client.
+
 ### Stages
 
 Stages are the different versions of the API. For example, if we want to access the test stage of the API, we would use the following URL:
