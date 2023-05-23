@@ -12,7 +12,7 @@ nav_order: 3
 **Base route**: `/api/userThreshold`
 {: .fs-6 .fw-300 }
 
-| 📚 Read more about how User Thresholds and Default Thresholds are used in the [Back-end Server Architecture document on Thresholds](/dashboard/backend/thresholds.md) documentation.|
+| 📚 Read more about how User Thresholds and Default Thresholds are used in the [Back-end Server Architecture Thresholds](/docs/dashboard/backend/thresholds) documentation.|
 
 ## Table of contents
 {: .no_toc .text-delta }
