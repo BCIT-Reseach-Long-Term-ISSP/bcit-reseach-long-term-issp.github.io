@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cache
-parent: Back-end Server Architecture
+parent: Server Architecture
 grand_parent: Dashboard
 permalink: /docs/dashboard/backend/cache
 nav_order: 2

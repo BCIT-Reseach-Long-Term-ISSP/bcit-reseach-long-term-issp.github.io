@@ -12,6 +12,8 @@ nav_order: 2
 **Base route**: `/api/device`
 {: .fs-6 .fw-300 }
 
+| 📚 Read more about Calibration in [Back-end Server Architecture Device, Sensor, & Calibration documentation](/docs/dashboard/backend/device-sensor-calibration).|
+
 ## Table of contents
 {: .no_toc .text-delta }
 

@@ -14,3 +14,5 @@ This is the documentation section of the Dashboard team.
 
 The current documentation under this parent page pertains to documentation for the v3 iteration of Dashboard.
 
+The current dashboard can be accessed via [https://yvrdashboard.netlify.app/](https://yvrdashboard.netlify.app/)
+

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AWS Timestream
-parent: Back-end Server Architecture
+parent: Server Architecture
 grand_parent: Dashboard
 permalink: /docs/dashboard/backend/aws-timestream
 nav_order: 4
