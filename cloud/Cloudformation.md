@@ -9,6 +9,7 @@ nav_order: 13
 ---
 
 # Overview
+
 Amazon Web Services (AWS) CloudFormation is a service that helps users model, provision, and manage their AWS infrastructure resources in a consistent, predictable, and repeatable manner. It enables the creation, modification, and deletion of a collection of resources together as a single unit, referred to as a "stack."
 
 ## Key Features / Concepts:
@@ -21,21 +22,20 @@ Amazon Web Services (AWS) CloudFormation is a service that helps users model, pr
 
 4. Nested Stacks: CloudFormation supports the creation of nested stacks, which allows users to break down complex architectures into smaller, reusable components.
 
-
 # Current Usage
+
 ![cloudformation - current usage](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cloudformation/aws_chart.png)
 
-The API gateway, together with the integrated Lambda functions, that exposes the endpoints for device configuration purposes are currently defined in cloudformation templates. 
+The API gateway, together with the integrated Lambda functions, that exposes the endpoints for device configuration purposes are currently defined in cloudformation templates.
 
-- Stack name: test-config-stack
+- Stack name: device-config-stack
 - Template: cloudformation/ApiGatewayMaster.yaml
 
 The template `ApiGatewayMaster.yaml` includes 6 nested stacks. Each defines a group of related resources. The nested stacks are
+
 - `ApiGatewayStack`: defines the REST Api Gateway
-- `AuthValidationLambdaStack`: defines all the resources and permissions necessary for the /AuthValidation endpoint 
-- `DeviceConfigLambdaStack`: defines all the resources and permissions necessary for the /config endpoint 
-- `CalibrationPointsLambdaStack`: defines all the resources and permissions necessary for the /calibration_points endpoint 
-- `DevicesLambdaStack`: defines all the resources and permissions necessary for the /devices endpoint 
-- `SensorsLambdaStack`: defines all the resources and permissions necessary for the /sensors endpoint 
-
-
+- `AuthValidationLambdaStack`: defines all the resources and permissions necessary for the /AuthValidation endpoint
+- `DeviceConfigLambdaStack`: defines all the resources and permissions necessary for the /config endpoint
+- `CalibrationPointsLambdaStack`: defines all the resources and permissions necessary for the /calibration_points endpoint
+- `DevicesLambdaStack`: defines all the resources and permissions necessary for the /devices endpoint
+- `SensorsLambdaStack`: defines all the resources and permissions necessary for the /sensors endpoint
