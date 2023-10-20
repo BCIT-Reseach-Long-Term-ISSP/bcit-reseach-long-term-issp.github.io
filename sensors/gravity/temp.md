@@ -46,9 +46,7 @@ Description: Waterproof temperature sensor.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "temp",      # string
-  data_type: "C",    # string
-  data_value:        # float -- Celsius
+  value:        # float -- Celsius
 }
 ```
 </div>

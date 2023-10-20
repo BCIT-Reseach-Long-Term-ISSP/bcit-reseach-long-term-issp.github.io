@@ -43,9 +43,7 @@ Unit: ppm
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "tds",        # string
-  data_type: "ppm",  # string -- parts per million
-  data_value:        # float
+  value:        # float
 }
 ```
 </div>

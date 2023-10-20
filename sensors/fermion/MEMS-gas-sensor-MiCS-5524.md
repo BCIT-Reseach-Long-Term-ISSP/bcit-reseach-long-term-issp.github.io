@@ -66,3 +66,15 @@ MiCS-5524 Datasheet (https://img.dfrobot.com.cn/wiki/5b973267c87e6f19943ab3ad/86
 Schematics Diagram (https://dfimg.dfrobot.com/nobody/wiki/bc7b994d37fdaffc6e43624bda91cbde.pdf)
 
 Dimension and Component Layout (https://dfimg.dfrobot.com/nobody/wiki/065f0240e12ab11e527c4c6cf91799ba.pdf)
+
+---
+
+## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  value:        # float
+}
+```
+</div>

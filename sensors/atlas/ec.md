@@ -68,9 +68,7 @@ The entried conducting area must be submerged in order to get accurate readings.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "ec",           # string
-  data_type: "µS/cm",   # string -- microsiemens per centimeter 
-  data_value:           # float
+  value:           # float
 }
 ```
 </div>

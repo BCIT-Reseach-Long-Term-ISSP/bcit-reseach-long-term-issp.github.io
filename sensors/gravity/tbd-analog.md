@@ -46,9 +46,7 @@ The top (black part) of the probe is not waterproof.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "tbd",      # string
-  data_type: "NTU", # string -- nephelometric turbidity units
-  data_value:       # float
+  value:       # float
 }
 ```
 </div>
