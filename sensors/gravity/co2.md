@@ -116,4 +116,14 @@ Print Voltage and CO2 concentration:
     Serial.print(concentration);
     Serial.println("ppm");
 ```
+---
 
+## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  value:        # float
+}
+```
+</div>

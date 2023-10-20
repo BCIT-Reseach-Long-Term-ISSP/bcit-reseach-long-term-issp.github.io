@@ -75,9 +75,7 @@ When placing probe in water, gently tap the sensor to ensure there are no air bu
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "ph",       # string
-  data_type: "pH",  # string
-  data_value:       # float
+  value:       # float
 }
 ```
 </div>

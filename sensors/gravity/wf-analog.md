@@ -44,9 +44,7 @@ This sensor can not be tilted no more than 5 degrees.
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "wf",          # string
-  data_type: "L/s",    # string -- microsiemens/centimeter
-  data_value:          # float
+  value:          # float
 }
 ```
 </div>

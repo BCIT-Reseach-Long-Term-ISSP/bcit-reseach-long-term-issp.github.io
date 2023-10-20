@@ -87,9 +87,7 @@ Default constant is 440 since that is the typical oxygen levels in air, based on
 <div class="code-example" markdown="1">
 ```json
 {
-  name: "do",          # string
-  data_type: "%Sat",   # string -- percent saturation
-  data_value:          # float
+  value:          # float
 }
 ```
 </div>

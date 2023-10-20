@@ -62,3 +62,15 @@ Based on the reading, we extrapolated the data using the following two formulas 
 
 The sensor requires a converter
 ![Converter](/sensors/assests/throw_in_liquid_level_converter.png)
+
+---
+
+## JSON 
+
+<div class="code-example" markdown="1">
+```json
+{
+  value:        # float
+}
+```
+</div>
