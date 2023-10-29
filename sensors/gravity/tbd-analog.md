@@ -42,11 +42,22 @@ The top (black part) of the probe is not waterproof.
 ---
 
 ## JSON 
-
+#### Publish Topic: device/reading/sensor/tbd
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:       # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/tbd
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>

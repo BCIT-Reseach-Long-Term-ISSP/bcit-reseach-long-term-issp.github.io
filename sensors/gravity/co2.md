@@ -119,11 +119,22 @@ Print Voltage and CO2 concentration:
 ---
 
 ## JSON 
-
+#### Publish Topic: device/reading/sensor/co2
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:        # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/co2
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>

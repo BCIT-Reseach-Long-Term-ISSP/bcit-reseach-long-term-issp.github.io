@@ -63,12 +63,23 @@ The entried conducting area must be submerged in order to get accurate readings.
 
 ![Diagram](/sensors/assests/ec_probe_submerged.jpg)
 
-## JSON 
-
+## JSON
+#### Publish Topic: device/reading/sensor/cond
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:           # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/cond
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>
