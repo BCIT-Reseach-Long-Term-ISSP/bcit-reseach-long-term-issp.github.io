@@ -42,11 +42,22 @@ Description: Waterproof temperature sensor.
 ---
 
 ## JSON 
-
+#### Publish Topic: device/reading/sensor/tmp
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:        # float -- Celsius
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/tmp
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>

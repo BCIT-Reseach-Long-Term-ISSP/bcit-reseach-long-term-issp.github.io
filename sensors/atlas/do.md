@@ -82,12 +82,23 @@ This sensor is designed to read percent saturation only. Reading oxygen in mg/L 
 ## Note on the default saturation
 Default constant is 440 since that is the typical oxygen levels in air, based on Henry's Law. 
 
-## JSON 
-
+## JSON
+#### Publish Topic: device/reading/sensor/do
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:          # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/do
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>

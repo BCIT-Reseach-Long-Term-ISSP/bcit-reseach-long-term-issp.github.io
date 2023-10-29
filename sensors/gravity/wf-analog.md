@@ -40,11 +40,21 @@ This sensor must be installed vertically.
 
 This sensor can not be tilted no more than 5 degrees.
 ## JSON 
-
+#### Publish Topic: device/reading/sensor/flw
 <div class="code-example" markdown="1">
 ```json
 {
   value:          # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/flw
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>

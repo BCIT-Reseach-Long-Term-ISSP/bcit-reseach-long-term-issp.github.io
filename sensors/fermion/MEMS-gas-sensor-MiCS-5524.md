@@ -70,11 +70,22 @@ Dimension and Component Layout (https://dfimg.dfrobot.com/nobody/wiki/065f0240e1
 ---
 
 ## JSON 
-
+#### Publish Topic: device/reading/sensor/ch4
 <div class="code-example" markdown="1">
+
 ```json
 {
   value:        # float
+}
+```
+</div>
+
+#### Subscribe Topic: device/config/sensor/ch4
+<div class="code-example" markdown="1">
+
+```json
+{
+  state:          # binary
 }
 ```
 </div>
