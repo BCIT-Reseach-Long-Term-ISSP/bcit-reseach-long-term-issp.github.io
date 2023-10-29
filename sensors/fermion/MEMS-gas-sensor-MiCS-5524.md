@@ -70,7 +70,7 @@ Dimension and Component Layout (https://dfimg.dfrobot.com/nobody/wiki/065f0240e1
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/ch4
+Publish Topic: device/reading/sensor/ch4
 <div class="code-example" markdown="1">
 
 ```json
@@ -80,7 +80,7 @@ Dimension and Component Layout (https://dfimg.dfrobot.com/nobody/wiki/065f0240e1
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/ch4
+Subscribe Topic: device/config/sensor/ch4
 <div class="code-example" markdown="1">
 
 ```json

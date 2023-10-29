@@ -71,7 +71,7 @@ Note: the calibration solution is no long suitable after 20 minutes and needs to
 When placing probe in water, gently tap the sensor to ensure there are no air bubbles trapped in the prob
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/ph
+Publish Topic: device/reading/sensor/ph
 <div class="code-example" markdown="1">
 
 ```json
@@ -81,7 +81,7 @@ When placing probe in water, gently tap the sensor to ensure there are no air bu
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/ph
+Subscribe Topic: device/config/sensor/ph
 <div class="code-example" markdown="1">
 
 ```json

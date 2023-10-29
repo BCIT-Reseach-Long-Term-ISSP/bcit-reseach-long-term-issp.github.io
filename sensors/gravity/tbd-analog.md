@@ -42,7 +42,7 @@ The top (black part) of the probe is not waterproof.
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/tbd
+Publish Topic: device/reading/sensor/tbd
 <div class="code-example" markdown="1">
 
 ```json
@@ -52,7 +52,7 @@ The top (black part) of the probe is not waterproof.
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/tbd
+Subscribe Topic: device/config/sensor/tbd
 <div class="code-example" markdown="1">
 
 ```json

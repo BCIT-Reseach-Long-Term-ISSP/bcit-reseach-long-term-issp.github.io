@@ -66,7 +66,7 @@ The sensor requires a converter
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/lvl
+Publish Topic: device/reading/sensor/lvl
 <div class="code-example" markdown="1">
 
 ```json
@@ -76,7 +76,7 @@ The sensor requires a converter
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/lvl
+Subscribe Topic: device/config/sensor/lvl
 <div class="code-example" markdown="1">
 
 ```json

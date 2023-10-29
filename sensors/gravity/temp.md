@@ -42,7 +42,7 @@ Description: Waterproof temperature sensor.
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/tmp
+Publish Topic: device/reading/sensor/tmp
 <div class="code-example" markdown="1">
 
 ```json
@@ -52,7 +52,7 @@ Description: Waterproof temperature sensor.
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/tmp
+Subscribe Topic: device/config/sensor/tmp
 <div class="code-example" markdown="1">
 
 ```json
