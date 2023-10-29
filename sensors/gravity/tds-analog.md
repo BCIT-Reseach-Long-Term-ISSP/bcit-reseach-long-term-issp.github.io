@@ -39,7 +39,7 @@ Unit: ppm
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/tds
+Publish Topic: device/reading/sensor/tds
 <div class="code-example" markdown="1">
 
 ```json
@@ -49,7 +49,7 @@ Unit: ppm
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/tds
+Subscribe Topic: device/config/sensor/tds
 <div class="code-example" markdown="1">
 
 ```json

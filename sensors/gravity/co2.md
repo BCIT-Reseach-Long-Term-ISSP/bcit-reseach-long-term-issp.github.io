@@ -119,7 +119,7 @@ Print Voltage and CO2 concentration:
 ---
 
 ## JSON 
-#### Publish Topic: device/reading/sensor/co2
+Publish Topic: device/reading/sensor/co2
 <div class="code-example" markdown="1">
 
 ```json
@@ -129,7 +129,7 @@ Print Voltage and CO2 concentration:
 ```
 </div>
 
-#### Subscribe Topic: device/config/sensor/co2
+Subscribe Topic: device/config/sensor/co2
 <div class="code-example" markdown="1">
 
 ```json
