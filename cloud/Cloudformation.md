@@ -20,22 +20,12 @@ Amazon Web Services (AWS) CloudFormation is a service that helps users model, pr
 
 3. Change Sets: Change sets allow users to preview the changes that will be made to a stack before executing them. This helps to identify potential issues before they impact the environment.
 
-4. Nested Stacks: CloudFormation supports the creation of nested stacks, which allows users to break down complex architectures into smaller, reusable components.
-
 # Current Usage
 
-![cloudformation - current usage](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/cloudformation/aws_chart.png)
-
-The API gateway, together with the integrated Lambda functions, that exposes the endpoints for device configuration purposes are currently defined in cloudformation templates.
-
-- Stack name: device-config-stack
-- Template: cloudformation/ApiGatewayMaster.yaml
-
-The template `ApiGatewayMaster.yaml` includes 6 nested stacks. Each defines a group of related resources. The nested stacks are
-
-- `ApiGatewayStack`: defines the REST Api Gateway
-- `AuthValidationLambdaStack`: defines all the resources and permissions necessary for the /AuthValidation endpoint
-- `DeviceConfigLambdaStack`: defines all the resources and permissions necessary for the /config endpoint
-- `CalibrationPointsLambdaStack`: defines all the resources and permissions necessary for the /calibration_points endpoint
-- `DevicesLambdaStack`: defines all the resources and permissions necessary for the /devices endpoint
-- `SensorsLambdaStack`: defines all the resources and permissions necessary for the /sensors endpoint
+| Stack Name                              | Description                                                                                                             |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `yvr-stage-api-gw`                      | Manages resources relevant to the API Gateway for updating device configuration and user data                           |
+| `yvr-stage-iot-rule`                    | Manages IoT rules for invoking the calibration lambda function                                                          |
+| `yvr-stage-calibration-lambda-function` | Manages resources relevant to the Lambda function that calibrates the incoming data from device                         |
+| `yvr-stage-device-lambda-function`      | Manages resources relevant to the Lambda function that performs CRUD operation of device configuration data in DynamoDB |
+| `yvr-stage-user-lambda-function`        | Manages resources relevant to the Lambda function that performs CRUD operation of user data in DynamoDB                 |
