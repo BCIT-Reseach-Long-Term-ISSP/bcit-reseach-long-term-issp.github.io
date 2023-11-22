@@ -26,10 +26,10 @@ Whenever code changes are pushed to the feature branches (i.e. branches that are
 
 
 
-Whenever code changes are pushed to the `main` branch of the `cloud-2023` repository, GitHub Actions will automatically run the defined workflows, which are described in the following sections.
+Whenever code changes are pushed to the `main` branch of the `cloud-2023` repository, GitHub Actions will automatically run the workflows defined in `.github/workflows`.  The details of the workflows are described in the following sections.
 
-### Update Lambda functions
-Whenever code changes are made to any of the following lambda functions, a GitHub Actions workflow will be triggered to do the deployment.
+### Lambda functions
+Whenever code changes are made to any of the following lambda functions, the GitHub Actions workflow defined in `.github/workflows/deploy_lambda.yml` will be triggered to do the deployment.
 - `yv-stage-user`
 - `yvr-stage-device`
 - `yvr-stage-calibration`
@@ -41,8 +41,10 @@ The deployment process is as follows:
 3. Update the lambda function through CLI to use the latest version of the code in S3
 
 ### API Gateway
-Whenever there are changes of the CloudFormation template that defines configurations of API Gateway `yvr-stage-api-gw`, a GitHub Actions workflow will be triggered to do the deployment.
+Whenever there are changes of the CloudFormation template that defines configurations of API Gateway `yvr-stage-api-gw`, the GitHub Actions workflow defined in `.github/workflows/deploy_api_gw.yml` will be triggered to do the deployment.
 
 
 ### IoT rule
-Whenever there are changes of the CloudFormation template that defines configurations of API Gateway `yvr_stage_iot_rule`, a GitHub Actions workflow will be triggered to do the deployment.
+Whenever there are changes of the CloudFormation template that defines configurations of API Gateway `yvr_stage_iot_rule`, he GitHub Actions workflow defined in `.github/workflows/deploy_iot_rule.yml` will be triggered to do the deployment.
+
+(View [GitHub documentations](https://docs.github.com/en/actions) for more details about GitHub Actions)
