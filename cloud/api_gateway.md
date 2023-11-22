@@ -130,13 +130,15 @@ In our case, we will enable caching for all resources in the API.
 It is particularly important to enable caching for the API Gateway because the API Gateway is a proxy for the backend services. If we do not enable caching, then the API Gateway will have to call the backend services every time a request is made to the API Gateway. This will result in a lot of calls to the backend services.
 
 ### Current usage
+
+Currently we have implemented our api gateway, yvr-stage-api-gw, in us-west-2. There are two resources available, data and device.
+
 ![Current API Gateway](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_api_gateway_current.png)
 <figcaption align="center"><b>Current API Gateway</b></figcaption>
 
-Currently we have implemented our api gateway, yvr-stage-api-gw, in us-west-2. There are two resources available, data and device.
+Data resource handles requests related to users, such as creating new users and reseting user passwords. Device resource allows Dashboard to perform CRUD operation to the device database.
 
 ![Current Gateway Resource](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_gateway_resource_current.png)
 <figcaption align="center"><b>Current API Gateway Resource</b></figcaption>
 
-Data resource handles requests related to users, such as creating new users and reseting user passwords. Device resource allows Dashboard to perform CRUD operation to the device database. Both resources call lambda functions to provide functionalities. Data resource triggers the yvr-stage-user lambda function. Device resource triggers the yvr-stage-device lambda function. Refer to corresponding documentation for details.
-
+Both resources call lambda functions to provide functionalities. Data resource triggers the yvr-stage-user lambda function. Device resource triggers the yvr-stage-device lambda function. Refer to corresponding documentation for details.
