@@ -2,13 +2,16 @@
 layout: default
 title: Stress Test
 has_children: false
-permalink: /docs/cloud/StressTest
-parent: Cloud
+permalink: /docs/cloud/deprecated/StressTest
+grand_parent: Cloud
+parent: Deprecated
 has_toc: false
-nav_order: 8
 ---
 
 # Stress Test
+
+Deprecated
+{: .label .label-red }
 
 A simple and very crude test to see issues and limitations with data flow in the cloud system. The test will run multiple python scripts in parallel that will imitate buoys sending MQTT messages to their appropriate topic.
 

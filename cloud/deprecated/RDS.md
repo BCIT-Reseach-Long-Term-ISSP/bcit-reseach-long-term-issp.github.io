@@ -2,13 +2,16 @@
 layout: default
 title: RDS Database
 has_children: false
-permalink: /docs/cloud/RDS
-parent: Cloud
+permalink: /docs/cloud/deprecated/RDS
+grand_parent: Cloud
+parent: Deprecated
 has_toc: false
-nav_order: 14
 ---
 
 # Relational Database Schema Documentation
+
+Deprecated
+{: .label .label-red }
 
 ## Introduction
 

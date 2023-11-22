@@ -1,14 +1,17 @@
 ---
 layout: default
 title: Proposal - CI/CD Pipeline Using ECR, ECS, and GitHub
-parent: Cloud
+grand_parent: Cloud
+parent: Deprecated
 has_children: false
-permalink: /docs/cloud/ecs
+permalink: /docs/cloud/deprecated/ecs
 has_toc: false
-nav_order: 12
 ---
 
 # Introduction
+
+Deprecated
+{: .label .label-red }
 
 This document outlines a proposal to create a CI/CD pipeline using ECR, ECS, and GitHub. As of May 2022, we are using Firebase Hosting to deploy the current web application. Because this project is still in its early stages, it was more beneficial to use Firebase Hosting due to its quick setup and lower learning curve compared to AWS. However, deployment using AWS would be beneficial to limit third-party dependency since the microservices that the project is mainly comprised of are from AWS and because their ecosystem is meant to be all-inclusive. 
 
