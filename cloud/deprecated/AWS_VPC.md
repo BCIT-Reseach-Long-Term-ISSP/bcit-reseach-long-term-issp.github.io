@@ -2,31 +2,35 @@
 layout: default
 title: AWS Virtual Private Cloud
 has_children: true
-permalink: /docs/cloud/aws-vpc
-parent: Cloud
+permalink: /docs/cloud/deprecated/aws-vpc
+grand_parent: Cloud
+parent: Deprecated
 has_toc: true
 nav_order: 17
 ---
 
 # AWS Virtual Private Cloud
 
+Deprecated
+{: .label .label-red }
+
 ## Overview
 Amazon Virtual Private Cloud (VPC) offers a secured, virtual networking environment that allows the launch of AWS resources in a defined virtual network. In our design, the `yvr-configuration` database and Lambda functions used for API gateways are positioned within the VPC, adding an extra layer of security. A VPC Endpoint is utilized to securely connect our VPC to Secrets Manager, without exposing the traffic to the public internet. This strategy effectively leverages VPC's isolation to enhance data security and network performance.
 
 ## Current Usage
 We use VPC to isolate our resources of DB and Lambda functions from the public internet and use VPC Endpoint to connect to Secrets Manager.
-![current_usage](assets/vpc/vpc_current_usage.png)
+![current_usage](../assets/vpc/vpc_current_usage.png)
 
 ## Current Configuration
 - **main route table and ACL**
   autometically generated in the creation of VPC
-  ![main_route_table](assets/vpc/vpc_main_route_table.png)
+  ![main_route_table](../assets/vpc/vpc_main_route_table.png)
   
 - **subnets**
-  ![subnets](assets/vpc/vpc_subnets.png)
+  ![subnets](../assets/vpc/vpc_subnets.png)
 
 - **security groups**
-  ![security_groups](assets/vpc/vpc_security_groups.png)
+  ![security_groups](../assets/vpc/vpc_security_groups.png)
 
   **Note**:
   the current security group is allowing all the inbound traffic of all the protocols and ports, and outbound traffic from of IPv4 and IPv6. 

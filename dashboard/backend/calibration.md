@@ -11,7 +11,7 @@ nav_order: 6
 The three models are stored on AWS RDS and managed by the Cloud team.
 {: .fs-6 .fw-300 }
 
-Each Device's configurations (settings), their sensors, and calibration points are stored and retrieved from [AWS RDS](/docs/cloud/RDS), managed by the Cloud team.
+Each Device's configurations (settings), their sensors, and calibration points are stored and retrieved from [AWS RDS](/docs/cloud/deprecated/RDS), managed by the Cloud team.
 
 The following is the cloud schema as of May 22, 2023.
 

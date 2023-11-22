@@ -3,3 +3,5 @@
 .jekyll-metadata
 .jekyll-cache
 _site
+
+.DS_Store
