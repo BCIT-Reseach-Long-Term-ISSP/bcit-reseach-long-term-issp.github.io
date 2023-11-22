@@ -138,5 +138,5 @@ Currently we have implemented our api gateway, yvr-stage-api-gw, in us-west-2. T
 ![Current Gateway Resource](https://raw.githubusercontent.com/BCIT-Reseach-Long-Term-ISSP/bcit-reseach-long-term-issp.github.io/master/cloud/assets/bidirectional_comm/1_gateway_resource_current.png)
 <figcaption align="center"><b>Current API Gateway Resource</b></figcaption>
 
-Data resource handles requests related to users, such as creating new users and reseting user passwords. Device resource allows Dashboard to perform CRUD operation to the device database.
+Data resource handles requests related to users, such as creating new users and reseting user passwords. Device resource allows Dashboard to perform CRUD operation to the device database. Both resources call lambda functions to provide functionalities. Data resource triggers the yvr-stage-user lambda function. Device resource triggers the yvr-stage-device lambda function. Refer to corresponding documentation for details.
 
