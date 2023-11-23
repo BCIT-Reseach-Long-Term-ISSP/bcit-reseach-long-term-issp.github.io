@@ -1,10 +1,11 @@
 ---
 layout: default
-title: AWS Lambda
+title: Lambda
 has_children: false
-permalink: /docs/cloud/aws_lambda
+permalink: /docs/cloud/lambda
 parent: Cloud
 has_toc: false
+nav_order: 12
 ---
 
 # AWS Lambda
@@ -40,10 +41,11 @@ Lambda automatically scales your functions in response to the incoming request r
    - `.github/workflows/deploy_lambda.yml` is the GitHub Actions workflow that deploys the Lambda function.  The name of the Lambda function has to be included in `names_of_lambdas_for_deployment` in the `Deploy changes of Lambda functions` step
    - `src/cloudformation/lambda_function.yml` is the CloudFormation template that defines the configuration settings for the Lambda function
    - The naming convention of the Lambda function is `yvr-stage-{function_name}`.  For example, `yvr-stage-calibration-lambda-function` is the name of the Lambda function for calibration.
-   - The configuration settings for the Lambda function were specified in the CloudFormation template, for example memory, timeout, environment variables etc.
+   - The configuration settings for the Lambda function were specified in the CloudFormation template, for example environment variables
    - The benefit of using CloudFormation to deploy the Lambda function is that it allows us to easily provision and manage instances of the Lambda function, along with other necessary resources such as IAM roles and CloudWatch logs.  It also allows us to easily update or rollback the Lambda function if needed.
 
 ## Current Usage
+
 | Lambda Function Name | Description |
 | -------------------- | ----------- |
 | `yvr-stage-calibration`                    | Calibrates the incoming data from device and stores it to Timestream                                                             |

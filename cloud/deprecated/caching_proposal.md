@@ -2,13 +2,16 @@
 layout: default
 title: Caching Proposal
 has_children: false
-permalink: /docs/cloud/redis_proposal
-parent: Cloud
+permalink: /docs/cloud/deprecated/redis_proposal
+grand_parent: Cloud
+parent: Deprecated
 has_toc: false
-nav_order: 11
 ---
 
 # Summary
+
+Deprecated
+{: .label .label-red }
 
 Implementing a caching layer into the EMA Project’s existing architecture will drastically speed up the dashboard application’s response time. I propose to use Redis as an application cache to load data to the cache only when changed since the dashboard performs many database reads. 
 
