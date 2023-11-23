@@ -30,4 +30,4 @@ Note: Authorization (JWT token) is required for all endpoints
     o	GET Request
     o	No body required
 -   Response:
-    ![getalluser_01](/assets/getalluser_01.png)
+    ![getalluser_01](assets/getalluser_01.png)
