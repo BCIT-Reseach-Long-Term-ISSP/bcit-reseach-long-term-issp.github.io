@@ -22,10 +22,13 @@ Amazon Web Services (AWS) CloudFormation is a service that helps users model, pr
 
 # Current Usage
 
-| Stack Name                              | Description                                                                                                             |
-| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `yvr-stage-api-gw`                      | Manages resources relevant to the API Gateway for updating device configuration and user data                           |
-| `yvr-stage-iot-rule`                    | Manages IoT rules for invoking the calibration lambda function                                                          |
-| `yvr-stage-calibration-lambda-function` | Manages resources relevant to the Lambda function that calibrates the incoming data from device                         |
-| `yvr-stage-device-lambda-function`      | Manages resources relevant to the Lambda function that performs CRUD operation of device configuration data in DynamoDB |
-| `yvr-stage-user-lambda-function`        | Manages resources relevant to the Lambda function that performs CRUD operation of user data in DynamoDB                 |
+| Stack Name                                 | Description                                                                                                             |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| `yvr-stage-api-gw`                         | Manages resources relevant to the API Gateway for updating device configuration and user data                           |
+| `yvr-stage-iot-rule`                       | Manages IoT rules for invoking the calibration lambda function                                                          |
+| `yvr-stage-calibration-lambda-function`    | Manages resources relevant to the Lambda function that calibrates the incoming data from device                         |
+| `yvr-stage-device-lambda-function`         | Manages resources relevant to the Lambda function that performs CRUD operation of device configuration data in DynamoDB |
+| `yvr-stage-user-lambda-function`           | Manages resources relevant to the Lambda function that performs CRUD operation of user data in DynamoDB                 |
+| `yvr-stage-cognito-get-users-info-lambda-function`         | Manages resources relevant to the Lambda function that sses the AWS Cognito API to get user information                                                                        |
+| `yvr-stage-cognito-get-role-lambda-function`               | Manages resources relevant to the Lambda function that sses the AWS Cognito API to get user role                                                                               |
+| `yvr-stage-cognito-add-update-delete-user-lambda-function` | Manages resources relevant to the Lambda function that sses the AWS Cognito API to add, update, or delete a user                                                               |

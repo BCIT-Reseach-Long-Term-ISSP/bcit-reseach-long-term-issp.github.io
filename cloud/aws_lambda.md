@@ -2,9 +2,8 @@
 layout: default
 title: AWS Lambda
 has_children: false
-permalink: /docs/cloud/bidirectional_communication/aws_lambda
-grand_parent: Cloud
-parent: Bi-directional Communication
+permalink: /docs/cloud/aws_lambda
+parent: Cloud
 has_toc: false
 ---
 
@@ -16,45 +15,40 @@ AWS Lambda is a compute service that lets us run code without provisioning or ma
 
 ## How does it work?
 
-AWS Lambda runs code in response to events such as HTTP requests. It automatically manages the compute resources required by that code. It starts our code when needed and scales automatically, from a few requests per day to thousands per second. We pay only for the compute time we consume - there is no charge when our code is not running.
+AWS Lambda runs code in response to events such as HTTP requests, or IoT events.  When an event occurs, AWS Lambda automatically provisions the necessary compute resources to run your code. It then executes your code in a secure and isolated environment.  
 
-## How did we use it?
+Lambda automatically scales your functions in response to the incoming request rate. It can handle multiple requests simultaneously, allowing you to run highly scalable applications without worrying about infrastructure management.
 
-We used AWS Lambda to create a public API that allows the Dashboard to communicate with the IoT devices. We created a Lambda function that is triggered by an HTTP request from the Dashboard. The Lambda function then sends a message to the IoT device using the AWS IoT Core service. The IoT device then responds to the message and the Lambda function returns the response to the Dashboard.
-
-## How to create a Lambda function?
+## How did we develop a Lambda function?
 
 1. Go to the AWS Lambda console and click on "Create function".
 
 2. Select "Author from scratch" and fill in the following information:
+    ![Create function](/cloud/assets/bidirectional_comm/1_create_function.png)
 
-![Create function](/cloud/assets/bidirectional_comm/1_create_function.png)
+3. Go to the **Code** tab.  Develop source code in the code editor or upload a .zip file containing the code for the Lambda function
 
-3. Click on "Create function" and you will be redirected to the function's page. Scroll down to the "Function code" section and click on "Actions" and then "Upload a .zip file". Upload the .zip file containing the code for the Lambda function or copy and paste the code directly into the code editor.
-
-## Configuring the Lambda function
-
-### IAM Role
-
-The Lambda function needs to have the correct permissions to be able to communicate with the IoT devices. To do this, we need to create an IAM role that has the following policies attached:
-
-- AWSLambdaBasicExecutionRole
-- AWSIoTDataAccess
-
-In addition to that, we must include any other policies that are required by the Lambda function as needed. 
-
-### Memory
-
-The amount of memory allocated to the Lambda function will depend on the size of the code and the amount of memory required to run the code. The more memory we allocate to the function, the more CPU power we allocate to it. The amount of memory allocated to the function will also affect the amount of time it takes to run the code.
-
-In our case, we allocated 256 MB of memory to the function and it was more than enough to run the code and showed significant improvements in the amount of time it took to run the code. 
-
-We can determine the optimal amount of memory to allocate to the function by running the code with different amounts of memory and measuring the amount of time it takes to run the code.
-
-AWS PowerTuning is a tool that can be used to determine the optimal amount of memory to allocate to the function. It runs the function with different amounts of memory and measures the amount of time it takes to run the code. It then determines the optimal amount of memory to allocate to the function based on the results of the tests.
-
-### Timeout
-
-The timeout for the Lambda function will depend on the amount of time it takes to run the code. The maximum timeout is 15 minutes. If the function takes longer than the timeout to run, it will be terminated and the code will not be executed. 
+4. Go to the **Configuration** tab and customize the configuration settings if needed
 
 
+## How did we deploy a Lambda function?
+1. After we had finalized the source code and configuration of the Lambda function, we added the source code to GitHub repository for version control.  
+   - `cloud-2023` is the GitHub repository
+   - `src/lambda_functions` is the directory that contains the source code for the Lambda functions, and the corresponding `requirements.txt` file that defines the dependencies for the Lambda functions
+
+2. GitHub Actions would then zip the source code, upload it to an S3 bucket, and use CloudFormation to create a new instance of Lambda function with the uploaded source code in the S3 bucket.  
+   - `.github/workflows/deploy_lambda.yml` is the GitHub Actions workflow that deploys the Lambda function.  The name of the Lambda function has to be included in `names_of_lambdas_for_deployment` in the `Deploy changes of Lambda functions` step
+   - `src/cloudformation/lambda_function.yml` is the CloudFormation template that defines the configuration settings for the Lambda function
+   - The naming convention of the Lambda function is `yvr-stage-{function_name}`.  For example, `yvr-stage-calibration-lambda-function` is the name of the Lambda function for calibration.
+   - The configuration settings for the Lambda function were specified in the CloudFormation template, for example memory, timeout, environment variables etc.
+   - The benefit of using CloudFormation to deploy the Lambda function is that it allows us to easily provision and manage instances of the Lambda function, along with other necessary resources such as IAM roles and CloudWatch logs.  It also allows us to easily update or rollback the Lambda function if needed.
+
+## Current Usage
+| Lambda Function Name | Description |
+| -------------------- | ----------- |
+| `yvr-stage-calibration`                    | Calibrates the incoming data from device and stores it to Timestream                                                             |
+| `yvr-stage-device`                         | Performs CRUD operation of device configuration data in DynamoDB  and publishes the device configuration changes to an IoT topic |
+| `yvr-stage-user`                           | Performs CRUD operation of user data in DynamoDB                                                                                 |
+| `yvr-stage-cognito-get-users-info`         | Uses the AWS Cognito API to get user information                                                                                 |
+| `yvr-stage-cognito-get-role`               | Uses the AWS Cognito API to get user role                                                                                        |
+| `yvr-stage-cognito-add-update-delete-user` | Uses the AWS Cognito API to add, update, or delete a user                                                                        |
