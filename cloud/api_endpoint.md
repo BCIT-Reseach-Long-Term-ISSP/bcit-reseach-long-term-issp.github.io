@@ -56,7 +56,7 @@ Note: Authorization (JWT token) is required for all endpoints
 
 ![addnewuser_01](assets/api_endpoint02.png)
 
--   Examepl Response:
+-   Example Response:
 
 ![addnewuser_02](assets/api_endpoint03.png)
 
