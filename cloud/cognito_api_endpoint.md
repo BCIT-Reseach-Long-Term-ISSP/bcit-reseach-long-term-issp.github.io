@@ -3,7 +3,7 @@ layout: default
 title: Cognito API Endpoint
 has_children: false
 permalink: /docs/cloud/bidirectional_communication/api_endpoints/cognito_api_endpoint
-grand_parent: Cloud
+grand_parent: Bi-directional Communication
 parent: API Endpoints
 has_toc: false
 ---
