@@ -16,17 +16,10 @@ So far, we have been focusing on ensuring data gets from the buoy sensors to the
 
 ### How will communication be facilitated?
 
-There are two main ways to establish communication between AWS services and dashboard.
+We used the following cloud architecture schema to make communication as simple and robust as possible.
 
-1. Integrate AWS SDK with dashboard API
-2. Create unique API for Cloud services
-
-The first option to integrate the AWS SDK with the dashboard team's API should be considered for future teams, as it helps consolidate all services into a single API service. However, since we were dealing with time constraints, we ended up resorting to the second option to help decouple dependencies between teams. 
-
-We used the following cloud architecture schema to create a simple API using AWS API gateway and AWS Lambda.
-
-![Cloud architecture of public lambda function](/cloud/assets/bidirectional_comm/1_public_lambda_diagram.png)
-<figcaption align="center"><b>Cloud architecture for public Cloud API for IoT communication</b></figcaption>
+![Cloud architecture for bidirectional communication](/cloud/assets/bidirectional_comm/bidirectional_communication.png)
+<figcaption align="center"><b>Cloud architecture for bidirectional communication</b></figcaption>
 
 
 ### What is AWS API Gateway?
@@ -35,4 +28,16 @@ AWS API Gateway is a fully managed service that makes it easy for us to create, 
 ### What is AWS Lambda?
 AWS Lambda is a compute service that lets us run code without provisioning or managing servers. It allows us to run isolated code on high-availability compute infrastructure and performs administration of the compute resources. 
 
+
+### What is Amazon Cognito?
+AWS Cognito is a fully managed identity and access management service provided by Amazon Web Services. It allows us to easily manage user authentication and further secures API Gateway.
+
+### What is Amazon DynamoDB?
+Amazon DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services. It is designed to provide fast and predictable performance with seamless scalability. It enables us to store the configuration data provided by the dashboard.
+
+### What is Amazon Timestream?
+AWS Timestream is a fully managed, serverless time-series database service provided by Amazon Web Services. It is designed to handle the ingestion, storage, and query of time-series data at scale, making it ideal for applications such as IoT. 
+
+### What is IoT Core?
+AWS IoT Core is the platform that enables users to connect devices to AWS Services and other devices, secure data and interactions, and process and act upon device data. It allows to send the configuration data to the devices and read measurements from the scanners.
 
