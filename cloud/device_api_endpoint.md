@@ -3,7 +3,7 @@ layout: default
 title: Device API Endpoint
 has_children: false
 permalink: /docs/cloud/bidirectional_communication/api_endpoints/device_api_endpoint
-grand_parent: Cloud
+grand_parent: Bi-directional Communication
 parent: API Endpoints
 has_toc: false
 ---
