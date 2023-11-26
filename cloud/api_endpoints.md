@@ -5,10 +5,10 @@ has_children: true
 permalink: /docs/cloud/bidirectional_communication/api_endpoints
 grand_parent: Cloud
 parent: Bi-directional Communication
-has_toc: false
+has_toc: true
 ---
 
-# API Endpoint
+# API Endpoints
 ## Overview
 An API endpoint in AWS serves as a specific URL or URI (Uniform Resource Identifier) that applications use to interact with a particular service or resource within the Amazon Web Services ecosystem. It acts as a gateway, allowing external applications to send requests and receive responses, enabling seamless communication and integration with AWS services.
 
