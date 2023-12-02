@@ -23,23 +23,50 @@ The updated architectures aims to achieve:
 - Lambdas and Lambda Layers to process calibration data
 - CI/CD of Lambdas
 
+> **_NOTE:_**  Resources with prefixes `yvr-stage` are the final stage resources that'll be used. However, there is some fragmented architecture where APIG and some dynamo tables are located in `us-east-1` these are prefixed by `bby23` which are hooked up to the yvr-stage resources.
+
 ## Key Features / Concepts:
 
-1. AWS Cognito:
+> The docs in this page isn't going to go over *how* certain AWS resources work. There's plenty of official docs on that already. The objective of this page is to showcase our design choices and why they make sense.
 
-2. Calibration Lambdas:
 
-3. MQTT and IoT Core:
+<details>
+<summary>1. Why did we go severless?</summary>
+
+BODY CONTENT
+
+</details>
+
+<details>
+<summary>2. Why microservices?</summary>
+
+BODY CONTENT
+
+</details>
+
+<details>
+<summary>3. What are the important decision criterias when building this?</summary>
+
+BODY CONTENT
+
+</details>
+<br>
+
+# Future Challenges
+
+something something
 
 # Current Usage
 
-| Stack Name                                 | Description                                                                                                             |
+| AWS Resource                                 | Description/Reasoning                                                                                                             |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| `yvr-stage-api-gw`                         | Manages resources relevant to the API Gateway for updating device configuration and user data                           |
-| `yvr-stage-iot-rule`                       | Manages IoT rules for invoking the calibration lambda function                                                          |
-| `yvr-stage-calibration-lambda-function`    | Manages resources relevant to the Lambda function that calibrates the incoming data from device                         |
-| `yvr-stage-device-lambda-function`         | Manages resources relevant to the Lambda function that performs CRUD operation of device configuration data in DynamoDB |
-| `yvr-stage-user-lambda-function`           | Manages resources relevant to the Lambda function that performs CRUD operation of user data in DynamoDB                 |
-| `yvr-stage-cognito-get-users-info-lambda-function`         | Manages resources relevant to the Lambda function that sses the AWS Cognito API to get user information                                                                        |
-| `yvr-stage-cognito-get-role-lambda-function`               | Manages resources relevant to the Lambda function that sses the AWS Cognito API to get user role                                                                               |
-| `yvr-stage-cognito-add-update-delete-user-lambda-function` | Manages resources relevant to the Lambda function that sses the AWS Cognito API to add, update, or delete a user                                                               |
+| `AWS Cognito`                         | Outsources authentication and authorization concerns to AWS and helps save us development time for custom security measures. Security in this area is handled by AWS. This service can be expensive if theres hundreds or thousands of users (charges are based on monthly active users). For a water monitoring system we're expecting about a dozen active users at most. Cost here would be about $5/month.                            |
+| `Calibration Lambdas`                       | This is a central piece in ensuring data is stored into timestream properly. Calibration is based on a finding the value two sets of given physical and digital values. These values are inputted into our config dyanmo table through the dashboard by a technician. Currently these are random values. Baked into the calibration lambda are lambda layers that are responsible for email notifications and retrieving physical and digital values from config table. To access the lambdas and lambdas layers, refer to `cloud-2023` repo. This repo also has CI/CD setup already using Github Actions.                                                          |
+| `MQTT and IoT Core`    | These are predominately handled by AWS, we simply have to connect devices and route traffic for a given topic to the respective calibration lambdas to process.                          |
+| `Github Actions`         | For CI/CD of lambdas. This is maintained via Github Actions. See the `cloud-2023` repo for the sample workflows. |
+| `AWS Backup`           | When we first got this project, there was a frankenstein usage of kensis firehose outputting data into S3 buckets to back data up. The cost difference is minimal and the recoverability and reliability of simply using AWS Backup makes more sense.                 |
+| `Cloud Watch`         | Handles the logging. Specifically, we can specify the log levels such as ERROR, INFO etc to make debugging lambdas and other cloud resources much easier                                                                         |
+| `API Gateway`               | We chose to use API gateway to handle incoming rest requests because its easy to map data and handle responses comes from dashboard. This also support our severless & microservices architecture.                                                                               |
+| `SES notification` | SES currently uses production level access. In other words, it's capable of sending emails to anyone in the world even if they're not verified. AWS has strict guidelines regarding this. We may need to build out dead letter channels to handle failed deliveries and make an "unsubscribe" button on email messages. This will better help us align with AWS rules to avoid spam.                                                          |
+| `Dashboard` | Although it's not something the cloud team manages, the dashboard is split into Backend and Frontend repos to make it all work.                                                             |
+| `Timestream db` | To query this, use AWS-SDK. Querying a timestream db with a rest api is possible but quite challenging due to its celluar architecture.                                                             |
