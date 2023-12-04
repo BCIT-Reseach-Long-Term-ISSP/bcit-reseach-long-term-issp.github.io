@@ -10,9 +10,9 @@ nav_order: 14
 
 # Overview  
 
-During the 2023 iteration. There were two cloud teams (BBY and DTC). Under their amazing work, we have upgraded the architecture significantly. 
+During the Dec 2023 iteration. There were two cloud teams (BBY and DTC). Under their amazing work, we have upgraded the architecture significantly. 
 
-![Final Cloud architecture for 2023](/cloud/assets/architecture/final-cloud-2023-architecture.drawio.png)
+![Final Cloud architecture for 2023](/cloud/assets/architecture/final_architecture_cloud_2023.drawio.png)
 
 The updated architectures aims to achieve:  
 
