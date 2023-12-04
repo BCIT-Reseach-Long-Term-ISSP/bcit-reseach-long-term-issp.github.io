@@ -33,28 +33,39 @@ The updated architectures aims to achieve:
 <details>
 <summary>1. Why did we go severless?</summary>
 
-BODY CONTENT
+Running services on AWS incurs a cost however it's easier to get started and infrastructure concerns are outsourced to AWS. There's not that big of a cost comparison between running a monolothic architecture in comparison to this severless architecture. Remember, if you choose to do monolithic, you have auto scaling concerns as well as instance sizes that might be needed. On top of that, there's added complexity. 
+<br>
+For a project that is passed from team to team, reducing complexity in architecture is a big selling point. In addition, if teams were stuck building our scalable, reliable, and secure infrastructure this project will likely never be finished do to the complexity. 
 
 </details>
 
 <details>
 <summary>2. Why microservices?</summary>
 
-BODY CONTENT
+Microservices help make the certain features swappable and upgradeable without shutting down other parts of the system. In addition, we can scale and add more microservices/ lambdas to support newer business logic as the arise. 
 
 </details>
 
 <details>
 <summary>3. What are the important decision criterias when building this?</summary>
 
-BODY CONTENT
+1. security
+2. cost
+3. maintainability
+4. does it get the job done
 
 </details>
 <br>
 
-# Future Challenges
+# Opportunities for Improvement
 
-something something
+- integrating us-east-1 into us-west-2 to a `yvr-stage` environment
+- SES notification resources are ready however Dashboard needs to utilize them
+- Device is sending to a singular topic. A topic must be able to idenitify *which* device it's coming from and for what sensor so that calibration can grab the right config data (physical and digital values) from the config dyanmo db table
+- Follow AWS guidelines in building out the SES notification system which may require having unsubscribe buttons from emails as well as dead letter channels and validation of proper emails
+- Further refine the SES notification email feature so that we can avoid spam or handle the notifications in batches. For example, a series of results being outside of a threshold can lead to dozens of alert emails in an hour.
+- Implement scheduled queries for common queries that Dashboard may make and coordinate with the dashboard team to have these implemented. Therefore, the ideal situation is to only query from scheduled query via aws-sdk and not the entire dataset. For example, the test databse of `EMA_YVR` has over 120k rows. When multiple devices and sensors are live, we'd be approach big data levels -- millions of rows.
+- Hosting the dashboard's backend of AWS so that it has no start-up latency. Frontend could still use the free tier of Netlify. Just make sure the domain has proper SSL certificates and is valid for HTTPS.
 
 # Current Usage
 
