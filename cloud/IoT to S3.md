@@ -59,6 +59,11 @@ We can setup an optional error action but we haven't set it up yet. Perhaps this
 
 Once done, click on the create rule button on the buttom. 
 
+<details>
+<summary>Deprecated: Kensis Stream</summary>
+
+> Note from 2023 architecture improvements. Kensis was a redundant and overly complicated process of backing up IoT data into S3 buckets. Therefore, this was deprecated. There's no need to read further.
+
 ## Kinesis Data Stream and Delivery Stream
 Refer to the Kinesis page for information on setting up data streams and delivery streams.
 https://bcit-reseach-long-term-issp.github.io/docs/cloud/kinesis
@@ -104,3 +109,6 @@ exports.handler = (event, context, callback) => {
 ```
 
 We now have everything setup for data to flow from IoT Core through Kinesis to a S3 bucket.
+
+
+</details>
