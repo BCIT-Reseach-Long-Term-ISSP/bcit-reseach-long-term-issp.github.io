@@ -126,7 +126,13 @@ Note: Authorization (JWT token) is required for all endpoints
 ![checkuserrole_02](assets/api_endpoint09.png)
 
 
+# Cognito Lambda Functions
 
+All Cognito related lambda functions are located in the Oregon region. 
+
+- yvr-stage-cognito-get-users-info function is used to pull all cognito users information
+- yvr-stage-cognito-get-role function is used to grab the user's role given the email address
+- yvr-stage-cognito-add-update-delete-user function is used to add, modify, and delete a cognito user
 
 
 
