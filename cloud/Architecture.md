@@ -12,15 +12,12 @@ nav_order: 14
 
 During the Dec 2023 iteration. There were two cloud teams (BBY and DTC). Under their amazing work, we have upgraded the architecture significantly. 
 
+## Final Cloud architecture for 2023
 ![Final Cloud architecture for 2023](/cloud/assets/architecture/final_architecture_cloud_2023.drawio.png)
 
 
-<details>
-<summary>Final Cloud architecture for 2023 Annotated with Resource Names</summary>
-
+## Final Cloud architecture for 2023 Annotated with Resource Names
 ![Final Cloud architecture for 2023 Annotated with Resource Names](/cloud/assets/architecture/architecture-Annotated_Final_Arch2.drawio.png)
-
-</details>
 <br>
 
 The updated architectures aims to achieve:  
