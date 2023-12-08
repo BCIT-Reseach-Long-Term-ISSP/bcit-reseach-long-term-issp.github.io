@@ -5,6 +5,8 @@ parent: Device Firmware Refactor
 grand_parent: Smart Device
 ---
 
+# Arduino Mega (Sensor Reading Device)
+
 This page provides instructions for setting up and using the Arduino Mega.
 
 ## Dependencies
