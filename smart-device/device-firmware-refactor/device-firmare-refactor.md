@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 # Device Firmware Refactor
-Repository: https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware-refactor/tree/main
+Repository: [device-firmware-refactor](https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware-refactor/tree/main)
 
 This repository currently generate mock data on the Mega, sends the data over to the Zero. Then the Zero uses the shield to subscribe to MQTT topics, get configuration from the cloud, and publish data to the mqtt topics as well. Finally, the zero sends the configurations back to the mega. After this, Zero goes to sleep, and mega wakes it up again whenever it wants to send sensor readings.
 Arduino Zero + Sara R4 shield (communication device) is treated as a dumb device. What I mean is, Arduino Mega decides where it wants to send the data to and which topic does it want to get the data/configuration from.
@@ -21,7 +21,7 @@ Arduino Zero + Sara R4 shield (communication device) is treated as a dumb device
 1. **Sensor Reading Device:**
     - Setup Arduino Mega [Documentation](./mega_setup.md).
 2. **Communication Device:**
-    - Setup Arduino Zero + Sara R4 shield [Documentation](.zero_setup.md).
+    - Setup Arduino Zero + Sara R4 shield [Documentation](./zero_setup.md).
 3. **Connect the sensor reading and communication device together:**
     ```
     +-------------+-----------------------------+
