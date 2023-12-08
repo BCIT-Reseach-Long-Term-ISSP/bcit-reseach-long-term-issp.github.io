@@ -4,6 +4,7 @@ title: Arduino Zero + Sara R4 10M 02B Setup (Communication Device)
 parent: Device Firmware Refactor
 grand_parent: Smart Device
 ---
+# Arduino Zero with SaraR4 NB-IoT Shield (Communication Device)
 
 This README provides instructions for setting up and using the Arduino Zero with the SaraR4 NB-IoT Shield. This guide assumes that you have the necessary dependencies installed, including Git, the Arduino IDE, VSCode, Python, and Bash.
 

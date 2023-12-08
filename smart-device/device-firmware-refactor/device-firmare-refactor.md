@@ -11,9 +11,7 @@ nav_order: 2
 Repository: https://github.com/BCIT-Reseach-Long-Term-ISSP/device-firmware-refactor/tree/main
 
 This repository currently generate mock data on the Mega, sends the data over to the Zero. Then the Zero uses the shield to subscribe to MQTT topics, get configuration from the cloud, and publish data to the mqtt topics as well. Finally, the zero sends the configurations back to the mega. After this, Zero goes to sleep, and mega wakes it up again whenever it wants to send sensor readings.
-
 Arduino Zero + Sara R4 shield (communication device) is treated as a dumb device. What I mean is, Arduino Mega decides where it wants to send the data to and which topic does it want to get the data/configuration from.
-{: .fs-6 .fw-300 }
 
 
 ## Bi-DIrenctional Communication sequence between Mega <-> Zero + Shield <-> AWS IoT
@@ -103,7 +101,7 @@ There are a lot of variables that you can play around with to cusomize the devic
     "sensor_interval": "<value>"
     }
     ```
-- Please ensure that for the Communication Device (Zero + Sara R4) to successfully get the the configuration, the published configuration on the MQTT config topic should be a retained message.
+- Please ensure that for the Communication Device (Zero + Sara R4) to successfully get the the configuration, the published configuration on the MQTT config topic should be a retained message.<br>
 ![Retained Device Config](./assets/device_config.png)
 
 ### Sensor Configuration Topic:
@@ -126,5 +124,5 @@ There are a lot of variables that you can play around with to cusomize the devic
     "state": "<value>"
     }
     ```
-- Please ensure that for the Communication Device (Zero + Sara R4) to successfully get the configuration, the published configuration on the MQTT config topic should be a retained message.
+- Please ensure that for the Communication Device (Zero + Sara R4) to successfully get the configuration, the published configuration on the MQTT config topic should be a retained message.<br>
 ![Retained Device Config](./assets/sensor_config.png)
