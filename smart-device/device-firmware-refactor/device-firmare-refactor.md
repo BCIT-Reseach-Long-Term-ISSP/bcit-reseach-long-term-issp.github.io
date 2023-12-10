@@ -45,10 +45,10 @@ To setup your local development environment, in case you don't want to use scrip
         arduino-cli core update-index --additional-urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
     ```
 2. ```bash
-        arduino-cli core install arduino:samd
+        arduino-cli core install arduino:samd@1.8.13
     ```
 3. ```bash
-        arduino-cli core install arduino:avr:mega
+        arduino-cli core install arduino:avr@1.8.6
     ```
 4. ```bash
         arduino-cli burn-bootloader -b "arduino:samd:arduino_zero_edbg" -p "<PORT>" -P "edbg"
@@ -57,13 +57,17 @@ To setup your local development environment, in case you don't want to use scrip
     ```bash
         arduino-cli burn-bootloader -b "arduino:samd:arduino_zero_edbg" -p "/dev/ttyACM0" -P "edbg"
     ```
-5. ```bash
-        arduino-cli core install arduino:samd@1.8.13
-    ```
-6. ```bash
-        arduino-cli core install arduino:avr@1.8.6
-    ```
-7. Copy the libraries from `<PROJECT_ROOT>/<zero/mega>/build_sources/artifacts/libraries/*` to `~/Arduino/libraries/` manually.
+5. Copy the libraries from `<PROJECT_ROOT>/<zero/mega>/build_sources/artifacts/libraries/*` to `~/Arduino/libraries/` manually.
+
+## Where to find the required libraries, if needed
+| Library                              | Version | Installation                                    |
+|---------------------------------------|---------|-------------------------------------------------|
+| PubSubClient                          | 2.8     | Arduino IDE Library Manager                     |
+| Arduino Low Power                     | 1.2.2   | Arduino IDE Library Manager                     |
+| RTCZero                               | 1.6.0   | Arduino IDE Library Manager                     |
+| ArduinoJson                           | 6.21.4  | Arduino IDE Library Manager                     |
+| Sparkfun LTE Shield Arduino Library   | 1.3.0   | Download zip from [GitHub](https://github.com/sparkfun/SparkFun_LTE_Shield_Arduino_Library/archive/refs/heads/master.zip) and add to Arduino IDE under **Sketch** → **Include Library** → **Add .ZIP Library** |
+| SimpleNB                              | latest  | Download zip from [GitHub](https://github.com/techstudio-design/SimpleNB/archive/refs/heads/master.zip) and add to Arduino IDE under **Sketch** → **Include Library** → **Add .ZIP Library** |
 
 
 ## Updating device variables
