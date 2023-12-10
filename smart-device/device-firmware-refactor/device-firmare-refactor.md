@@ -60,14 +60,43 @@ To setup your local development environment, in case you don't want to use scrip
 5. Copy the libraries from `<PROJECT_ROOT>/<zero/mega>/build_sources/artifacts/libraries/*` to `~/Arduino/libraries/` manually.
 
 ## Where to find the required libraries, if needed
-| Library                              | Version | Installation                                    |
-|---------------------------------------|---------|-------------------------------------------------|
-| PubSubClient                          | 2.8     | Arduino IDE Library Manager                     |
-| Arduino Low Power                     | 1.2.2   | Arduino IDE Library Manager                     |
-| RTCZero                               | 1.6.0   | Arduino IDE Library Manager                     |
-| ArduinoJson                           | 6.21.4  | Arduino IDE Library Manager                     |
-| Sparkfun LTE Shield Arduino Library   | 1.3.0   | Download zip from [GitHub](https://github.com/sparkfun/SparkFun_LTE_Shield_Arduino_Library/archive/refs/heads/master.zip) and add to Arduino IDE under **Sketch** → **Include Library** → **Add .ZIP Library** |
-| SimpleNB                              | latest  | Download zip from [GitHub](https://github.com/techstudio-design/SimpleNB/archive/refs/heads/master.zip) and add to Arduino IDE under **Sketch** → **Include Library** → **Add .ZIP Library** |
+<table>
+  <tr>
+    <th>Library</th>
+    <th>Version</th>
+    <th>Installation</th>
+  </tr>
+  <tr>
+    <td>PubSubClient</td>
+    <td>2.8</td>
+    <td>Arduino IDE Library Manager</td>
+  </tr>
+  <tr>
+    <td>Arduino Low Power</td>
+    <td>1.2.2</td>
+    <td>Arduino IDE Library Manager</td>
+  </tr>
+  <tr>
+    <td>RTCZero</td>
+    <td>1.6.0</td>
+    <td>Arduino IDE Library Manager</td>
+  </tr>
+  <tr>
+    <td>ArduinoJson</td>
+    <td>6.21.4</td>
+    <td>Arduino IDE Library Manager</td>
+  </tr>
+  <tr>
+    <td>Sparkfun LTE Shield Arduino Library</td>
+    <td>1.3.0</td>
+    <td>Download zip from <a href="https://github.com/sparkfun/SparkFun_LTE_Shield_Arduino_Library/archive/refs/heads/master.zip" target="_blank">GitHub</a> and add to Arduino IDE under <strong>Sketch</strong> → <strong>Include Library</strong> → <strong>Add .ZIP Library</strong></td>
+  </tr>
+  <tr>
+    <td>SimpleNB</td>
+    <td>latest</td>
+    <td>Download zip from <a href="https://github.com/techstudio-design/SimpleNB/archive/refs/heads/master.zip" target="_blank">GitHub</a> and add to Arduino IDE under <strong>Sketch</strong> → <strong>Include Library</strong> → <strong>Add .ZIP Library</strong></td>
+  </tr>
+</table>
 
 
 ## Updating device variables
